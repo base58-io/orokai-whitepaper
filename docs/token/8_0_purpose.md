@@ -35,5 +35,3 @@ Ability to route partner flows through OROKAI Chain without surrendering custody
 OROKAI Chain provides the infrastructure for seamless multi-chain coordination while preserving the core principles of decentralization and user control.
 
 :::
-
-## GITARA SIEMA!!
