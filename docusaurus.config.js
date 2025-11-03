@@ -66,7 +66,7 @@ const config = {
     image: 'img/docusaurus-social-card.jpg',
     colorMode: { respectPrefersColorScheme: true },
      mermaid: {
-    theme: { light: 'neutral', dark: 'dark' },
+    theme: { light: 'light', dark: 'dark' },
   },
     navbar: {
       title: ' ',

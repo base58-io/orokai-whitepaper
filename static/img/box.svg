@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.11 97.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cccccb;
+        font-family: Inter-Regular, Inter;
+        font-size: 10px;
+        font-variation-settings: 'opsz' 14, 'wght' 400;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #d3bbb6;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        fill: #d3bbb6;
+        font-family: Inter-Bold, Inter;
+        font-size: 12px;
+        font-variation-settings: 'opsz' 14, 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-9 {
+        letter-spacing: .02em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect class="cls-3" x=".5" y=".5" width="188.11" height="96.22" rx="18.02" ry="18.02"/>
+    <text class="cls-5" transform="translate(54.06 21.08)"><tspan class="cls-7" x="0" y="0">T</tspan><tspan class="cls-8" x="7.33" y="0">r</tspan><tspan x="12.05" y="0">adFi </tspan><tspan class="cls-2" x="39.72" y="0">W</tspan><tspan x="51.88" y="0">ORLD</tspan></text>
+    <text class="cls-1" transform="translate(34.61 42.42)"><tspan x="0" y="0">User</tspan><tspan x="0" y="12">C</tspan><tspan class="cls-4" x="7.3" y="12">r</tspan><tspan x="10.9" y="12">edit </tspan><tspan class="cls-6" x="31.36" y="12">c</tspan><tspan x="37.17" y="12">a</tspan><tspan class="cls-4" x="42.79" y="12">r</tspan><tspan x="46.39" y="12">d</tspan><tspan x="0" y="24">Bank account (1% APY)</tspan><tspan class="cls-2" x="0" y="36">F</tspan><tspan x="5.66" y="36">amiliar </tspan><tspan class="cls-11" x="39.49" y="36">ev</tspan><tspan x="50.55" y="36">e</tspan><tspan class="cls-9" x="56.38" y="36">r</tspan><tspan class="cls-11" x="60.3" y="36">y</tspan><tspan x="65.73" y="36">d</tspan><tspan class="cls-10" x="71.85" y="36">a</tspan><tspan x="77.32" y="36">y apps</tspan></text>
+  </g>
+</svg>
