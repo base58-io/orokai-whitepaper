@@ -1,0 +1,606 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --ifm-footer-title-color: #171717; 
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+    /* Typography */
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-heading-font-family: 'Inter', sans-serif;
+  --ifm-font-family-monospace: 'Inter', monospace;
+
+  --sidebar-bg: #faf7f5;
+  --sidebar-border: rgba(0, 0, 0, 0.08);
+  --sidebar-link-color: #5a5a5a;
+  --sidebar-link-hover-bg: rgba(0, 0, 0, 0.04);
+  --sidebar-link-hover-color: #000000;
+  --sidebar-caret-color: #888888;
+  --sidebar-category-color: #3a3a3a; /* ciemniejszy dla trybu jasnego */
+  
+  --footer-bg: #faf7f5;
+  --footer-border: rgba(0, 0, 0, 0.08);
+  --footer-text-color: #5a5a5a;
+  --footer-link-hover-color: #000000;
+  --footer-copyright-color: #888888;
+
+  --sidebar-active-parent-bg: rgba(0, 0, 0, 0.03);
+  --sidebar-active-bg: rgba(46, 133, 85, 0.08);
+
+  --toc-card-bg: rgba(0, 0, 0, 0.02);
+  --toc-card-border: rgba(0, 0, 0, 0.08);
+  --toc-card-text: #3a3a3a;
+  --toc-card-desc: #5a5a5a;
+  --toc-card-hover-bg: rgba(0, 0, 0, 0.04);
+
+  --admonition-bg: rgba(0, 0, 0, 0.02);
+  --admonition-text: #3a3a3a;
+  --admonition-hover-bg: rgba(0, 0, 0, 0.04);
+  --admonition-info-color: #6b6b6b;
+  --admonition-warning-color: #d4a373;
+  --admonition-danger-color: #c46f6f;
+
+  /* Markdown */
+  --markdown-text: #3a3a3a;
+  --markdown-border: rgba(0, 0, 0, 0.1);
+  --markdown-link-border: rgba(46, 133, 85, 0.3);
+  --markdown-link-hover: #205d3b;
+  --markdown-link-hover-border: rgba(0, 0, 0, 0.3);
+  
+  /* Code */
+  --code-block-bg: #f5f5f5;
+  --code-block-border: rgba(0, 0, 0, 0.1);
+  --code-block-text: #2a2a2a;
+  --inline-code-bg: #f0f0f0;
+  --inline-code-border: rgba(0, 0, 0, 0.1);
+  --inline-code-text: #2a2a2a;
+  
+  /* TOC */
+  --toc-text: #6b6b6b;
+  --toc-hover: #2a2a2a;
+  --toc-hover-border: rgba(0, 0, 0, 0.2);
+  --toc-active: #000000;
+  
+  /* Other */
+  --focus-outline: rgba(46, 133, 85, 0.4);
+  --blockquote-bg: #f5f5f5;
+  --blockquote-text: #5a5a5a;
+  --table-border: rgba(0, 0, 0, 0.1);
+  --table-header-bg: #f5f5f5;
+  --table-header-text: #2a2a2a;
+  --table-text: #3a3a3a;
+  --table-bg: #ffffff;
+  --image-border: rgba(0, 0, 0, 0.1);
+
+  background-color: #f8f4f2;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #D3BBB6;
+  --ifm-color-primary-dark: #c4a49d;
+  --ifm-color-primary-darker: #bd9991;
+  --ifm-color-primary-darkest: #a7766c;
+  --ifm-color-primary-light: #e2d2cf;
+  --ifm-color-primary-lighter: #e9dddb;
+  --ifm-color-primary-lightest: #ffffff;
+  --ifm-footer-title-color: #171717; 
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-background-color: #171717;
+  --ifm-background-surface-color: #171717;
+
+  --ifm-font-color-base: #cfcfcf;
+  --ifm-heading-color: #ffffff;
+
+  --sidebar-bg: #1d1d1d;
+  --sidebar-border: rgba(255, 255, 255, 0.05);
+  --sidebar-link-color: #bdbdbd;
+  --sidebar-link-hover-bg: rgba(255, 255, 255, 0.03);
+  --sidebar-link-hover-color: #ffffff;
+  --sidebar-caret-color: #888888;
+  --sidebar-category-color: #dadada; /* jaśniejszy dla trybu ciemnego */
+
+  --footer-bg: #171717;
+  --footer-border: rgba(255, 255, 255, 0.05);
+  --footer-text-color: #bdbdbd;
+  --footer-link-hover-color: #ffffff;
+  --footer-copyright-color: #a5a5a5;
+
+  --sidebar-active-parent-bg: rgba(255, 255, 255, 0.03);
+  --sidebar-active-bg: rgba(211, 187, 182, 0.1);
+
+  --toc-card-bg: rgba(255, 255, 255, 0.02);
+  --toc-card-border: rgba(255, 255, 255, 0.05);
+  --toc-card-text: #e0e0e0;
+  --toc-card-desc: #bcbcbc;
+  --toc-card-hover-bg: rgba(255, 255, 255, 0.04);
+
+  --admonition-bg: rgba(255, 255, 255, 0.02);
+  --admonition-text: #e0e0e0;
+  --admonition-hover-bg: rgba(255, 255, 255, 0.05);
+  --admonition-info-color: #a5a5a5;
+  --admonition-warning-color: #d4a373;
+  --admonition-danger-color: #c46f6f;
+
+  /* Markdown */
+  --markdown-text: #cfcfcf;
+  --markdown-border: rgba(255, 255, 255, 0.07);
+  --markdown-link-border: rgba(211, 187, 182, 0.3);
+  --markdown-link-hover: #ffffff;
+  --markdown-link-hover-border: rgba(255, 255, 255, 0.5);
+  
+  /* Code */
+  --code-block-bg: #0f0f0f;
+  --code-block-border: rgba(255, 255, 255, 0.07);
+  --code-block-text: #eaeaea;
+  --inline-code-bg: #0f0f0f;
+  --inline-code-border: rgba(255, 255, 255, 0.07);
+  --inline-code-text: #eaeaea;
+  
+  /* TOC */
+  --toc-text: #9a9a9a;
+  --toc-hover: #ffffff;
+  --toc-hover-border: rgba(255, 255, 255, 0.2);
+  --toc-active: #ffffff;
+  
+  /* Other */
+  --focus-outline: rgba(211, 187, 182, 0.4);
+  --blockquote-bg: #171717;
+  --blockquote-text: #bcbcbc;
+  --table-border: rgba(255, 255, 255, 0.07);
+  --table-header-bg: #1f1f1f;
+  --table-header-text: #ffffff;
+  --table-text: #cfcfcf;
+  --table-bg: #171717;
+  --image-border: rgba(255, 255, 255, 0.07);
+
+  background-color: #171717;
+
+}
+
+/* === NAVBAR === */
+.navbar {
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  min-height: 3.5rem;
+}
+.navbar__brand .navbar__title {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #eaeaea;
+  letter-spacing: -0.02em;
+}
+.navbar__logo img { height: 28px; width: auto; display: block; }
+.navbar__brand { display: flex; align-items: center; gap: 0.5rem; }
+.navbar__item, .navbar__link {
+  font-weight: 400; font-size: 0.9rem; letter-spacing: -0.02em;
+}
+.navbar__link--active {font-weight: 600; }
+
+/* === SIDEBAR === */
+.theme-doc-sidebar-container {
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--sidebar-border);
+}
+
+.theme-doc-sidebar-container .menu {
+  padding: 1rem 1rem 2rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.menu__list {
+  gap: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section titles in sidebar (categories) */
+.menu__list-item-collapsible > .menu__link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.00em;
+  color: var(--sidebar-category-color) !important;
+}
+
+/* Regular links */
+.menu__link {
+  color: var(--sidebar-link-color);
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.menu__link:hover {
+  background-color: var(--sidebar-link-hover-bg);
+  color: var(--sidebar-link-hover-color);
+}
+
+/* Caret */
+.menu__caret:after {
+  border-color: var(--sidebar-caret-color);
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: var(--footer-bg);
+  border-top: 1px solid var(--footer-border);
+  color: var(--footer-text-color);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.footer a {
+  color: var(--ifm-color-primary);
+}
+
+.footer a:hover {
+  color: var(--footer-link-hover-color);
+}
+
+.footer__copyright {
+  color: var(--footer-copyright-color);
+}
+
+footer .footer__title {
+  color: var(--ifm-footer-title-color) !important;
+}
+
+
+/* === SIDEBAR LINKS === */
+.menu__link {
+  padding-left: 1rem;
+  color: var(--sidebar-link-color);
+  font-weight: 400;
+  line-height: 1.4;
+  background: none !important;
+  border: none !important;
+  border-radius: 6;
+}
+
+.menu__link:hover {
+  background: var(--sidebar-link-hover-bg) !important;
+  color: var(--sidebar-link-hover-color);
+}
+
+/* === ACTIVE SIDEBAR ITEM === */
+.menu__link--active,
+.menu__link--active:hover {
+  background: var(--sidebar-active-bg) !important;
+  border: none !important;
+  font-weight: 500;
+  color: var(--ifm-color-primary) !important;
+  position: relative;
+}
+
+.menu__link--active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 90%;
+  width: 3.5px;
+  background-color: var(--ifm-color-primary);
+  border-radius: 4px 0 0 4px;
+}
+
+/* === ACTIVE PARENT SECTION (collapsible items) === */
+.menu__link.menu__link--sublist.menu__link--active,
+.menu__link.menu__link--sublist.menu__link--active:hover {
+  color: var(--ifm-color-primary) !important;
+  font-weight: 500;
+  background: var(--sidebar-active-bg) !important;
+  border: none !important;
+  border-radius: 0;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.menu__link.menu__link--sublist.menu__link--active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 90%;
+  width: 3.5px;
+  background-color: var(--ifm-color-primary);
+  border-radius: 4px 0 0 4px;
+}
+
+/* === ADMONITIONS === */
+.theme-admonition {
+  border-radius: 10px;
+  border-left: 3px solid var(--ifm-color-primary);
+  background-color: var(--admonition-bg);
+  color: var(--admonition-text);
+}
+
+.theme-admonition h5 {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+}
+
+.theme-admonition .admonition-icon svg {
+  stroke: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.theme-admonition.tip {
+  border-left-color: var(--ifm-color-primary);
+}
+
+.theme-admonition.info {
+  border-left-color: var(--admonition-info-color);
+}
+
+.theme-admonition.warning {
+  border-left-color: var(--admonition-warning-color);
+}
+
+.theme-admonition.danger {
+  border-left-color: var(--admonition-danger-color);
+}
+
+.theme-admonition:hover {
+  background-color: var(--admonition-hover-bg);
+  transition: background-color 0.2s ease;
+}
+/* === MARK HIGHLIGHT === */
+mark {
+  background-color: rgba(211, 187, 182, 0.75);
+  color: #171717;
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+/* === TYPOGRAPHY === */
+.markdown h1 {
+  color: var(--ifm-heading-color);
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+.markdown h2 {
+  color: var(--ifm-heading-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.3;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--markdown-border);
+  padding-bottom: 0.5rem;
+}
+
+.markdown h3 {
+  color: var(--ifm-heading-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown h4 {
+  color: var(--ifm-heading-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown p {
+  color: var(--markdown-text);
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+}
+
+.markdown li {
+  color: var(--markdown-text);
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* === LINKS IN CONTENT === */
+.markdown a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--markdown-link-border);
+}
+
+.markdown a:hover {
+  color: var(--markdown-link-hover);
+  border-bottom: 1px solid var(--markdown-link-hover-border);
+}
+
+/* === CODE BLOCKS === */
+.theme-code-block,
+.theme-code-block pre {
+  background-color: var(--code-block-bg) !important;
+  border: 1px solid var(--code-block-border);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--code-block-text);
+}
+
+/* Inline code */
+code {
+  background-color: var(--inline-code-bg);
+  border: 1px solid var(--inline-code-border);
+  border-radius: 4px;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.875rem;
+  color: var(--inline-code-text);
+}
+
+/* === RIGHT TOC === */
+.table-of-contents {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--toc-text);
+}
+
+.table-of-contents__link {
+  color: var(--toc-text);
+  border-left: 2px solid transparent;
+  padding-left: 0.5rem;
+}
+
+.table-of-contents__link:hover {
+  color: var(--toc-hover);
+  border-left-color: var(--toc-hover-border);
+}
+
+.table-of-contents__link--active {
+  color: var(--toc-active);
+  font-weight: 500;
+  border-left-color: var(--ifm-color-primary);
+}
+
+/* === ACCESSIBILITY FOCUS === */
+*:focus {
+  outline: 2px solid var(--focus-outline);
+  outline-offset: 2px;
+}
+
+/* === BLOCKQUOTE === */
+.markdown blockquote {
+  border-left: 3px solid var(--ifm-color-primary);
+  background-color: var(--blockquote-bg);
+  color: var(--blockquote-text);
+  padding: 0rem 1rem;
+  border-radius: 4px;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+/* === TABLES === */
+.markdown table {
+  border: 1px solid var(--table-border);
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+.markdown th {
+  background-color: var(--table-header-bg);
+  color: var(--table-header-text);
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid var(--table-border);
+  padding: 0.75rem 1rem;
+}
+
+.markdown td {
+  border-top: 1px solid var(--table-border);
+  padding: 0.75rem 1rem;
+  color: var(--table-text);
+  background-color: var(--table-bg);
+}
+
+/* === IMAGES === */
+.markdown img {
+  max-width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--image-border);
+}
+
+/* === TOC GRID + CARDS === */
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.toc-card {
+  display: block;
+  background: var(--toc-card-bg);
+  border: 1px solid var(--toc-card-border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  color: var(--toc-card-text);
+  transition: all 0.2s ease;
+}
+
+.toc-card:hover {
+  background: var(--toc-card-hover-bg);
+  border-color: var(--ifm-color-primary);
+  transform: translateY(0px);
+}
+
+.toc-card h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.05rem;
+  color: var(--ifm-color-primary);
+}
+
+.toc-card p {
+  margin: 0;
+  color: var(--toc-card-desc);
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
+.toc-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  color: var(--ifm-color-primary);
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.toc-card:hover .toc-icon {
+  opacity: 1;
+}
+
+.toc-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+[data-theme='light'] .dark-only {
+  display: none;
+}
+
+[data-theme='dark'] .light-only {
+  display: none;
+}
