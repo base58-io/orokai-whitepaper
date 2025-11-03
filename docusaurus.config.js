@@ -32,8 +32,8 @@ const config = {
     defaultLocale: 'en',
     locales: ['pl', 'en'],
     localeConfigs: {
-      pl: { label: 'Polski', direction: 'ltr', htmlLang: 'pl-PL' },
       en: { label: 'English', direction: 'ltr', htmlLang: 'en-US' },
+      pl: { label: 'Polski', direction: 'ltr', htmlLang: 'pl-PL' },
     },
   },
 

@@ -1,0 +1,8 @@
+{
+  "label": "Spis treści",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "OROKAI to warstwa oprogramowania (non-custodial middleware) łącząca świat tradycyjnych finansów (TradFi) z finansami zdecentralizowanymi (DeFi)."
+  }
+}

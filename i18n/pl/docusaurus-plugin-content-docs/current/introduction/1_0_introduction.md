@@ -1,0 +1,56 @@
+---
+sidebar_label: Wprowadzenie do OROKAI
+sidebar_position: 1
+custom_edit_url: null
+---
+
+# Wprowadzenie do OROKAI
+
+## Historia, która zainspirowała OROKAI
+
+*Singapur, 2023. Maria, 34-letnia przedsiębiorczyni, siedzi przed laptopem z kartką pełną notatek. Właśnie przeczytała o możliwości otrzymania 4-6% rocznie ze stakingu ETH – znacznie więcej niż 1% w jej banku. Ma 50 000 USD oszczędności i jest gotowa spróbować.*
+
+*Otwiera stronę Lido.fi. Pojawia się przycisk "Connect Wallet". Maria nie ma portfela krypto. Googeluje "jak założyć portfel Ethereum". Trafia na Metamask. Podczas instalacji pojawia się 12 losowych słów: "seed phrase – ZAPISZ TO I NIGDY NIE UDOSTĘPNIAJ. Jeśli zgubisz, stracisz wszystko."*
+
+*Maria jest przerażona. To nie jest jak hasło do banku, które można zresetować. To jest... nieodwracalne. Zamyka zakładkę.*
+
+*Trzy miesiące później inflacja zjada kolejne 0.5% jej oszczędności. Maria wciąż nie użyła DeFi.*
+
+---
+
+**To nie jest problem Marii. To problem DeFi.**
+
+95% ludzi z dostępem do internetu nigdy nie użyje protokołów DeFi – nie dlatego, że nie chcą, ale dlatego, że **bariery wejścia są zbyt wysokie**. Portfele. Klucze prywatne. Gas fees. Wybór protokołów. Transakcje w obcych walutach.
+
+**OROKAI rozwiązuje ten problem – bez odbierania użytkownikom kontroli nad środkami.**
+
+## Czym jest **OROKAI**
+
+### Warstwa oprogramowania
+
+**OROKAI** to warstwa oprogramowania (<mark>non-custodial</mark> middleware) łącząca świat tradycyjnych finansów (TradFi) z finansami zdecentralizowanymi (DeFi). Naszym celem jest umożliwić użytkownikowi samodzielne (<mark>self-custody</mark>) przygotowanie i podpisywanie <mark>własnych transakcji</mark> on-chain w celu angażowania swoich aktywów w wybrane zewnętrzne protokoły DeFi i otrzymywania nagród w USDT zgodnie z zasadami tych protokołów.
+
+### Rola OROKAI
+
+**OROKAI** <mark>nie przechowuje</mark> środków użytkowników, <mark>nie posiada</mark> dostępu do ich kluczy prywatnych, <mark>nie wykonuje</mark> transakcji w imieniu użytkownika, <mark>nie kontroluje</mark> aktywów i <mark>nie świadczy</mark> usług powierniczych ani doradztwa inwestycyjnego. Użytkownik zachowuje pełne władztwo nad środkami, a **wszystkie operacje są autoryzowane przez niego i wykonywane przez inteligentne kontrakty zgodnie z jego dyspozycją.**
+
+
+:::warning[DISCLAIMER]
+
+**OROKAI** nie przechowuje środków użytkowników, nie posiada dostępu do ich kluczy prywatnych, nie wykonuje transakcji w imieniu użytkownika, nie kontroluje aktywów i nie świadczy usług powierniczych ani doradztwa inwestycyjnego.
+
+:::
+
+## Podstawowe zasady
+
+### Rozdzielenie ról 
+Interfejs OROKAI ≠ protokoły. OROKAI nie kontroluje, nie prowadzi ani nie operuje żadnym zewnętrznym protokołem DeFi i nie jest stroną rozliczeń między użytkownikiem a tymi protokołami.
+
+### Brak doradztwa 
+Informacje, w tym wyniki modułu AI Agenta, mają charakter wyłącznie informacyjny i nie stanowią porady inwestycyjnej, prawnej ani podatkowej.
+
+### Ryzyka
+ Transakcje on-chain są nieodwracalne; rynki aktywów krypto są zmienne; tzw. „stablecoiny” mogą nie utrzymywać peg; istnieje ryzyko błędnej identyfikacji tokenów/kontraktów, mostów i smart kontraktów.
+
+### Dostępność / sankcje 
+Korzystanie z interfejsu może być niedozwolone w określonych jurysdykcjach; zabronione jest obchodzenie ograniczeń (np. przez VPN). Nie zezwalamy na użycie przez podmioty z list sankcyjnych.

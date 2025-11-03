@@ -1,0 +1,8 @@
+{
+  "label": "Token and Blockchain",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Utility and network/protocol mechanics. Contains no return promises; all outcomes are variable and not guaranteed."
+  }
+}

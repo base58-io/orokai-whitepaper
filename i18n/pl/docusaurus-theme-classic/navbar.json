@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": " ",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Orokai Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Whitepaper": {
+    "message": "Whitepaper",
+    "description": "Navbar item with label Whitepaper"
+  }
+}

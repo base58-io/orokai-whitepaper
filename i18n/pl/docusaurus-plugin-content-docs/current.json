@@ -1,0 +1,78 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category 'Introduction' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Introduction.link.generated-index.description": {
+    "message": "A non-custodial bridge between the world of traditional and decentralized finance - built with simplicity, transparency, and full user control in mind.",
+    "description": "The generated-index page description for category 'Introduction' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Problem": {
+    "message": "Problem",
+    "description": "The label for category 'Problem' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Problem.link.generated-index.description": {
+    "message": "Users need a safe, guided path toward stable returns.",
+    "description": "The generated-index page description for category 'Problem' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Solution": {
+    "message": "Solution",
+    "description": "The label for category 'Solution' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Solution.link.generated-index.description": {
+    "message": "OROKAI is a single platform for initiating and managing positions in verified protocols across multiple chains.",
+    "description": "The generated-index page description for category 'Solution' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.AI Agent": {
+    "message": "AI Agent",
+    "description": "The label for category 'AI Agent' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.AI Agent.link.generated-index.description": {
+    "message": "AI Agent OROKAI is a module that supports users in understanding options and organizing decisions.",
+    "description": "The generated-index page description for category 'AI Agent' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.How it works": {
+    "message": "How it works",
+    "description": "The label for category 'How it works' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.How it works.link.generated-index.description": {
+    "message": "OROKAI simplifies DeFi entry: from on-ramp through 'zero-setup wallet,' strategy selection, first allocation, to monitoring and potential 'one-click' migrations between protocols and chains - with full user control (self-custody).",
+    "description": "The generated-index page description for category 'How it works' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Value for Users": {
+    "message": "Value for Users",
+    "description": "The label for category 'Value for Users' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Value for Users.link.generated-index.description": {
+    "message": "Minimal effort with controlled risk.",
+    "description": "The generated-index page description for category 'Value for Users' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Business Model": {
+    "message": "Business Model",
+    "description": "The label for category 'Business Model' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Business Model.link.generated-index.description": {
+    "message": "OROKAI monetizes the software layer and network infrastructure, not user funds.",
+    "description": "The generated-index page description for category 'Business Model' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Token and Blockchain": {
+    "message": "Token and Blockchain",
+    "description": "The label for category 'Token and Blockchain' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Token and Blockchain.link.generated-index.description": {
+    "message": "Utility and network/protocol mechanics. Contains no return promises; all outcomes are variable and not guaranteed.",
+    "description": "The generated-index page description for category 'Token and Blockchain' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Roadmap": {
+    "message": "Roadmap",
+    "description": "The label for category 'Roadmap' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Roadmap.link.generated-index.description": {
+    "message": "The OROKAI roadmap describes development in three phases. Each phase has clearly defined product goals, milestones, compliance gates (go/no-go), and success metrics.",
+    "description": "The generated-index page description for category 'Roadmap' in sidebar 'tutorialSidebar'"
+  }
+}

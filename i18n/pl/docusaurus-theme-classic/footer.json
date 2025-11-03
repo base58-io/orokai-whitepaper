@@ -1,0 +1,34 @@
+{
+  "link.item.label.orokai.com": {
+    "message": "orokai.com",
+    "description": "The label of footer link with label=orokai.com linking to http://orokai.com/"
+  },
+  "link.item.label.X (formerly Twitter)": {
+    "message": "X (formerly Twitter)",
+    "description": "The label of footer link with label=X (formerly Twitter) linking to https://x.com/orokai_com"
+  },
+  "link.item.label.Linkedin": {
+    "message": "Linkedin",
+    "description": "The label of footer link with label=Linkedin linking to https://www.linkedin.com/in/orokai-orokai-3962b6389/?skipRedirect=true"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com/profile.php?id=61581892741237"
+  },
+  "link.item.label.YouTube": {
+    "message": "YouTube",
+    "description": "The label of footer link with label=YouTube linking to https://www.youtube.com/@orokaicom"
+  },
+  "link.item.label.TikTok": {
+    "message": "TikTok",
+    "description": "The label of footer link with label=TikTok linking to https://www.tiktok.com/@orokai.com"
+  },
+  "link.item.label.Instagram": {
+    "message": "Instagram",
+    "description": "The label of footer link with label=Instagram linking to https://www.instagram.com/orokai_com/"
+  },
+  "copyright": {
+    "message": "Copyright © 2025",
+    "description": "The footer copyright"
+  }
+}
