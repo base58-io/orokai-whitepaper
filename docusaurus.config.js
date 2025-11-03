@@ -34,6 +34,7 @@ const config = {
     localeConfigs: {
       en: { label: 'English', direction: 'ltr', htmlLang: 'en-US' },
       pl: { label: 'Polski', direction: 'ltr', htmlLang: 'pl-PL' },
+       ja: { label: '日本語', direction: 'ltr', htmlLang: 'ja-JP' },
     },
   },
 
