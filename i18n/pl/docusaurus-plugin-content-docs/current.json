@@ -4,11 +4,11 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Introduction": {
-    "message": "Introduction",
+    "message": "Wstęp",
     "description": "The label for category 'Introduction' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Introduction.link.generated-index.description": {
-    "message": "A non-custodial bridge between the world of traditional and decentralized finance - built with simplicity, transparency, and full user control in mind.",
+    "message": "OROKAI to warstwa oprogramowania (non-custodial middleware) łącząca świat tradycyjnych finansów (TradFi) z finansami zdecentralizowanymi (DeFi).",
     "description": "The generated-index page description for category 'Introduction' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Problem": {
