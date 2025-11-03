@@ -9,7 +9,7 @@ custom_edit_url: null
 
 <div class="toc-grid">
 
-<a href="/docs/category/introduction" class="toc-card">
+<a href="pl/docs/category/introduction" class="toc-card">
   <div class="toc-card-head">
     <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>Wstęp do OROKAI</h3>
   </div>

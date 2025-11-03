@@ -30,7 +30,7 @@ const config = {
   // Konfiguracja wielojęzyczności
   i18n: {
     defaultLocale: 'en',
-    locales: ['pl', 'en', 'ja'],
+    locales: ['en', 'pl', 'ja'],
     localeConfigs: {
       en: { label: 'English', direction: 'ltr', htmlLang: 'en-US' },
       pl: { label: 'Polski', direction: 'ltr', htmlLang: 'pl-PL' },

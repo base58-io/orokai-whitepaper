@@ -1,39 +1,39 @@
 ---
-sidebar_label: Definition and Project Purpose
+sidebar_label: 定義とプロジェクトの目的
 sidebar_position: 2
 custom_edit_url: null
 ---
 
-# OROKAI Definition and Project Purpose
+# OROKAIの定義とプロジェクトの目的
 
-## Definition
+## 定義
 
-OROKAI is a software layer with a web/mobile interface and a set of smart contracts that:
+OROKAIは、Web/モバイルインターフェースとスマートコントラクトのセットを備えたソフトウェアレイヤーであり、以下の機能を提供します：
 
-> aggregates proven DeFi protocols across multiple chains (staking, lending, DEX),
+> 複数のチェーンにわたる実績のあるDeFiプロトコル（ステーキング、レンディング、DEX）を集約
 
-> simplifies technical steps (allocation, migrations, claims, rebalancing, cross-chain) through automation,
+> 自動化により技術的な手順（アロケーション、マイグレーション、クレーム、リバランス、クロスチェーン）を簡素化
 
-> supports decision-making through an AI Agent module (informational, not advisory).
+> AIエージェントモジュールを通じた意思決定支援（情報提供のみ、助言ではない）
 
-## Purpose
+## 目的
 
-To enable individuals without technical expertise to use DeFi in a self-custody model, with emphasis on:
+技術的な専門知識を持たない個人が、セルフカストディモデルでDeFiを利用できるようにすること。重点項目：
 
-> security of on-chain operations (least-privilege),
+> オンチェーン操作のセキュリティ（最小権限）
 
-> transparency of costs and permissions,
+> コストと権限の透明性
 
-> interoperability between chains,
+> チェーン間の相互運用性
 
-> compliance with regulatory requirements (in a phased model).
+> 規制要件への準拠（段階的モデル）
 
-## Nature of Services
+## サービスの性質
 
-OROKAI is software and tools. We do not provide custodial, depository, or investment advisory services; <mark>OROKAI is not a bank, broker, or custodian.</mark>
+OROKAIはソフトウェアおよびツールです。保管、預託、または投資助言サービスは提供しません。<mark>OROKAIは銀行、ブローカー、またはカストディアンではありません。</mark>
 
 :::tip[OROKAI]
 
-OROKAI is software and tools with a web/mobile interface and a set of smart contracts.
+OROKAIは、Web/モバイルインターフェースとスマートコントラクトのセットを備えたソフトウェアおよびツールです。
 
 :::
