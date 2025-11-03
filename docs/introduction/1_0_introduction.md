@@ -8,7 +8,7 @@ custom_edit_url: null
 
 ## **The Story That Inspired OROKAI**
 
-JAKAŚ ZMIANA
+JAKAŚ ZMIANA Nowa zmiana
 
 *Singapore, 2023. Maria, a 34-year-old entrepreneur, sits in front of her laptop with a notepad full of scribbles. She just read about earning 4-6% APY by staking ETH – significantly more than the 1% her bank offers. She has $50,000 in savings and is ready to try.*
 
