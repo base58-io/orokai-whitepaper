@@ -6,9 +6,9 @@ custom_edit_url: null
 
 # OROKAI Chain
 
-OROKAI Chain serves as a coordination and settlement layer for complex multi-chain flows, and the OROKAI token functions as utility, including gas for paying transaction fees on the network. 
+OROKAI Chain serves as a coordination and settlement layer for complex multi-chain flows, and the OROKAI token functions as utility, including gas for paying transaction fees on the network.
 
-Internal operations (e.g., batching, routing, flow metadata, claim schedules) are settled on the OROKAI chain while <mark>maintaining self-custody</mark> and the <mark>prepare-and-sign principle.</mark> 
+Internal operations (e.g., batching, routing, flow metadata, claim schedules) are settled on the OROKAI chain while <mark>maintaining self-custody</mark> and the <mark>prepare-and-sign principle.</mark>
 
 External interactions with DeFi protocols remain on their native networks and are executed through DEX from the allow-list.
 
@@ -35,3 +35,5 @@ Ability to route partner flows through OROKAI Chain without surrendering custody
 OROKAI Chain provides the infrastructure for seamless multi-chain coordination while preserving the core principles of decentralization and user control.
 
 :::
+
+## GITARA SIEMA!!
