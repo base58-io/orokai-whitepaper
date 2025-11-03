@@ -101,7 +101,7 @@ custom_edit_url: null
 
 </div>
 
-## Technical part
+## Część Techniczna
 
 <div class="toc-grid">
 
