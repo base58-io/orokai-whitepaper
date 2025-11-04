@@ -12,7 +12,7 @@
     "description": "The generated-index page description for category 'Introduction' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Problem": {
-    "message": "Problem",
+    "message": "問題",
     "description": "The label for category 'Problem' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Problem.link.generated-index.description": {
