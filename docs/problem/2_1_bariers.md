@@ -33,3 +33,75 @@ High chance of operational error (e.g., wrong address/chain, incorrect gas token
 For non-technical users, there is a high probability of making an irreversible mistake.
 
 :::
+
+## **"Journey of Pain" – A typical user's path**
+
+User wants to start staking ETH. Here's what they must go through:
+
+Step 1: Choose a wallet
+```
+├─ Metamask vs. Rabby vs. Rainbow vs. Ledger vs. Trezor?
+├─ "Which one is safe?"
+└─ Decision: 30-60 min research → Metamask (most popular)
+```
+Step 2: Installation and seed phrase
+```
+├─ 12 random words: "voyage spatial quantum..."
+├─ WARNING: "NEVER share, don't screenshot"
+├─ Stress: "What if I lose it? What if someone steals it?"
+└─ 25% of users quit HERE (source: Metamask survey 2023)
+```
+
+Step 3: Buy ETH
+```
+├─ If via CEX: KYC (1-3 days) + transfer (fee $5-15)
+├─ If via DEX: need ETH for gas already (chicken-egg problem)
+└─ Average time: 2-5 days
+```
+
+Step 4: Understanding Lido
+```
+├─ "What is stETH?" → Research 30 min
+├─ "What's the difference vs. rETH, cbETH?" → Confusion
+└─ "Can I lose funds?" → FUD (Fear, Uncertainty, Doubt)
+```
+
+Step 5: Connect wallet to Lido
+```
+├─ Pop-up: "Lido.fi wants to connect to your wallet"
+├─ Phishing fear: "Is this the real Lido?"
+└─ Verification: check URL, logo, community
+```
+
+Step 6: Approve contract
+```
+├─ Pop-up: "Allow Lido to spend your ETH - Unlimited"
+├─ "UNLIMITED?! That's dangerous!"
+├─ Cost: $3-8 gas fee (first time, surprise)
+└─ 15% of users quit HERE (source: Etherscan data)
+```
+
+Step 7: Stake transaction
+```
+├─ Second transaction, second gas fee ($5-12)
+├─ "Estimated time: 15 seconds" → actually 3 minutes (Ethereum congestion)
+└─ Success... or is it?
+```
+
+Step 8: Verification
+```
+├─ "Did I get stETH?" → Must manually add token to Metamask
+├─ "When do I get rewards?" → Research: "accrues daily, visible in balance"
+└─ "How to withdraw?" → More research: "swap stETH → ETH or unstake queue"
+```
+
+
+> TOTAL TIME: 3-7 days (with KYC) or 4-8 hours (without KYC)
+
+> NUMBER OF STEPS: 8 major + ~20 micro-decisions
+
+> POSSIBLE QUIT POINTS: 5
+
+> SUCCESS RATE (completion rate): ~35-40%
+
+

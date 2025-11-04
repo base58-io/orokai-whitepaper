@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476 172.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #d4bbb6;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-4, .cls-2, .cls-5, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-6 {
+        opacity: .5;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-4 {
+        opacity: .3;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        font-size: 7px;
+      }
+
+      .cls-4, .cls-6 {
+        font-family: Inter-Regular, Inter;
+        font-variation-settings: 'opsz' 14, 'wght' 400;
+      }
+
+      .cls-2 {
+        opacity: .1;
+        stroke: #fff;
+        stroke-width: .5px;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        font-family: Inter-Bold, Inter;
+        font-variation-settings: 'opsz' 14, 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-12 {
+        letter-spacing: .02em;
+      }
+
+      .cls-13 {
+        letter-spacing: .02em;
+      }
+
+      .cls-14 {
+        fill: #d4bbb6;
+      }
+
+      .cls-15 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-16 {
+        fill: #171717;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect class="cls-16" width="476" height="172.44"/>
+    <path class="cls-1" d="M63.73,159.17c97.57-2.71,131.6-22.65,154.07-41.21,20.19-16.68,24.38-25.23,34.72-34.67,40.72-37.19,82.2-46.06,98.25-49.91,13.36-3.2,32.88-6.82,57.31-7.7"/>
+    <circle class="cls-14" cx="212.32" cy="122.03" r="3.85"/>
+    <text class="cls-6" transform="translate(366.76 154.58)"><tspan x="0" y="0">Inn</tspan><tspan class="cls-15" x="10.15" y="0">o</tspan><tspan class="cls-11" x="14.21" y="0">v</tspan><tspan x="18.11" y="0">a</tspan><tspan class="cls-7" x="22.04" y="0">t</tspan><tspan x="24.26" y="0">ors</tspan></text>
+    <text class="cls-6" transform="translate(352.34 142.77)"><tspan x="0" y="0">Ea</tspan><tspan class="cls-13" x="8.14" y="0">r</tspan><tspan class="cls-8" x="10.88" y="0">l</tspan><tspan x="12.61" y="0">y Adop</tspan><tspan class="cls-7" x="36.11" y="0">t</tspan><tspan x="38.34" y="0">ors</tspan></text>
+    <text class="cls-6" transform="translate(355.78 114.35)"><tspan x="0" y="0">Ea</tspan><tspan class="cls-13" x="8.14" y="0">r</tspan><tspan class="cls-8" x="10.88" y="0">l</tspan><tspan x="12.61" y="0">y Majo</tspan><tspan class="cls-10" x="34.66" y="0">r</tspan><tspan x="37.37" y="0">i</tspan><tspan class="cls-12" x="39.06" y="0">t</tspan><tspan x="41.49" y="0">y</tspan></text>
+    <text class="cls-6" transform="translate(368.49 83.97)"><tspan x="0" y="0">Ea</tspan><tspan class="cls-13" x="8.14" y="0">r</tspan><tspan class="cls-8" x="10.88" y="0">l</tspan><tspan x="12.61" y="0">y La</tspan><tspan class="cls-7" x="26.4" y="0">t</tspan><tspan x="28.63" y="0">e</tspan></text>
+    <text class="cls-6" transform="translate(370.29 54.72)"><tspan x="0" y="0">Lagga</tspan><tspan class="cls-9" x="20.41" y="0">r</tspan><tspan x="22.92" y="0">ds</tspan></text>
+    <text class="cls-5" transform="translate(228.05 124.74)"><tspan x="0" y="0">DeFi is HERE</tspan></text>
+    <text class="cls-4" transform="translate(66.35 156.1)"><tspan x="0" y="0">100K</tspan></text>
+    <text class="cls-4" transform="translate(65.41 83.97)"><tspan x="0" y="0">100M</tspan></text>
+    <text class="cls-4" transform="translate(66.35 142.68)"><tspan x="0" y="0">1M</tspan></text>
+    <text class="cls-4" transform="translate(65.88 113.01)"><tspan x="0" y="0">10M</tspan></text>
+    <text class="cls-4" transform="translate(64.94 55.45)"><tspan x="0" y="0">1B</tspan></text>
+    <line class="cls-2" x1="63.73" y1="145.32" x2="407.67" y2="145.32"/>
+    <line class="cls-2" x1="63.73" y1="115.78" x2="407.67" y2="115.78"/>
+    <line class="cls-2" x1="62.59" y1="86.22" x2="406.53" y2="86.22"/>
+    <line class="cls-2" x1="62.82" y1="56.98" x2="406.75" y2="56.98"/>
+    <polygon class="cls-3" points="407.84 161.66 407.84 159.81 62.22 159.81 62.22 19.88 59.93 19.88 62.92 13.38 65.94 19.88 63.6 19.88 63.6 158.72 407.84 158.72 407.84 156.91 416.07 159.27 407.84 161.66"/>
+  </g>
+</svg>
