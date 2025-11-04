@@ -1,35 +1,35 @@
 ---
-sidebar_label: Operational Risks
+sidebar_label: Ryzyko operacyjne
 sidebar_position: 4
 custom_edit_url: null
 ---
 
-# Operational and Decision-Making Risks for Non-Technical Users
+# Ryzyko operacyjne i decyzyjne użytkownika nietechnicznego
 
-## Common Pitfalls and Challenges
+## Najczęstsze pułapki i wyzwania
 
-### Transactional and UX errors
+### Błędy transakcyjne i UX-owe
 
-Wrong networks, confusing tickers, incorrect contract permissions, insufficient gas funds → <mark>losses, locked funds, or inefficient use of assets.</mark>
+Złe sieci, mylące tickery, nieprawidłowe uprawnienia kontraktów, brak środków na gas → <mark>straty, blokady środków lub ich nieefektywne wykorzystanie.</mark>
 
-### Information asymmetry
+### Asymetria informacji
 
-Users often <mark>do not understand</mark> the sources of returns (where rewards come from), let alone the risks (e.g., bridge risk, contract risk, liquidity risk).
+Użytkownicy często <mark>nie rozumieją</mark> źródeł zwrotu (skąd biorą się nagrody), a tym bardziej ryzyk (np. ryzyko mostu, kontraktu, płynności).
 
-### "Overchoice" effect
+### Efekt „overchoice”
 
-Hundreds of protocols and pools cause decision paralysis – <mark>users don't know</mark> "what to choose," give up, or choose randomly.
+Setki protokołów i pul powodują paraliż decyzyjny – <mark>użytkownik nie wie,</mark> „co wybrać”, rezygnuje albo wybiera przypadkowo.
 
-### Lack of consistent warnings
+### Brak spójnych ostrzeżeń
 
-Many protocol interfaces do not display uniform, understandable warnings, making it difficult to make informed decisions.
+Interfejsy wielu protokołów nie wyświetlają jednolitych, zrozumiałych ostrzeżeń, co utrudnia świadome podejmowanie decyzji.
 
-## Consequence
+## Konsekwencja
 
-Even simple capital allocation is often perceived as "too risky" or "too complicated," limiting adoption.
+Nawet prosta alokacja kapitału bywa postrzegana jako „zbyt ryzykowna” lub „zbyt skomplikowana”, co ogranicza adopcję.
 
-:::warning[Barriers to mainstream adoption]
+:::warning[Bariery w popularyzacji]
 
-The combination of technical complexity, information gaps, and decision overload creates significant friction that prevents broader DeFi adoption among non-technical users.
+Połączenie złożoności technicznej, braków informacyjnych i nadmiaru decyzji tworzy znaczące trudności, które powstrzymują szersze przyjęcie DeFi wśród użytkowników nietechnicznych.
 
 :::

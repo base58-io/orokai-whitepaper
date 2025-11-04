@@ -1,25 +1,26 @@
 ---
-sidebar_label: Introduction to Problem
+sidebar_label: Opis problemu
 sidebar_position: 1
 custom_edit_url: null
 ---
 
-# Introduction to Problem
+# Opis problemu
 
-## Technical problem
+## Problem techniczny
 
-### Software Layer
+### Warstwa oprogramowania
 
-DeFi is distributed, technical, and costly to operate. For most new users, the barriers include:
-> wallet setup and key management
+DeFi jest rozproszone, techniczne i kosztowne w obsłudze. Dla większości nowych użytkowników barierą są: 
+> konfiguracja portfela i zarządzanie kluczami
 
-> protocol selection
+> dobór protokołów
 
-> understanding network costs (gas)
+> zrozumienie kosztów sieci (gas)
 
-> cross-chain bridge risks
+> ryzyko mostów międzyłańcuchowych
 
-There is a lack of a single, comprehensible "window" guiding users through the process – from onboarding to allocating funds to selected strategies – while maintaining <mark>self-custody</mark> and full awareness of costs and risks. 
+Brakuje jednego, zrozumiałego „okna” prowadzącego użytkownika przez proces – od wejścia do przypisania środków do wybranych strategii – przy zachowaniu <mark>self-custody</mark>  i pełnej świadomości kosztów oraz ryzyka.
 
-Users expect <mark>predictability</mark> (e.g., rewards settled in USDT) and <mark>transparency</mark>, but without the need to master technical details for each network and protocol.
+Użytkownicy oczekują <mark>przewidywalności</mark> (np. rozliczania nagród w USDT) i  <mark>przejrzystości,</mark> ale bez konieczności opanowywania detali technicznych dla każdej sieci i protokołu.
+
 

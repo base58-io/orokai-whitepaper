@@ -1,35 +1,35 @@
 ---
-sidebar_label: Barriers to Entry in DeFi
+sidebar_label: DeFiへの参入障壁
 sidebar_position: 2
 custom_edit_url: null
 ---
 
-# Barriers to Entry in DeFi
+# DeFiへの参入障壁
 
-## Challenges Facing New Users
+## 新規ユーザーが直面する課題
 
-### Wallets and private keys
+### ウォレットと秘密鍵
 
-For new users, simply creating a wallet and understanding that a <mark>private key</mark> cannot be disclosed or lost is often a critical barrier. Additionally, <mark>seed phrases, backups, and phishing pose</mark> significant problems.
+新規ユーザーにとって、ウォレットを作成し、<mark>秘密鍵</mark>を開示したり紛失したりしてはならないことを理解することは、しばしば重大な障壁となります。さらに、<mark>シードフレーズ、バックアップ、フィッシング詐欺が</mark>大きな問題となっています。
 
-### Gas costs and tokens
+### ガスコストとトークン
 
-On each network, transaction fees are denominated in a different token and change dynamically. Users must ensure they have the appropriate gas token on each chain, which generates additional steps (and mistakes).
+各ネットワークでは、取引手数料は異なるトークンで表され、動的に変化します。ユーザーは各チェーンで適切なガストークンを確保する必要があり、これが追加の手順（およびミス）を生み出します。
 
-### Cross-chain bridges
+### クロスチェーンブリッジ
 
-Transferring assets between networks requires tools that carry technical and operational risks (errors, incorrect parameters, confusing assets with similar names)
+ネットワーク間での資産移転には、技術的および運用上のリスクを伴うツールが必要です（エラー、不正なパラメータ、類似した名前の資産の混同）。
 
-### Multi-step operations
+### 複数ステップの操作
 
-A simple allocation may require <mark>several steps:</mark> swap → bridge → deposit/stake → claim/re-stake. Each stage involves separate transactions, fees, risks, and decisions.
+単純なアロケーションでも<mark>複数のステップが必要になる場合があります：</mark>スワップ → ブリッジ → デポジット/ステーク → クレーム/再ステーク。各段階には個別の取引、手数料、リスク、決定が含まれます。
 
-## Consequence
+## 結果
 
-High chance of operational error (e.g., wrong address/chain, incorrect gas token), unnecessary costs, and abandonment of the process by non-technical users.
+運用エラー（誤ったアドレス/チェーン、不適切なガストークンなど）の可能性が高く、不要なコスト、そして技術的でないユーザーによるプロセスの放棄。
 
-:::warning[high chance of operational error]
+:::warning[運用エラーの高い可能性]
 
-For non-technical users, there is a high probability of making an irreversible mistake.
+技術的でないユーザーにとって、取り返しのつかない間違いを犯す可能性が高くなります。
 
 :::

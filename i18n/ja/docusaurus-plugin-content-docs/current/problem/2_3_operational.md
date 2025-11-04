@@ -1,35 +1,35 @@
 ---
-sidebar_label: Operational Risks
+sidebar_label: 運用リスク
 sidebar_position: 4
 custom_edit_url: null
 ---
 
-# Operational and Decision-Making Risks for Non-Technical Users
+# 技術的でないユーザーの運用および意思決定リスク
 
-## Common Pitfalls and Challenges
+## 一般的な落とし穴と課題
 
-### Transactional and UX errors
+### 取引およびUXエラー
 
-Wrong networks, confusing tickers, incorrect contract permissions, insufficient gas funds → <mark>losses, locked funds, or inefficient use of assets.</mark>
+誤ったネットワーク、紛らわしいティッカー、不正確なコントラクト権限、不十分なガス資金 → <mark>損失、資金のロック、または資産の非効率的な使用。</mark>
 
-### Information asymmetry
+### 情報の非対称性
 
-Users often <mark>do not understand</mark> the sources of returns (where rewards come from), let alone the risks (e.g., bridge risk, contract risk, liquidity risk).
+ユーザーはしばしばリターンの源泉（報酬がどこから来るのか）を<mark>理解しておらず</mark>、ましてやリスク（ブリッジリスク、コントラクトリスク、流動性リスクなど）については理解していません。
 
-### "Overchoice" effect
+### 「過剰選択」効果
 
-Hundreds of protocols and pools cause decision paralysis – <mark>users don't know</mark> "what to choose," give up, or choose randomly.
+数百のプロトコルとプールが意思決定の麻痺を引き起こします – <mark>ユーザーは</mark>「何を選ぶべきか」<mark>わからず</mark>、諦めるか、ランダムに選択します。
 
-### Lack of consistent warnings
+### 一貫した警告の欠如
 
-Many protocol interfaces do not display uniform, understandable warnings, making it difficult to make informed decisions.
+多くのプロトコルインターフェースは、統一された理解可能な警告を表示せず、情報に基づいた決定を下すことが困難になります。
 
-## Consequence
+## 結果
 
-Even simple capital allocation is often perceived as "too risky" or "too complicated," limiting adoption.
+単純な資本配分でさえ「リスクが高すぎる」または「複雑すぎる」と認識されることが多く、採用が制限されます。
 
-:::warning[Barriers to mainstream adoption]
+:::warning[主流採用への障壁]
 
-The combination of technical complexity, information gaps, and decision overload creates significant friction that prevents broader DeFi adoption among non-technical users.
+技術的な複雑さ、情報ギャップ、意思決定の過負荷の組み合わせが、技術的でないユーザーの間でより広範なDeFi採用を妨げる重大な摩擦を生み出しています。
 
 :::

@@ -1,31 +1,31 @@
 ---
-sidebar_label: Protocol and Network
+sidebar_label: プロトコルとネットワーク
 sidebar_position: 3
 custom_edit_url: null
 ---
 
-# Protocol and Network Fragmentation, Information Dispersion
+# プロトコルとネットワークの断片化、情報の分散
 
-## Challenges of a Decentralized Ecosystem
+## 分散型エコシステムの課題
 
-### Multiple chains, multiple interfaces
+### 複数のチェーン、複数のインターフェース
 
-The same strategy classes (staking, lending, LP) exist across different networks and in different contract versions. Parameters, <mark>risks, and costs</mark> vary depending on the chain and protocol.
+同じ戦略クラス（ステーキング、レンディング、LP）が異なるネットワークや異なるコントラクトバージョンに存在します。パラメータ、<mark>リスク、コスト</mark>はチェーンとプロトコルによって異なります。
 
-### Heterogeneous metrics and documentation
+### 異質な指標とドキュメント
 
-APY/APR calculated differently, varying payout schedules and lock-up conditions; information scattered across websites, technical documentation, and social media.
+APY/APRの計算方法が異なり、支払いスケジュールとロックアップ条件も様々。情報はウェブサイト、技術文書、ソーシャルメディアに分散しています。
 
-### Rapid changes
+### 急速な変化
 
-Contract updates, new pools, variable limits, and asset lists require <mark>continuous monitoring</mark> – individual users lack the time and tools for this.
+コントラクトの更新、新しいプール、変動する制限、資産リストには<mark>継続的な監視</mark>が必要です – 個々のユーザーにはそのための時間とツールがありません。
 
-## Consequence
+## 結果
 
-Difficulty in comparing strategies "apples to apples," risk of choosing an inadequate protocol or outdated contract version.
+戦略の「同条件での比較」が困難であり、不適切なプロトコルや古いコントラクトバージョンを選択するリスクがあります。
 
-:::warning[Risk of outdated information]
+:::warning[情報の陳腐化リスク]
 
-The fast-paced nature of DeFi means that strategies and protocols can change rapidly, making it challenging for users to stay informed and make optimal decisions.
+DeFiのペースが速いため、戦略とプロトコルは急速に変化する可能性があり、ユーザーが情報を把握し、最適な決定を下すことが困難になります。
 
 :::

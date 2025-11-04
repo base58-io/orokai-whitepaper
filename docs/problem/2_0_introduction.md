@@ -21,5 +21,5 @@ DeFi is distributed, technical, and costly to operate. For most new users, the b
 
 There is a lack of a single, comprehensible "window" guiding users through the process – from onboarding to allocating funds to selected strategies – while maintaining <mark>self-custody</mark> and full awareness of costs and risks. 
 
-Users expect <mark>predictability</mark> (e.g., rewards settled in USDT) and <mark>transparency</mark>, but without the need to master technical details for each network and protocol.
+Users expect <mark>predictability</mark> (e.g., rewards settled in USDT) and <mark>transparency,</mark> but without the need to master technical details for each network and protocol.
 

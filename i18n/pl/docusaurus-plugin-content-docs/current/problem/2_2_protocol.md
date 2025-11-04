@@ -1,31 +1,31 @@
 ---
-sidebar_label: Protocol and Network
+sidebar_label: Fragmentacja protokołów i sieci
 sidebar_position: 3
 custom_edit_url: null
 ---
 
-# Protocol and Network Fragmentation, Information Dispersion
+# Fragmentacja protokołów i sieci, rozproszenie informacji
 
-## Challenges of a Decentralized Ecosystem
+## Wyzwania zdecentralizowanego ekosystemu
 
-### Multiple chains, multiple interfaces
+### Wiele łańcuchów, wiele interfejsów
 
-The same strategy classes (staking, lending, LP) exist across different networks and in different contract versions. Parameters, <mark>risks, and costs</mark> vary depending on the chain and protocol.
+Te same klasy strategii (staking, lending, LP) istnieją na różnych sieciach i w różnych wersjach kontraktów. Parametry, <mark>ryzyka i koszty</mark> różnią się w zależności od łańcucha i protokołu.
 
-### Heterogeneous metrics and documentation
+### Niejednorodne metryki i dokumentacja
 
-APY/APR calculated differently, varying payout schedules and lock-up conditions; information scattered across websites, technical documentation, and social media.
+APY/APR liczone odmiennie, różne harmonogramy wypłat i warunki lock-up; informacje rozsiane między stronami www, dokumentacją techniczną i social.
 
-### Rapid changes
+### Szybkie zmiany
 
-Contract updates, new pools, variable limits, and asset lists require <mark>continuous monitoring</mark> – individual users lack the time and tools for this.
+Aktualizacje kontraktów, nowe pule, zmienne limity i listy aktywów wymagają <mark>ciągłego monitoringu</mark> – użytkownik indywidualny nie ma na to czasu ani narzędzi.
 
-## Consequence
+## Konsekwencja
 
-Difficulty in comparing strategies "apples to apples," risk of choosing an inadequate protocol or outdated contract version.
+Trudność w porównaniu strategii „jabłko do jabłka”, ryzyko wyboru nieadekwatnego protokołu lub nieaktualnej wersji kontraktu.
 
-:::warning[Risk of outdated information]
+:::warning[Ryzyko nieaktualnych informacji]
 
-The fast-paced nature of DeFi means that strategies and protocols can change rapidly, making it challenging for users to stay informed and make optimal decisions.
+Dynamiczny charakter DeFi sprawia, że strategie i protokoły mogą szybko się zmieniać, co utrudnia użytkownikom pozostanie na bieżąco i podejmowanie optymalnych decyzji.
 
 :::

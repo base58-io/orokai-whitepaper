@@ -1,25 +1,24 @@
 ---
-sidebar_label: Introduction to Problem
+sidebar_label: 問題の紹介
 sidebar_position: 1
 custom_edit_url: null
 ---
 
-# Introduction to Problem
+# 問題の紹介
 
-## Technical problem
+## 技術的な問題
 
-### Software Layer
+### ソフトウェアレイヤー
 
-DeFi is distributed, technical, and costly to operate. For most new users, the barriers include:
-> wallet setup and key management
+DeFiは分散型で技術的であり、運用コストがかかります。ほとんどの新規ユーザーにとって、障壁は以下を含みます：
+> ウォレットのセットアップと鍵管理
 
-> protocol selection
+> プロトコルの選択
 
-> understanding network costs (gas)
+> ネットワークコスト（ガス）の理解
 
-> cross-chain bridge risks
+> クロスチェーンブリッジのリスク
 
-There is a lack of a single, comprehensible "window" guiding users through the process – from onboarding to allocating funds to selected strategies – while maintaining <mark>self-custody</mark> and full awareness of costs and risks. 
+オンボーディングから選択された戦略への資金配分まで、<mark>セルフカストディ</mark>とコストおよびリスクの完全な認識を維持しながら、ユーザーをプロセス全体を通じてガイドする、単一の理解可能な「ウィンドウ」が欠けています。
 
-Users expect <mark>predictability</mark> (e.g., rewards settled in USDT) and <mark>transparency</mark>, but without the need to master technical details for each network and protocol.
-
+ユーザーは<mark>予測可能性</mark>（USDTで決済される報酬など）と<mark>透明性</mark>を期待していますが、各ネットワークとプロトコルの技術的詳細を習得する必要はありません。

@@ -19,17 +19,17 @@ custom_edit_url: null
   </div>
 </a>
 
-<a href="/docs/category/the-problem" class="toc-card">
+<a href="./category/the-problem" class="toc-card">
   <div class="toc-card-head">
-    <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>Problem</h3>
+    <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>問題</h3>
   </div>
 
   <div class="toc-card-desc">
-    Why OROKAI is needed and what it solves.
+    OROKAIが必要な理由と解決すること
   </div>
 </a>
 
-<a href="/docs/category/solution" class="toc-card">
+<a href="./category/solution" class="toc-card">
   <div class="toc-card-head">
     <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>Solution</h3>
   </div>
@@ -39,7 +39,7 @@ custom_edit_url: null
   </div>
 </a>
 
-<a href="/docs/category/ai-agent" class="toc-card">
+<a href="./category/ai-agent" class="toc-card">
   <div class="toc-card-head">
     <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>AI Agent OROKAI</h3>
   </div>
@@ -49,7 +49,7 @@ custom_edit_url: null
   </div>
 </a>
 
-<a href="/docs/category/how-it-works" class="toc-card">
+<a href="./category/how-it-works" class="toc-card">
   <div class="toc-card-head">
     <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>How It Works (User Journey)</h3>
   </div>
@@ -59,7 +59,7 @@ custom_edit_url: null
   </div>
 </a>
 
-<a href="/docs/category/value-for-users" class="toc-card">
+<a href="./category/value-for-users" class="toc-card">
   <div class="toc-card-head">
     <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>Value for Users</h3>
   </div>
@@ -69,7 +69,7 @@ custom_edit_url: null
   </div>
 </a>
 
-<a href="/docs/category/business-model" class="toc-card">
+<a href="./category/business-model" class="toc-card">
   <div class="toc-card-head">
     <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>Business Model</h3>
   </div>
@@ -79,7 +79,7 @@ custom_edit_url: null
   </div>
 </a>
 
-<a href="/docs/category/token-and-blockchain" class="toc-card">
+<a href="./category/token-and-blockchain" class="toc-card">
   <div class="toc-card-head">
     <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>OROKAI Token and Blockchain</h3>
   </div>
@@ -89,7 +89,7 @@ custom_edit_url: null
   </div>
 </a>
 
-<a href="/docs/category/roadmap" class="toc-card">
+<a href="./category/roadmap" class="toc-card">
   <div class="toc-card-head">
     <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>Roadmap</h3>
   </div>
@@ -101,11 +101,11 @@ custom_edit_url: null
 
 </div>
 
-## Technical part
+## 技術編
 
 <div class="toc-grid">
 
-<a href="/docs/category/introduction" class="toc-card">
+<a href="./category/introduction" class="toc-card">
   <div class="toc-card-head">
     <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>Introduction to OROKAI</h3>
   </div>
@@ -115,7 +115,7 @@ custom_edit_url: null
   </div>
 </a>
 
-<a href="/docs/category/the-problem" class="toc-card">
+<a href="./category/the-problem" class="toc-card">
   <div class="toc-card-head">
     <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>Problem</h3>
   </div>
@@ -125,7 +125,7 @@ custom_edit_url: null
   </div>
 </a>
 
-<a href="/docs/category/solution" class="toc-card">
+<a href="./category/solution" class="toc-card">
   <div class="toc-card-head">
     <svg class="toc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="12" y1="10" x2="12" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg><h3>Solution</h3>
   </div>
