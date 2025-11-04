@@ -2,7 +2,8 @@
   "label": "問題",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "ユーザーには、安定したリターンに向けた安全でガイド付きの道筋が必要です。"
+    "type": "generated-index",    
+    "description": "ユーザーには、安定したリターンに向けた安全でガイド付きの道筋が必要です。",
+    "title": "問題"
   }
 }

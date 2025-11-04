@@ -16,7 +16,7 @@
     "description": "The label for category 'Problem' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Problem.link.generated-index.description": {
-    "message": "Users need a safe, guided path toward stable returns.",
+    "message": "ユーザーには、安定したリターンに向けた安全でガイド付きの道筋が必要です。",
     "description": "The generated-index page description for category 'Problem' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Solution": {
