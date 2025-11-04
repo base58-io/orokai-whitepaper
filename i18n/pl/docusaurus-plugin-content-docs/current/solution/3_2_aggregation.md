@@ -1,27 +1,27 @@
 ---
-sidebar_label: Protocol Aggregation
+sidebar_label: Agregacja protokołów 
 sidebar_position: 3
 custom_edit_url: null
 ---
 
-# Protocol Aggregation: Staking, Lending, DEX
+# Agregacja sprawdzonych protokołów
 
-## Verified Protocol Integration
+## Integracja sprawdzonych protokołów
 
-### Allow-list of providers
+### Allow-lista dostawców
 
-We present only protocols from the <mark>list of verified integrations</mark> (including staking/LST, lending, DEX). Criteria include reputation, liquidity, audits/bug bounties, incident history, and parameter transparency.
+Prezentujemy tylko protokoły z <mark>listy zweryfikowanych integracji</mark>  (m.in. staking/LST, lending, DEX). Kryteria obejmują m.in. reputację, płynność, audyty/bug-bounty, historię incydentów, transparentność parametrów.
 
-### Interface neutrality
+### Neutralność interfejsu
 
-<mark>OROKAI does not manage any protocols,</mark> is not an LP/MM, and does not intermediate in settlements.
+<mark>OROKAI nie zarządza żadnym z protokołów,</mark> nie jest LP/MM i nie pośredniczy w rozliczeniach.
 
-### Parameter normalization
+### Normalizacja parametrów
 
-Metrics (e.g., fees, reward schedules, lock-ups) are presented in a comparable manner, with clear assumptions.
+Metryki (np. opłaty, harmonogramy nagród, lock-upy) są prezentowane w porównywalny sposób, z jasnymi założeniami.
 
-:::tip[Quality over quantity]
+:::tip[Jakość ponad ilość]
 
-OROKAI prioritizes thoroughly vetted protocols over broad selection, ensuring users access reliable DeFi infrastructure.
+OROKAI stawia na dokładnie zweryfikowane protokoły zamiast szerokiego wyboru, zapewniając użytkownikom dostęp do niezawodnej infrastruktury DeFi.
 
 :::

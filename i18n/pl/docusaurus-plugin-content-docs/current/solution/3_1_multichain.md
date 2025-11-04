@@ -6,22 +6,22 @@ custom_edit_url: null
 
 # Multi-Chain Support
 
-## Cross-Chain Infrastructure
+## Infrastruktura międzyłańcuchowa
 
-### Supported Networks
+### Obsługiwane sieci
 
-We support leading EVM ecosystems (Ethereum, BNB, Base, Polygon) as well as Solana and Cosmos (selected zones).
+Wspieramy wiodące ekosystemy EVM (Ethereum, BNB, Base, Polygon) oraz Solana i Cosmos (wybrane strefy).
 
-### Interoperability
+### Interoperacyjność
 
-Cross-chain migrations are executed <mark>through verified communication mechanisms/bridges</mark> (e.g., CCTP/Wormhole/LayerZero — according to allow-list). <mark>Users approve each transfer;</mark> limits/warnings minimize operational risk.
+Migracje międzyłańcuchowe realizowane są przez <mark>sprawdzone mechanizmy komunikacji/mostów</mark> (np. CCTP/Wormhole/LayerZero — zgodnie z allow-listą). <mark>Użytkownik zatwierdza każdy transfer;</mark> limity/ostrzeżenia minimalizują ryzyko operacyjne.
 
-### Costs and Gas
+### Koszty i gaz
 
-UI predicts and displays estimated costs (gas, bridge fees) before the user signs the transaction.
+UI przewiduje i pokazuje szacunkowe koszty (gas, opłaty mostów), zanim użytkownik podpisze transakcję.
 
-:::warning[Cross-chain transfer risks]
+:::warning[Ryzyka transferów międzyłańcuchowych]
 
-Cross-chain transfers carry technical risks; asset and network identification is always the user's responsibility.
+Transfery międzyłańcuchowe niosą ryzyko techniczne; identyfikacja aktywa i sieci jest zawsze po stronie użytkownika.
 
 :::

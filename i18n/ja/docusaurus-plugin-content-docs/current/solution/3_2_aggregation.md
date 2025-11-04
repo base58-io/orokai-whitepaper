@@ -1,27 +1,27 @@
 ---
-sidebar_label: Protocol Aggregation
+sidebar_label: プロトコル集約
 sidebar_position: 3
 custom_edit_url: null
 ---
 
-# Protocol Aggregation: Staking, Lending, DEX
+# プロトコル集約：ステーキング、レンディング、DEX
 
-## Verified Protocol Integration
+## 検証済みプロトコル統合
 
-### Allow-list of providers
+### プロバイダーのホワイトリスト
 
-We present only protocols from the <mark>list of verified integrations</mark> (including staking/LST, lending, DEX). Criteria include reputation, liquidity, audits/bug bounties, incident history, and parameter transparency.
+<mark>検証済み統合リスト</mark>のプロトコルのみを提示します（ステーキング/LST、レンディング、DEXを含む）。基準には、評判、流動性、監査/バグバウンティ、インシデント履歴、パラメータの透明性が含まれます。
 
-### Interface neutrality
+### インターフェースの中立性
 
-<mark>OROKAI does not manage any protocols,</mark> is not an LP/MM, and does not intermediate in settlements.
+<mark>OROKAIはいかなるプロトコルも管理せず、</mark>LP/MMではなく、決済に仲介しません。
 
-### Parameter normalization
+### パラメータの標準化
 
-Metrics (e.g., fees, reward schedules, lock-ups) are presented in a comparable manner, with clear assumptions.
+指標（手数料、報酬スケジュール、ロックアップなど）は、明確な前提条件とともに、比較可能な方法で提示されます。
 
-:::tip[Quality over quantity]
+:::tip[量より質]
 
-OROKAI prioritizes thoroughly vetted protocols over broad selection, ensuring users access reliable DeFi infrastructure.
+OROKAIは、幅広い選択肢よりも徹底的に精査されたプロトコルを優先し、ユーザーが信頼できるDeFiインフラストラクチャにアクセスできるようにします。
 
 :::

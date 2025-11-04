@@ -1,27 +1,27 @@
 ---
-sidebar_label: Multi-chain support
+sidebar_label: マルチチェーンサポート
 sidebar_position: 2
 custom_edit_url: null
 ---
 
-# Multi-Chain Support
+# マルチチェーンサポート
 
-## Cross-Chain Infrastructure
+## クロスチェーンインフラストラクチャ
 
-### Supported Networks
+### サポートされているネットワーク
 
-We support leading EVM ecosystems (Ethereum, BNB, Base, Polygon) as well as Solana and Cosmos (selected zones).
+主要なEVMエコシステム（Ethereum、BNB、Base、Polygon）、およびSolanaとCosmos（選択されたゾーン）をサポートしています。
 
-### Interoperability
+### 相互運用性
 
-Cross-chain migrations are executed <mark>through verified communication mechanisms/bridges</mark> (e.g., CCTP/Wormhole/LayerZero — according to allow-list). <mark>Users approve each transfer;</mark> limits/warnings minimize operational risk.
+クロスチェーンマイグレーションは、<mark>検証済みの通信メカニズム/ブリッジを通じて</mark>実行されます（例：CCTP/Wormhole/LayerZero — ホワイトリストに従って）。<mark>ユーザーは各転送を承認します。</mark>制限/警告により運用リスクが最小化されます。
 
-### Costs and Gas
+### コストとガス
 
-UI predicts and displays estimated costs (gas, bridge fees) before the user signs the transaction.
+UIは、ユーザーが取引に署名する前に、推定コスト（ガス、ブリッジ手数料）を予測および表示します。
 
-:::warning[Cross-chain transfer risks]
+:::warning[クロスチェーン転送リスク]
 
-Cross-chain transfers carry technical risks; asset and network identification is always the user's responsibility.
+クロスチェーン転送には技術的リスクが伴います。資産とネットワークの識別は常にユーザーの責任です。
 
 :::

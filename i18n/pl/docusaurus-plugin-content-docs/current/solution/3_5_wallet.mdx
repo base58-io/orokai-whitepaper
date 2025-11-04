@@ -1,0 +1,184 @@
+---
+sidebar_label: Zero Wallet Setup
+sidebar_position: 6
+custom_edit_url: null
+---
+
+# „Zero Wallet Setup" – Inwestowanie bez konieczności tworzenia portfela
+
+## Abstrakcja portfela, nie przejęcie kontroli nad środkami
+
+### Abstrakcja, nie custody
+
+Oferujemy tryb „zero-setup", w którym **portfel jest tworzony po stronie użytkownika** (np. smart wallet/MPC powiązany z tożsamością urządzenia/e-mail), <mark>ale klucze NIE SĄ przechowywane przez OROKAI.</mark>
+
+### Onboarding bez tarcia
+
+Użytkownicy mogą rozpocząć od **on-ramp** przez licencjonowanego partnera, a następnie – w kilku krokach – **podpisać pierwsze transakcje** bez ręcznej konfiguracji frazy seed (z zachowaniem opcji eksportu/odzyskiwania kluczy po ich stronie).
+
+### Pełna kontrola
+
+Każda operacja wymaga **świadomej autoryzacji**; użytkownik może w dowolnym momencie **przenieść** aktywa do innego portfela wspieranego w ekosystemie.
+
+### „Zero-Setup" NIE oznacza przejęcia kontroli nad środkami
+
+To jedno z najważniejszych rozróżnień w architekturze OROKAI. Wielu użytkowników (i regulatorów) może zakładać, że „nie musisz tworzyć portfela" oznacza „OROKAI przechowuje Twoje środki". <mark>To absolutnie NIE jest prawdą.</mark>
+
+:::warning[Self-custody uproszczone]
+
+„Zero-setup" nie oznacza, że OROKAI przechowuje klucze. To użytkowa abstrakcja nad portfelem, który pozostaje w modelu self-custody.
+
+:::
+
+## PORÓWNANIE
+
+### Rozwiązania custody vs. non-custodial
+
+**MODEL CUSTODY (np. Binance, Coinbase - NIE OROKAI)**
+```
+Doświadczenie użytkownika:
+ - Rejestracja przez email/hasło
+ - Wpłata środków na giełdę
+ - „Zapomniałeś hasła?" = możliwe odzyskanie
+ - Wsparcie może „odblokować" Twoje konto
+
+Co się faktycznie dzieje:
+
+ Użytkownik
+   ↓ (wpłata)
+ Portfel Giełdy (oni kontrolują klucze prywatne)
+   ↓ (łączenie z innymi użytkownikami)
+ Hot/Cold Storage Giełdy
+
+Kontrola:        Giełda posiada Twoje klucze
+Odwracalność:    Giełda może zamrozić/cofnąć (dobre i złe)
+Regulacje:       Wymaga licencji bankowej/EMI/VASP
+Twoje ryzyko:    Jeśli giełda zostanie zhakowana, tracisz środki
+Status prawny:   Jesteś „wierzycielem", nie „właścicielem"
+```
+
+**✅ MODEL OROKAI „ZERO-SETUP" (Non-Custodial)**
+```
+Doświadczenie użytkownika:
+ - Rejestracja (lub logowanie społecznościowe)
+ - Portfel tworzony w TWOJEJ przeglądarce/urządzeniu
+ - Brak konieczności zapisywania frazy seed (opcja: eksport później)
+ - „Zapomniałeś hasła?" = resetujemy dostęp do UI, NIE do portfela
+
+Co się faktycznie dzieje:
+
+ Użytkownik
+   ↓
+ Twoje urządzenie (przeglądarka/aplikacja)
+   ├─ Klucz prywatny (zaszyfrowany, przechowywany lokalnie)
+   ├─ Może być zabezpieczony przez: Keychain urządzenia, 
+   │                                 fragment MPC lub 
+   │                                 odzyskiwanie społecznościowe
+   └─ TY możesz wyeksportować frazę seed w każdej chwili
+
+ Blockchain (np. Ethereum)
+   └─ Twoje środki są TUTAJ (on-chain, pod TWOIM adresem)
+
+ Serwery OROKAI
+   ├─ BRAK dostępu do Twojego klucza prywatnego
+   ├─ Przechowują tylko: Preferencje UI, metadane historii tx
+   └─ Przygotowują transakcje (Ty podpisujesz na swoim urządzeniu)
+
+Kontrola:        TY masz swoje klucze (na swoim urządzeniu)
+Odwracalność:    Transakcje blockchain są ostateczne
+Regulacje:       Dostawca oprogramowania (nie instytucja finansowa)
+Twoje ryzyko:    Jeśli OROKAI zniknie, Twoje środki są bezpieczne
+Status prawny:   Jesteś „właścicielem" aktywów on-chain
+```
+
+### Jak faktycznie działa „Zero-Setup" (przegląd techniczny)
+
+[Diagram techniczny przedstawiający trzy opcje portfela - dostępny w dokumentacji]
+
+### Kluczowe pytania i odpowiedzi
+
+| Pytanie | Odpowiedź |
+|---------|-----------|
+| **„Czy OROKAI przechowuje moje środki?"** | **NIE.** Twoje środki są on-chain pod TWOIM adresem. OROKAI nie może uzyskać do nich dostępu. |
+| **„Czy OROKAI może zamrozić moje konto?"** | **Częściowo.** Możemy zablokować dostęp do UI (np. zgodność z sankcjami), ale NIE MOŻEMY zamrozić Twoich środków on-chain. Zawsze możesz uzyskać dostęp przez inne portfele. |
+| **„Co jeśli OROKAI zostanie zhakowany?"** | **Twoje środki są bezpieczne.** Klucze prywatne są na TWOIM urządzeniu, nie na naszych serwerach. Hakerzy mogliby uzyskać dostęp tylko do metadanych (historia tx), nie do kluczy. |
+| **„Co jeśli zgubię swoje urządzenie?"** | **Zależy od typu portfela.** Smart Wallet/MPC = możliwe odzyskanie przez email/logowanie społecznościowe. Tradycyjny = potrzebna kopia zapasowa frazy seed. Zalecamy włączenie odzyskiwania PRZED transakcjami. |
+| **„Czy mogę użyć mojego portfela OROKAI w MetaMask?"** | **Tak** (jeśli Opcja C). Wyeksportuj frazę seed → Importuj do MetaMask. Dla Smart Wallet/MPC, przeniesiesz środki na nowy adres MetaMask. |
+| **„Co jeśli OROKAI zakończy działalność?"** | **Twoje środki pozostają dostępne.** Wyeksportuj portfel przed zamknięciem lub uzyskaj dostęp bezpośrednio przez eksploratory blockchain + dowolne oprogramowanie portfelowe. |
+| **„Czy to jest zgodne z przepisami?"** | **Tak.** Oprogramowanie non-custodial NIE wymaga licencji bankowych/VASP w większości jurysdykcji (w tym EU MiCA, Singapore MAS, Japan FSA). NIE przechowujemy środków klientów. |
+
+### Porównanie z innymi „prostymi portfelami"
+
+| Typ portfela | Custody | Fraza seed | Odzyskiwanie |
+|--------------|---------|------------|--------------|
+| **Giełda Coinbase** | Tak | Nie (oni przechowują) | Email/SMS |
+| **MetaMask** | Nie | Tak (12 słów) | Tylko jeśli zapisałeś |
+| **Argent Wallet** | Nie | Nie | Odzyskiwanie społecznościowe |
+| **Gnosis Safe** | Nie | Multi-sig | Przez współpodpisujących |
+| **Ledger** | Nie | Tak (24 słowa) | Tylko jeśli zapisałeś |
+| **OROKAI** | **NIE** | Opcjonalnie | Tak (konfigurowalne) |
+
+### Co się dzieje, gdy stracisz dostęp
+
+**SCENARIUSZ: Użytkownik traci telefon z aplikacją OROKAI**
+
+**Opcja A/B (Smart Wallet / MPC):**
+```
+1. Użytkownik przechodzi do orok.ai na NOWYM urządzeniu
+2. Kliknięcie „Zgubiłem moje urządzenie"
+3. Weryfikacja tożsamości:
+   ├─ Kod weryfikacyjny email
+   ├─ LUB Logowanie społecznościowe (Google/Apple)
+   └─ LUB Zatwierdzenie zaufanego kontaktu (jeśli skonfigurowane)
+4. Dostęp do portfela przywrócony
+5. Opcjonalnie: Dodaj nowe urządzenie jako dodatkowego podpisującego
+
+Środki: BEZPIECZNE (wciąż na blockchain)
+Dostęp: ODZYSKANY
+```
+
+**Opcja C (Tradycyjny portfel):**
+```
+JEŚLI użytkownik wykonał kopię zapasową frazy seed:
+1. Użytkownik przechodzi do orok.ai na NOWYM urządzeniu
+2. Kliknięcie „Importuj istniejący portfel"
+3. Wpisanie 12-słownej frazy seed
+4. Dostęp przywrócony
+
+JEŚLI użytkownik NIE wykonał kopii zapasowej frazy seed:
+Środki: TRWALE UTRACONE (tak jak w MetaMask)
+Dlatego ZACHĘCAMY do włączenia opcji odzyskiwania
+```
+
+**Podejście OROKAI:**
+> Domyślnie Opcja A/B (możliwe odzyskanie) dla nowych użytkowników
+
+> Wyświetlanie WYRAŹNYCH ostrzeżeń o odpowiedzialności za kopie zapasowe
+
+> Oferowanie przypomnień „Wykonaj kopię zapasową teraz" (ale bez wymuszania)
+
+> Równowaga między prostotą UX a edukacją bezpieczeństwa
+
+### Perspektywa prawna i regulacyjna
+
+import StartLight from '@site/static/img/zero.svg';
+import StartDark from '@site/static/img/zero.svg';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <StartLight className="light-only" />
+    <StartDark className="dark-only" />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
+:::tip[KLUCZOWE PRECEDENSY:]
+> **MetaMask (ConsenSys):** Non-custodial, NIE regulowany jako VASP
+
+> **Uniswap:** Interfejs DEX, NIE regulowany jako giełda
+
+> **Ledger:** Portfel sprzętowy, NIE regulowany jako custodian
+
+**OROKAI podąża tą ścieżką:** Oprogramowanie, które POMAGA użytkownikom
+wchodzić w interakcje z blockchainem, ale NIE kontroluje ich aktywów.
+:::

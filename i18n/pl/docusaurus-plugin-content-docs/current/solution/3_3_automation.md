@@ -1,37 +1,37 @@
 ---
-sidebar_label: Automation and simplification
+sidebar_label: Automatyzacja i uproszczenie
 sidebar_position: 4
 custom_edit_url: null
 ---
 
-# Automation and Simplification of the Investment Process
+# Automatyzacja i uproszczenie procesu inwestowania
 
-## Streamlined Operations
+## Zoptymalizowane procesy
 
-### Step-by-step allocation
+### Alokacja „krok po kroku”
 
-Interface guides through a <mark>minimal set of signatures:</mark> 
+Interfejs prowadzi przez <mark>minimalny zestaw podpisów:</mark> 
 
-> approve (if needed)
+> approve (jeśli potrzebne)
 
-> swap on DEX (if selected) 
+> swap w DEX (jeśli wybrano)
 
-> deposit/stake in protocol.
+> deposit/stake w protokole.
 
-### Reward claims (optional)
+### Claimy nagród (opcjonalnie)
 
-Users <mark>can enable</mark> claim/re-stake scenarios or claim → USDT (through DEX). Each scenario is a predefined set of transactions that the <mark>user authorizes</mark> and can disable at any time.
+Użytkownik  <mark>może włączyć</mark> scenariusze claim/re-stake albo claim → USDT (przez DEX). Każdy scenariusz to z góry określony zestaw transakcji, które <mark>użytkownik autoryzuje</mark> i może wyłączyć w dowolnym momencie.
 
-### Rebalancing and migrations
+### Rebalans i migracje
 
-UI enables strategy comparison and – if the user decides – prepares a set of migration transactions (e.g., unstake/withdraw → bridge → swap → deposit).
+UI umożliwia porównanie strategii i – jeśli użytkownik tak zdecyduje – przygotowuje zestaw transakcji migracyjnych (np. unstake/withdraw → bridge → swap → deposit).
 
-### Permission control and revocation
+### Kontrola i odwołanie uprawnień
 
-"Permissions" and "History" screens allow users to review/revoke approvals and check operation paths.
+Ekrany „Uprawnienia” i „Historia” pozwalają przeglądać/odwoływać aprrove’y oraz sprawdzać ścieżkę operacji.
 
-:::tip[User-authorized automation]
+:::tip[Automatyzacja z pełną kontrolą użytkownika]
 
-Automation does not mean operating without user knowledge: OROKAI prepares operations, the user signs them, and smart contracts execute them only within granted permissions.
+Automatyzacja nie oznacza działania bez wiedzy użytkownika: OROKAI przygotowuje operacje, użytkownik je podpisuje, a smart kontrakty wykonują je wyłącznie w zakresie udzielonych uprawnień.
 
 :::

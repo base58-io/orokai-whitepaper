@@ -1,37 +1,37 @@
 ---
-sidebar_label: Automation and simplification
+sidebar_label: 自動化と簡素化
 sidebar_position: 4
 custom_edit_url: null
 ---
 
-# Automation and Simplification of the Investment Process
+# 投資プロセスの自動化と簡素化
 
-## Streamlined Operations
+## 合理化された操作
 
-### Step-by-step allocation
+### ステップバイステップのアロケーション
 
-Interface guides through a <mark>minimal set of signatures:</mark> 
+インターフェースは<mark>最小限の署名セット</mark>を通じてガイドします：
 
-> approve (if needed)
+> 承認（必要な場合）
 
-> swap on DEX (if selected) 
+> DEXでのスワップ（選択された場合）
 
-> deposit/stake in protocol.
+> プロトコルでのデポジット/ステーク
 
-### Reward claims (optional)
+### 報酬のクレーム（オプション）
 
-Users <mark>can enable</mark> claim/re-stake scenarios or claim → USDT (through DEX). Each scenario is a predefined set of transactions that the <mark>user authorizes</mark> and can disable at any time.
+ユーザーは、クレーム/再ステークシナリオ、またはクレーム → USDT（DEX経由）を<mark>有効にできます</mark>。各シナリオは、<mark>ユーザーが承認し</mark>、いつでも無効にできる事前定義された取引のセットです。
 
-### Rebalancing and migrations
+### リバランスとマイグレーション
 
-UI enables strategy comparison and – if the user decides – prepares a set of migration transactions (e.g., unstake/withdraw → bridge → swap → deposit).
+UIは戦略比較を可能にし、ユーザーが決定した場合、マイグレーション取引のセットを準備します（例：アンステーク/引き出し → ブリッジ → スワップ → デポジット）。
 
-### Permission control and revocation
+### 権限の制御と取り消し
 
-"Permissions" and "History" screens allow users to review/revoke approvals and check operation paths.
+「権限」および「履歴」画面により、ユーザーは承認をレビュー/取り消し、操作パスを確認できます。
 
-:::tip[User-authorized automation]
+:::tip[ユーザー承認の自動化]
 
-Automation does not mean operating without user knowledge: OROKAI prepares operations, the user signs them, and smart contracts execute them only within granted permissions.
+自動化は、ユーザーの知識なしに操作することを意味しません：OROKAIは操作を準備し、ユーザーがそれらに署名し、スマートコントラクトは付与された権限内でのみ実行します。
 
 :::
