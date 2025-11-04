@@ -20,11 +20,11 @@
     "description": "The generated-index page description for category 'Problem' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Solution": {
-    "message": "Solution",
+    "message": "Rozwiązanie",
     "description": "The label for category 'Solution' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Solution.link.generated-index.description": {
-    "message": "OROKAI is a single platform for initiating and managing positions in verified protocols across multiple chains.",
+    "message": "OROKAI to jedna platforma do inicjowania i zarządzania pozycjami w zweryfikowanych protokołach działających na wielu blockchainach.",
     "description": "The generated-index page description for category 'Solution' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AI Agent": {
