@@ -34,64 +34,47 @@ This is one of the most important distinctions in OROKAI's design. Many users (a
 
 ### Custodial vs. Non-Custodial Solutions
 
+import CustodialLight from '@site/static/img/custodial.svg';
+import CustodialDark from '@site/static/img/custodial.svg';
 
-CUSTODIAL MODEL (e.g., Binance, Coinbase - NOT OROKAI) 
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <CustodialLight className="light-only" />
+    <CustodialDark className="dark-only" />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
 
- User Experience:                                               
-  • Sign up with email/password                                   
-  • Deposit funds to exchange                                      
-  • "Forgot password?" = recoverable                              
-  • Support can "unlock" your account                              
+  > **Control:**         Exchange has your keys  
 
-  What Actually Happens:                                          
+  > **Reversibility:**   Exchange can freeze/reverse (good & bad)    
+  
+  > **Regulation:**      Requires banking/EMI/VASP license            
+  
+  > **Your risk:**       If exchange is hacked, you lose funds        
+  
+  > **Legal status:**    You are a "creditor" not "owner"             
 
-   User                                                    
-   (deposits)                                              
-   Exchange's Wallet (they control private keys)         
-   (commingles with other users)                          
-   Exchange's Hot/Cold Storage                              
+import NonCustodialLight from '@site/static/img/noncustodial.svg';
+import NonCustodialDark from '@site/static/img/noncustodial.svg';
 
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <NonCustodialLight className="light-only" />
+    <NonCustodialDark className="dark-only" />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
 
-  Control:          Exchange has your keys                       
-  Reversibility:    Exchange can freeze/reverse (good & bad)    
-  Regulation:       Requires banking/EMI/VASP license            
-  Your risk:        If exchange is hacked, you lose funds        
-  Legal status:     You are a "creditor" not "owner"             
+  > **Control:**         YOU have your keys (on your device) 
 
-
-
-  ✅ OROKAI "ZERO-SETUP" MODEL (Non-Custodial) 
-
-
-  User Experience:                                                
-  • Sign up (or use social login)                                  
-  • Wallet is created in YOUR browser/device                      
-  • No seed phrase to write down (optional: export later)          
-  • "Forgot password?" = can reset UI access, NOT wallet          
-
-  What Actually Happens:                                          
-
-  User                                                     
-   ↓                                                          
- Your Device (browser/app)                                
-   ├─  Private Key (encrypted, stored locally)             
-   ├─  Can be backed by: Device keychain, MPC shard,      
-   │                       or social recovery                
-   └─  YOU can export seed phrase anytime                   
-                                                             
- Blockchain (e.g., Ethereum)                             
-   └─  Your funds are HERE (on-chain, in YOUR address)     
-                                                             
-   OROKAI Servers                                           
-   ├─  NO access to your private key                        
-   ├─  Only store: UI preferences, tx history metadata      
-   └─  Prepare transactions (you sign in your device)       
-
-  Control:          YOU have your keys (on your device)         
-  Reversibility:    Blockchain transactions are final            
-  Regulation:       Software provider (not financial institution)
-  Your risk:        If OROKAI disappears, your funds are safe    
-  Legal status:     You are the "owner" of on-chain assets       
+  > **Reversibility:**   Blockchain transactions are final  
+  
+  > **Regulation:**      Software provider (not financial institution)            
+  
+  > **Your risk:**       If OROKAI disappears, your funds are safe        
+  
+  > **Legal status:**    You are the "owner" of on-chain assets             
 
 
 ### How "Zero-Setup" Actually Works (Technical Overview)
@@ -126,7 +109,7 @@ CUSTODIAL MODEL (e.g., Binance, Coinbase - NOT OROKAI)
 SCENARIO: User loses phone with OROKAI app
 
 Option A/B (Smart Wallet / MPC):
-
+```
  1. User goes to orokai on NEW device     
  2. Click "I lost my device"                                
  3. Verify identity:                                               
@@ -138,10 +121,10 @@ Option A/B (Smart Wallet / MPC):
                                                                    
  Funds: SAFE (still on blockchain)                               
  Access: RECOVERED                                                
-
+```
 
 Option C (Traditional Wallet):
-
+```
 IF user backed up seed phrase:                     
  1. User goes to orok.ai on NEW device                  
  2. Click "Import existing wallet"                         
@@ -151,7 +134,7 @@ IF user backed up seed phrase:
  IF user DID NOT back up seed phrase:                           
  Funds: PERMANENTLY LOST (same as MetaMask)                     
  This is why we ENCOURAGE enabling recovery options             
-
+```
 
 OROKAI's Approach:
 > Default to Option A/B (recoverable) for new users
@@ -166,13 +149,13 @@ OROKAI's Approach:
 
 ### Legal & Regulatory Perspective
 
-import StartLight from '@site/static/img/zero.svg';
-import StartDark from '@site/static/img/zero.svg';
+import ZeroLight from '@site/static/img/zero.svg';
+import ZeroDark from '@site/static/img/zero.svg';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
   <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <StartLight className="light-only" />
-    <StartDark className="dark-only" />
+    <ZeroLight className="light-only" />
+    <ZeroDark className="dark-only" />
   </div>
 </div>
 <div style={{ margin: '24px 0' }}></div>

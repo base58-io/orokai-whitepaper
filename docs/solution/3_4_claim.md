@@ -26,6 +26,6 @@ Reward amounts and exchange rates are <mark>variable</mark> and depend on extern
 
 :::warning[Variable returns]
 
-All returns are subject to market conditions and protocol parameters. USDT conversion happens through DEX at prevailing market rates, which may fluctuate.
+All returns are subject to market conditions and protocol parameters. Conversion to USDT or other stablecoins takes place through DEXs at prevailing market rates, which may fluctuate.
 
 :::

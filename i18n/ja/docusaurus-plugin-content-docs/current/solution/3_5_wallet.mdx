@@ -34,64 +34,47 @@ custom_edit_url: null
 
 ### カストディアル vs. ノンカストディアルソリューション
 
+import CustodialLight from '@site/static/img/custodial.svg';
+import CustodialDark from '@site/static/img/custodial.svg';
 
-カストディアルモデル（例：Binance、Coinbase - OROKAIではない）
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <CustodialLight className="light-only" />
+    <CustodialDark className="dark-only" />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
 
- ユーザー体験:                                               
-  • メール/パスワードでサインアップ                                   
-  • 取引所に資金を預ける                                      
-  • 「パスワードを忘れた？」 = 回復可能                              
-  • サポートがアカウントを「ロック解除」できる                              
+  > **管理権限:**      取引所があなたの鍵を持つ  
 
-  実際に起こること:                                          
+  > **可逆性:**        取引所は凍結/取り消しが可能（良し悪し）    
+  
+  > **規制:**          銀行/EMI/VASPライセンスが必要            
+  
+  > **あなたのリスク:** 取引所がハッキングされると資金を失う        
+  
+  > **法的地位:**      あなたは「債権者」であり「所有者」ではない             
 
-   ユーザー                                                    
-   （預金）                                              
-   取引所のウォレット（秘密鍵を管理）         
-   （他のユーザーと混在）                          
-   取引所のホット/コールドストレージ                              
+import NonCustodialLight from '@site/static/img/noncustodial.svg';
+import NonCustodialDark from '@site/static/img/noncustodial.svg';
 
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <NonCustodialLight className="light-only" />
+    <NonCustodialDark className="dark-only" />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
 
-  管理権限:      取引所があなたの鍵を持つ                       
-  可逆性:        取引所は凍結/取り消しが可能（良し悪し）    
-  規制:          銀行/EMI/VASPライセンスが必要            
-  あなたのリスク: 取引所がハッキングされると資金を失う        
-  法的地位:      あなたは「債権者」であり「所有者」ではない             
+  > **管理権限:**      あなたが鍵を持つ（あなたのデバイス上） 
 
-
-
-  ✅ OROKAI「ゼロセットアップ」モデル（ノンカストディアル）
-
-
-  ユーザー体験:                                                
-  • サインアップ（またはソーシャルログインを使用）                                  
-  • ウォレットはあなたのブラウザ/デバイスで作成される                      
-  • シードフレーズを書き留める必要なし（オプション：後でエクスポート）          
-  • 「パスワードを忘れた？」 = UIアクセスをリセット可能、ウォレットは不可          
-
-  実際に起こること:                                          
-
-  ユーザー                                                     
-   ↓                                                          
- あなたのデバイス（ブラウザ/アプリ）                                
-   ├─  秘密鍵（暗号化、ローカル保存）             
-   ├─  バックアップ可能：デバイスキーチェーン、MPCシャード、      
-   │                       またはソーシャルリカバリー                
-   └─  いつでもシードフレーズをエクスポート可能                   
-                                                             
- ブロックチェーン（例：Ethereum）                             
-   └─  あなたの資金はここにある（オンチェーン、あなたのアドレス）     
-                                                             
-   OROKAIサーバー                                           
-   ├─  秘密鍵へのアクセスなし                        
-   ├─  保存するのは：UI設定、取引履歴メタデータのみ      
-   └─  取引を準備（あなたのデバイスで署名）       
-
-  管理権限:      あなたが鍵を持つ（あなたのデバイス上）         
-  可逆性:        ブロックチェーン取引は最終的            
-  規制:          ソフトウェアプロバイダー（金融機関ではない）
-  あなたのリスク: OROKAIが消滅しても、あなたの資金は安全    
-  法的地位:      あなたはオンチェーン資産の「所有者」       
+  > **可逆性:**        ブロックチェーン取引は最終的  
+  
+  > **規制:**          ソフトウェアプロバイダー（金融機関ではない）            
+  
+  > **あなたのリスク:** OROKAIが消滅しても、あなたの資金は安全        
+  
+  > **法的地位:**      あなたはオンチェーン資産の「所有者」             
 
 
 ### 「ゼロセットアップ」の実際の仕組み（技術概要）
@@ -126,7 +109,7 @@ custom_edit_url: null
 シナリオ：ユーザーがOROKAIアプリの入った電話を紛失
 
 オプションA/B（スマートウォレット/MPC）：
-
+```
  1. ユーザーは新しいデバイスでorokaiにアクセス     
  2. 「デバイスを紛失しました」をクリック                                
  3. 本人確認：                                               
@@ -138,10 +121,10 @@ custom_edit_url: null
                                                                    
  資金：安全（ブロックチェーン上に残る）                               
  アクセス：回復                                                
-
+```
 
 オプションC（従来型ウォレット）：
-
+```
 ユーザーがシードフレーズをバックアップしている場合：                     
  1. ユーザーは新しいデバイスでorok.aiにアクセス                  
  2. 「既存のウォレットをインポート」をクリック                         
@@ -151,7 +134,7 @@ custom_edit_url: null
  ユーザーがシードフレーズをバックアップしていない場合：                           
  資金：永久に失われる（MetaMaskと同じ）                     
  これが、リカバリーオプションを有効にすることを推奨する理由             
-
+```
 
 OROKAIのアプローチ：
 > 新規ユーザーにはデフォルトでオプションA/B（回復可能）
@@ -166,13 +149,13 @@ OROKAIのアプローチ：
 
 ### 法的および規制の観点
 
-import StartLight from '@site/static/img/zero.svg';
-import StartDark from '@site/static/img/zero.svg';
+import ZeroLight from '@site/static/img/zero.svg';
+import ZeroDark from '@site/static/img/zero.svg';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
   <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <StartLight className="light-only" />
-    <StartDark className="dark-only" />
+    <ZeroLight className="light-only" />
+    <ZeroDark className="dark-only" />
   </div>
 </div>
 <div style={{ margin: '24px 0' }}></div>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 647.11 281.64">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Inter-Light, Inter;
+        font-size: 10px;
+        font-variation-settings: 'opsz' 14, 'wght' 300;
+        font-weight: 300;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #cccccb;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        opacity: .8;
+      }
+
+      .cls-5 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        fill: #231f20;
+        font-size: .1px;
+      }
+
+      .cls-10, .cls-2 {
+        font-family: Inter-Bold, Inter;
+        font-variation-settings: 'opsz' 14, 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-11 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        font-size: 14px;
+      }
+
+      .cls-15 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-16 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-17 {
+        letter-spacing: 0em;
+      }
+
+      .cls-18 {
+        letter-spacing: 0em;
+      }
+
+      .cls-19 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-20 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-21 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-22 {
+        font-family: Inter-Medium, Inter;
+        font-size: 7px;
+        font-variation-settings: 'opsz' 14, 'wght' 500;
+        font-weight: 500;
+        opacity: .8;
+      }
+
+      .cls-22, .cls-23 {
+        fill: #fff;
+      }
+
+      .cls-24 {
+        letter-spacing: 0em;
+      }
+
+      .cls-23 {
+        opacity: .3;
+      }
+
+      .cls-25 {
+        letter-spacing: 0em;
+      }
+
+      .cls-26 {
+        letter-spacing: 0em;
+      }
+
+      .cls-27 {
+        letter-spacing: 0em;
+      }
+
+      .cls-28 {
+        letter-spacing: 0em;
+      }
+
+      .cls-29 {
+        letter-spacing: 0em;
+      }
+
+      .cls-30 {
+        letter-spacing: .02em;
+      }
+
+      .cls-31 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-32 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-33 {
+        letter-spacing: .01em;
+      }
+
+      .cls-34 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-35 {
+        fill: none;
+        opacity: .1;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-36 {
+        fill: #171717;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect class="cls-36" width="647.11" height="281.64"/>
+    <rect class="cls-35" x="14.96" y="17.15" width="612.15" height="35.32" rx="6.76" ry="6.76"/>
+    <text class="cls-2" transform="translate(166.54 40.13)"><tspan x="0" y="0">CU</tspan><tspan class="cls-26" x="20.6" y="0">S</tspan><tspan class="cls-34" x="29.67" y="0">T</tspan><tspan x="38.57" y="0">ODIAL MODEL </tspan><tspan class="cls-28" x="138.76" y="0">(</tspan><tspan x="143.96" y="0">e.g.</tspan><tspan class="cls-16" x="170.5" y="0">,</tspan><tspan x="174.74" y="0" xml:space="preserve"> Binance</tspan><tspan class="cls-31" x="233.25" y="0">,</tspan><tspan class="cls-27" x="237.49" y="0" xml:space="preserve"> Coin</tspan><tspan class="cls-25" x="272.26" y="0">b</tspan><tspan class="cls-18" x="281.22" y="0">as</tspan><tspan class="cls-5" x="297.19" y="0">e</tspan><tspan x="305.35" y="0">)</tspan></text>
+    <rect class="cls-35" x="331.41" y="73.26" width="295.98" height="190.61" rx="6.76" ry="6.76"/>
+    <rect class="cls-35" x="15.13" y="73.15" width="295.53" height="190.42" rx="6.76" ry="6.76"/>
+    <text class="cls-2" transform="translate(30.26 94.13)"><tspan x="0" y="0">User Expe</tspan><tspan class="cls-7" x="69.23" y="0">r</tspan><tspan x="75" y="0">ience: </tspan></text>
+    <text class="cls-10" transform="translate(446.07 185.95)"><tspan x="0" y="0">Lorem ipsum</tspan></text>
+    <rect class="cls-35" x="29.95" y="104.33" width="24.98" height="24.98" rx="4.84" ry="4.84"/>
+    <g class="cls-4">
+      <text class="cls-1" transform="translate(80.22 120.09)"><tspan x="0" y="0">Sign up with email/</tspan><tspan class="cls-24" x="88.43" y="0">p</tspan><tspan x="94.55" y="0">ass</tspan><tspan class="cls-21" x="110.36" y="0">w</tspan><tspan x="118.33" y="0">o</tspan><tspan class="cls-19" x="124.26" y="0">r</tspan><tspan x="127.69" y="0">d</tspan></text>
+    </g>
+    <path class="cls-3" d="M48.17,113.65l-2.51-2.51c-.35-.35-.92-.35-1.27,0,0,0,0,0,0,0l-6.94,6.94c-.17.17-.26.4-.26.64v2.51c0,.5.4.9.9.9h9.45c.25,0,.45-.2.45-.45s-.2-.45-.45-.45h-5.66l6.3-6.3c.35-.35.35-.92,0-1.27,0,0,0,0,0,0ZM46.18,115.63l-2.51-2.51,1.35-1.35,2.51,2.51-1.35,1.35Z"/>
+    <rect class="cls-35" x="68.44" y="104.33" width="225.78" height="24.98" rx="4.84" ry="4.84"/>
+    <polygon class="cls-23" points="178.92 134.12 180.77 134.12 181.86 134.12 183.67 134.12 181.31 140.62 178.92 134.12"/>
+    <rect class="cls-35" x="29.95" y="144.33" width="24.98" height="24.98" rx="4.84" ry="4.84"/>
+    <g class="cls-4">
+      <text class="cls-1" transform="translate(80.22 160.09)"><tspan x="0" y="0">Deposit funds </tspan><tspan class="cls-17" x="67.44" y="0">t</tspan><tspan x="70.34" y="0">o </tspan><tspan class="cls-15" x="79.08" y="0">ex</tspan><tspan x="89.74" y="0">change </tspan></text>
+    </g>
+    <rect class="cls-35" x="68.44" y="144.33" width="225.78" height="24.98" rx="4.84" ry="4.84"/>
+    <polygon class="cls-23" points="178.84 173.35 180.69 173.35 181.78 173.35 183.59 173.35 181.23 179.85 178.84 173.35"/>
+    <rect class="cls-35" x="29.95" y="183.33" width="24.98" height="24.98" rx="4.84" ry="4.84"/>
+    <g class="cls-4">
+      <text class="cls-1" transform="translate(80.22 199.09)"><tspan class="cls-12" x="0" y="0">F</tspan><tspan x="5.49" y="0">o</tspan><tspan class="cls-19" x="11.42" y="0">r</tspan><tspan x="14.84" y="0">got </tspan><tspan class="cls-24" x="32.59" y="0">p</tspan><tspan x="38.71" y="0">ass</tspan><tspan class="cls-21" x="54.53" y="0">w</tspan><tspan x="62.5" y="0">o</tspan><tspan class="cls-19" x="68.42" y="0">r</tspan><tspan x="71.85" y="0">d? = </tspan><tspan class="cls-19" x="95.03" y="0">r</tspan><tspan x="98.46" y="0">ec</tspan><tspan class="cls-32" x="109.85" y="0">ov</tspan><tspan x="120.95" y="0">erable </tspan></text>
+    </g>
+    <rect class="cls-35" x="68.44" y="183.33" width="225.78" height="24.98" rx="4.84" ry="4.84"/>
+    <polygon class="cls-23" points="178.92 212.42 180.77 212.42 181.86 212.42 183.67 212.42 181.31 218.92 178.92 212.42"/>
+    <rect class="cls-35" x="29.95" y="223.33" width="24.98" height="24.98" rx="4.84" ry="4.84"/>
+    <g class="cls-4">
+      <text class="cls-1" transform="translate(80.22 239.09)"><tspan x="0" y="0">Suppo</tspan><tspan class="cls-30" x="30.18" y="0">r</tspan><tspan x="33.93" y="0">t </tspan><tspan class="cls-24" x="39.72" y="0">c</tspan><tspan x="45.41" y="0">an &quot;unlock&quot; </tspan><tspan class="cls-32" x="102.12" y="0">y</tspan><tspan x="107.49" y="0">our account</tspan></text>
+    </g>
+    <rect class="cls-35" x="68.44" y="223.33" width="225.78" height="24.98" rx="4.84" ry="4.84"/>
+    <path class="cls-3" d="M49.69,161.87v2.83c0,.3-.25.55-.55.55s-.55-.25-.55-.55v-2.83c0-1.42-.6-2.78-1.64-3.74v3.99c0,.3-.25.55-.55.55-.18,0-.36-.09-.46-.25l-.73-1.12s-.01-.02-.02-.03c-.22-.39-.72-.53-1.12-.31s-.53.72-.31,1.12h0l1.51,2.31c.17.25.09.59-.16.76s-.59.09-.76-.16h0l-1.52-2.33-.02-.03s-.05-.09-.07-.14h-5.11c-.3,0-.55-.25-.55-.55v-7.12c0-.6.49-1.1,1.1-1.1h3.29v3.29c0,.3.25.55.55.55s.55-.25.55-.55v-3.29h3.29c.6,0,1.1.49,1.1,1.1v1.89c1.71,1.15,2.73,3.08,2.74,5.14ZM42.57,150.69l1.26,1.26c.21.21.56.21.77,0s.21-.56,0-.77l-2.19-2.19c-.21-.21-.56-.21-.77,0,0,0,0,0,0,0l-2.19,2.19c-.21.21-.21.56,0,.77.21.21.56.21.77,0h0l1.26-1.26v3.06h1.1v-3.06Z"/>
+    <path class="cls-3" d="M47.02,233.43h-6.35v-1.36c0-1,.81-1.81,1.81-1.81.87,0,1.66.62,1.82,1.45.05.25.29.4.54.35.24-.05.4-.29.35-.53-.26-1.26-1.4-2.18-2.71-2.18-1.5,0-2.72,1.22-2.72,2.72v1.36h-1.81c-.5,0-.91.41-.91.91v6.35c0,.5.41.91.91.91h9.07c.5,0,.91-.41.91-.91v-6.35c0-.5-.41-.91-.91-.91ZM42.48,238.19c-.38,0-.68-.3-.68-.68s.3-.68.68-.68.68.3.68.68-.3.68-.68.68Z"/>
+    <path class="cls-3" d="M48.21,191.12h-11.03c-.51,0-.92.41-.92.92v7.36c0,.51.41.92.92.92h11.03c.51,0,.92-.41.92-.92v-7.36c0-.51-.41-.92-.92-.92ZM47.1,196.56c.15.21.1.49-.1.64s-.49.1-.64-.1l-.44-.6-.44.6c-.15.21-.44.25-.64.1s-.25-.44-.1-.64l.44-.6-.71-.23c-.24-.08-.37-.34-.29-.58.08-.24.34-.37.58-.29l.71.23v-.75c0-.25.21-.46.46-.46s.46.21.46.46v.75l.71-.23c.24-.08.5.05.58.29.08.24-.05.5-.29.58l-.71.23.44.6ZM42.96,196.56c.15.21.1.49-.1.64-.21.15-.49.1-.64-.1l-.44-.6-.44.6c-.15.21-.44.25-.64.1s-.25-.44-.1-.64l.44-.6-.71-.23c-.24-.08-.37-.34-.29-.58.08-.24.34-.37.58-.29l.71.23v-.75c0-.25.21-.46.46-.46s.46.21.46.46v.75l.71-.23c.24-.08.5.05.58.29.08.24-.05.5-.29.58l-.71.23.44.6ZM39.02,193.41v4.6c0,.25-.21.46-.46.46s-.46-.21-.46-.46v-4.6c0-.25.21-.46.46-.46s.46.21.46.46Z"/>
+    <polygon class="cls-23" points="318.31 192.95 318.31 180.74 318.31 173.55 318.31 161.6 324.81 177.18 318.31 192.95"/>
+    <text class="cls-2" transform="translate(346.26 94.13)"><tspan x="0" y="0">What </tspan><tspan class="cls-20" x="39.81" y="0">A</tspan><tspan x="49.94" y="0">ctual</tspan><tspan class="cls-33" x="83.95" y="0">l</tspan><tspan x="87.88" y="0">y Happens: </tspan></text>
+    <rect class="cls-35" x="349.95" y="104.33" width="24.98" height="24.98" rx="4.84" ry="4.84"/>
+    <rect class="cls-36" x="388.44" y="104.33" width="225.78" height="24.98" rx="4.84" ry="4.84"/>
+    <g class="cls-4">
+      <text class="cls-1" transform="translate(400.22 120.09)"><tspan x="0" y="0" xml:space="preserve">User   </tspan></text>
+    </g>
+    <rect class="cls-35" x="388.44" y="104.33" width="225.78" height="24.98" rx="4.84" ry="4.84"/>
+    <polygon class="cls-23" points="498.92 132.12 500.77 132.12 501.86 132.12 503.67 132.12 501.31 138.62 498.92 132.12"/>
+    <rect class="cls-35" x="349.95" y="164.33" width="24.98" height="24.98" rx="4.84" ry="4.84"/>
+    <g class="cls-4">
+      <text class="cls-1" transform="translate(400.22 180.09)"><tspan x="0" y="0">E</tspan><tspan class="cls-15" x="5.95" y="0">x</tspan><tspan x="11.04" y="0">chang</tspan><tspan class="cls-14" x="39.92" y="0">e</tspan><tspan x="45.62" y="0">&apos;s </tspan><tspan class="cls-11" x="56.5" y="0">W</tspan><tspan x="65.66" y="0">allet (th</tspan><tspan class="cls-32" x="99.77" y="0">e</tspan><tspan x="105.37" y="0">y cont</tspan><tspan class="cls-19" x="134.13" y="0">r</tspan><tspan x="137.55" y="0">ol p</tspan><tspan class="cls-6" x="154.65" y="0">r</tspan><tspan x="158.31" y="0">i</tspan><tspan class="cls-8" x="160.64" y="0">v</tspan><tspan x="166.11" y="0">a</tspan><tspan class="cls-17" x="171.61" y="0">t</tspan><tspan x="174.51" y="0">e </tspan><tspan class="cls-15" x="183.12" y="0">k</tspan><tspan class="cls-32" x="188.17" y="0">e</tspan><tspan x="193.77" y="0" xml:space="preserve">ys)    </tspan></text>
+    </g>
+    <rect class="cls-35" x="388.44" y="164.33" width="225.78" height="24.98" rx="4.84" ry="4.84"/>
+    <polygon class="cls-23" points="498.84 192.35 500.69 192.35 501.78 192.35 503.59 192.35 501.23 198.85 498.84 192.35"/>
+    <rect class="cls-35" x="349.95" y="223.33" width="24.98" height="24.98" rx="4.84" ry="4.84"/>
+    <g class="cls-4">
+      <text class="cls-1" transform="translate(400.22 239.09)"><tspan x="0" y="0">E</tspan><tspan class="cls-15" x="5.95" y="0">x</tspan><tspan x="11.04" y="0">chang</tspan><tspan class="cls-14" x="39.92" y="0">e</tspan><tspan x="45.62" y="0">&apos;s Hot/Cold S</tspan><tspan class="cls-17" x="106.99" y="0">t</tspan><tspan x="109.89" y="0" xml:space="preserve">orage    </tspan></text>
+    </g>
+    <rect class="cls-35" x="388.44" y="223.33" width="225.78" height="24.98" rx="4.84" ry="4.84"/>
+    <rect class="cls-3" x="483.17" y="139.98" width="36.22" height="11.11" rx="2.06" ry="2.06"/>
+    <text class="cls-22" transform="translate(486.48 147.99)"><tspan x="0" y="0">Deposi</tspan><tspan class="cls-29" x="23.25" y="0">t</tspan><tspan x="25.57" y="0">s</tspan></text>
+    <rect class="cls-3" x="447.56" y="200.98" width="104" height="11.11" rx="2.06" ry="2.06"/>
+    <text class="cls-22" transform="translate(450.48 208.99)"><tspan x="0" y="0">Commingles wi</tspan><tspan class="cls-9" x="51.19" y="0">t</tspan><tspan x="53.58" y="0">h o</tspan><tspan class="cls-13" x="63.88" y="0">t</tspan><tspan x="66.27" y="0">her users</tspan></text>
+    <polygon class="cls-23" points="498.92 154.12 500.77 154.12 501.86 154.12 503.67 154.12 501.31 160.62 498.92 154.12"/>
+    <polygon class="cls-23" points="498.84 214.35 500.69 214.35 501.78 214.35 503.59 214.35 501.23 220.85 498.84 214.35"/>
+    <path class="cls-3" d="M362.66,229.36c-3.37,0-6.01,1.54-6.01,3.51v6.01c0,1.97,2.64,3.51,6.01,3.51s6.01-1.54,6.01-3.51v-6.01c0-1.97-2.64-3.51-6.01-3.51ZM367.67,235.87c0,.6-.49,1.22-1.35,1.69-.97.53-2.27.82-3.66.82s-2.69-.29-3.66-.82c-.86-.47-1.35-1.08-1.35-1.69v-1.04c1.07.94,2.89,1.54,5.01,1.54s3.94-.61,5.01-1.54v1.04ZM366.31,240.56c-.97.53-2.27.82-3.66.82s-2.69-.29-3.66-.82c-.86-.47-1.35-1.08-1.35-1.69v-1.04c1.07.94,2.89,1.54,5.01,1.54s3.94-.61,5.01-1.54v1.04c0,.6-.49,1.22-1.35,1.69Z"/>
+    <path class="cls-3" d="M368.52,172.54h-11.32c-.31,0-.57-.25-.57-.57s.25-.57.57-.57h9.62c.31,0,.57-.25.57-.57s-.25-.57-.57-.57h-9.62c-.94,0-1.7.76-1.7,1.7v9.06c0,.94.76,1.7,1.7,1.7h11.32c.63,0,1.13-.51,1.13-1.13v-7.92c0-.63-.51-1.13-1.13-1.13ZM365.97,178.2c-.47,0-.85-.38-.85-.85s.38-.85.85-.85.85.38.85.85-.38.85-.85.85Z"/>
+    <path class="cls-3" d="M368.14,121.73c-.08.14-.23.22-.39.22h-10.77c-.25,0-.45-.2-.45-.45,0-.08.02-.16.06-.22.85-1.48,2.17-2.54,3.71-3.04-1.92-1.14-2.54-3.62-1.4-5.53,1.14-1.92,3.62-2.54,5.53-1.4,1.92,1.14,2.54,3.62,1.4,5.53-.34.58-.83,1.06-1.4,1.4,1.54.5,2.85,1.56,3.71,3.04.08.14.08.31,0,.45Z"/>
+  </g>
+</svg>

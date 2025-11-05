@@ -26,6 +26,6 @@ Widok „Wyniki” normalizuje metryki i pozwala filtrować po łańcuchu, proto
 
 :::warning[Zmienny zwrot]
 
-Wysokość zwrotów zależy od warunków rynkowych oraz parametrów protokołu. Konwersja na USDT odbywa się za pośrednictwem DEX po aktualnych kursach rynkowych, które mogą ulegać wahaniom.
+Wszystkie zwroty zależą od warunków rynkowych oraz parametrów protokołu. Konwersja na USDT lub inne stablecoiny odbywa się przez DEX po obowiązujących cenach rynkowych, które mogą ulegać zmianom.
 
 :::
