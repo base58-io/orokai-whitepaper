@@ -6,6 +6,100 @@ custom_edit_url: null
 
 # Boundaries and Responsible Use of AI (Disclaimer)
 
+## AI AGENT Role & Boundaries
+
+### What AI AGENT does:
+
+> Analyzes your profile
+
+   - Goals: capital preservation / passive income / growth
+   - Risk tolerance: conservative / balanced / opportunistic
+   - Time horizon: short-term / medium-term / long-term
+   - Preferences: chains, assets, lock-up constraints
+   - Experience level: beginner / intermediate / advanced
+
+> Filters protocols 
+
+   - Allow-list: Only shows audited, vetted protocols
+   - Risk scoring: Based on TVL, audits, time alive, incidents
+   - Matching: Aligns with your declared profile
+   - Excludes: Quarantined/high-risk options automatically
+
+> Shows options
+
+   - Option A: "Best match" for your profile
+   - Option B: Alternative (different risk/reward balance)
+   - Option C: Alternative (different chains/protocols)
+   - Each with: Expected APY, costs, risks, steps
+
+> Explains why ("Reason-codes")
+
+   - "Recommended because: [your goal] + [low risk] + [high liquidity]"
+   - "Alternative because: [higher APY] but [lock-up period]"
+   - "Avoid because: [recent incident] / [low liquidity] / [high cost]"
+
+> Monitors & suggests adjustments 
+
+   - "APY dropped 2% → Consider migration?"
+   - "New protocol matches your profile → Review?"
+   -  "Gas prices low → Good time to rebalance?"
+   -  YOU approve any changes (AI doesn't execute)
+
+### What AI AGENT does not do:
+
+> Does not provide financial advice
+
+   - AI suggestions are INFORMATIONAL, not investment advice
+   - You are responsible for your own decisions
+
+> Does not guarantee returns
+
+   - All yields are variable and protocol-dependent
+   - AI cannot predict future market conditions
+
+> Does not execute transactions
+
+   - AI prepares transaction intents
+   - YOU must sign every transaction in your wallet
+
+> Does not have access to your funds 
+
+   - AI cannot move your money
+   - Non-custodial model maintained
+
+> Does not replace due diligence
+
+   - Always read protocol docs, understand risks
+   - AI is a tool to help, not a substitute for research
+
+
+:::tip[TRANSPARENCY & EXPLAINABILITY:]
+- Every recommendation shows "Why this?" reason-codes
+- You can see which factors influenced the suggestion
+- You can adjust your profile anytime (AI re-evaluates)
+- Full history of suggestions and your actions (audit trail)
+:::
+
+## Why "Informational Only" Matters 
+
+### Legal & Regulatory
+
+| If AI Were "Advisory" | OROKAI's "Informational" Approach |
+|----------------------|-----------------------------------|
+| Would require investment advisor license (SEC, FCA, MAS...) | Software providing data & tools |
+| Fiduciary duty (must act in client's best interest) | User makes own decisions |
+| Liability for losses ("bad advice") | Disclosures: variable returns, user responsibility |
+| Mandatory suitability assessments | Optional profile for personalization |
+| Ongoing monitoring obligation | Monitoring as a feature, not obligation |
+| Detailed compliance reporting | Standard software ToS & Privacy Policy |
+
+### Regulatory Precedent:
+
+- **Robinhood "Learn"**: Educational content, not advice → No RIA license needed  
+- **CoinGecko alerts**: "BTC dropped 5%" notification → Informational, not advice  
+- **TradingView indicators**: Technical analysis tools → User interprets, not advice  
+- **OROKAI AI**: Protocol suggestions with reasoning → User decides, not advice
+
 ## Scope and Limitations
 
 ### No investment advice
