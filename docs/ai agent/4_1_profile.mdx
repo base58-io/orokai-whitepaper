@@ -1,0 +1,272 @@
+---
+sidebar_label: User Profile
+sidebar_position: 2
+custom_edit_url: null
+---
+
+# User Profile (Goals, Preferences, Risk Tolerance)
+
+## Profile Scope (User-Declared)
+
+### Goals
+Capital preservation / passive income / LST/LRT exposure / cross-chain diversification.
+
+### Time horizon and liquidity
+No lock-up / acceptable lock-up / flexible exit.
+
+### Risk preferences
+Conservative / balanced / opportunistic (with limits).
+
+### Experience level
+Outside web3 / beginner / advanced (affects explanation depth).
+
+### Operational preferences
+Settlement currency (e.g., USDT), basket of chains/protocols, max number of steps, fee constraints.
+
+## How Profile Building Works: Step-by-Step
+
+The AI Agent's recommendations are only as good as the profile data it receives. Here's how OROKAI builds a comprehensive user profile **while keeping it simple**:
+
+
+> Profile building journey (5-10 minutes)
+
+import stepsLight from '@site/static/img/steps.png';
+import stepsDark from '@site/static/img/steps.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={stepsLight} className="light-only" style={{ width: '100%' }} />
+    <img src={stepsDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
+### STEP 1: Goals
+
+What do you want to achieve with DeFi?
+
+```
+EXAMPLES:
+[   ] Capital Preservation
+     → Focus on stable protocols, minimize risk
+     → Example: Lending stablecoins to AAVE
+
+[   ] Passive Income
+     → Regular rewards, predictable yields 
+     → Example: Staking ETH via Lido
+
+[   ] Capital Growth
+     → Higher APY targets, accept more volatility
+     → Example: Providing liquidity to DEX pools
+
+[   ] Diversification
+     → Spread across multiple chains/protocols
+     → Example: 40% staking, 30% lending, 30% LP
+
+[   ] Explore DeFi
+     → Learning mode, smaller amounts, guided experience
+     → Example: Start with $100-500 across 2-3 protocols
+```
+
+### STEP 2: Risk tolerance
+
+How much risk are you comfortable with?
+
+``` 
+EXAMPLES:
+  Conservative       Balanced             Opportunistic
+  ◀────────────────●──────────────────────▶
+  Low Risk               Medium                Higher Risk
+
+Your position: Balanced
+
+What this means:
+ ✓ Willing to accept some volatility for better returns
+ ✓ Mix of established + newer protocols (vetted)
+ ✓ Some lock-up periods acceptable (< 30 days)
+ ✓ Understand APY can fluctuate 10-20% 
+```
+
+### STEP 3: Time horizon
+
+How long do you plan to keep funds deployed?
+``` 
+EXAMPLES:
+[   ] Short-term (< 3 months)
+    → Need flexibility, no lock-ups
+    → May prioritize liquidity over max APY
+
+[●] Medium-term (3-12 months)
+    → Can accept some lock-up for better rates
+    → Balanced approach
+
+[   ] Long-term (1+ years)
+    → Maximize compounding, comfortable with lock-ups
+    → Lower transaction frequency = lower gas costs
+```
+
+### STEP 4: Liquidity preferences
+How important is it to withdraw anytime?
+
+``` 
+EXAMPLES:
+[   ] Must be instant (liquid tokens only)
+    → stETH, rETH, aTokens - can swap anytime
+    → May accept slightly lower APY for flexibility
+
+[●] Flexible (some queue/delay acceptable)
+    → Can wait 1-7 days for unstaking if needed
+    → Opens more protocol options
+
+[   ] Committed (lock-up for higher returns)
+    → Willing to lock for 30-90 days for better APY
+    → Example: Fixed-term lending, governance staking
+```
+
+### STEP 5: Chain & asset preferences 
+Which blockchains and assets do you prefer?
+
+``` 
+EXAMPLES:
+Preferred Chains: (Select 1-3)
+[✓] Ethereum      [✓] Polygon      [   ] BNB Chain      [   ] Solana        [   ] Base         [   ] Cosmos
+
+Preferred Assets: (Select 1-5)
+[✓] ETH           [✓] USDC         [✓] USDT      [   ] BTC (wrapped) [   ] MATIC        [   ] SOL
+```
+
+### STEP 6: Operational constraints
+Any operational preferences or limits?
+
+``` 
+EXAMPLES:
+Max Gas Cost per Transaction:
+[   ] No limit   [●] $20   [   ] $10   [   ] Custom: $_____
+
+Max Steps in One Flow:
+[   ] No limit   [●] 5 steps   [   ] 3 steps   [   ] 1 step only 
+
+Rewards Settlement Preference:
+[●] Auto-convert to USDT (when cost-effective)
+[   ] Keep in native tokens (I'll convert manually)
+[   ] Re-stake automatically (compound)
+
+Exposure Limits (per protocol):
+[   ] No limit   [●] Max 50% in one protocol   [   ] Max 30%
+```
+
+### STEP 7: Experience level
+How would you describe your DeFi experience?
+
+``` 
+EXAMPLES:
+
+[●] New to DeFi
+    → UI will show more explanations and warnings
+    → Recommendations lean conservative
+    → Step-by-step guidance enabled
+
+[   ] Some experience (used 1-3 protocols)
+    → Balanced explanations and freedom
+    → Recommendations include intermediate options
+
+[   ] Advanced (used 5+ protocols, understand risks)
+    → Minimal hand-holding, advanced features enabled
+    → Recommendations include cutting-edge protocols
+```
+
+:::tip[NOTE] 
+
+OROKAI also monitors your behavior:
+   • Frequency of transactions → adjust complexity recommendations
+   • Types of protocols used → expand/narrow suggestions
+   • Response to risk warnings → refine risk scoring
+
+:::
+
+### Dynamic Profile Adaptation
+
+Your profile isn't static. AI learns from your behavior and market conditions:
+
+> **USER BEHAVIOR SIGNALS:**
+
+
+- You consistently ignore "higher APY" options
+
+   → AI: Shift recommendations toward stability/security
+
+   → Update: Risk tolerance lowered to "Conservative"
+
+- You've completed 10+ transactions without issues
+
+   → AI: Enable more advanced features
+
+   → Update: Experience level → "Intermediate"
+
+- You always choose Ethereum despite higher gas
+
+   → AI: Deprioritize other chains in recommendations
+
+   → Update: Chain preference → "ETH strongly preferred"
+
+- You manually convert rewards to USDT every time
+
+   → AI: Suggest enabling auto-convert
+
+   → Update: Settlement preference → "Auto-USDT"
+
+
+> **MARKET CONDITION SIGNALS:**
+
+
+- Ethereum gas spikes to >$50 per transaction
+
+   → AI: Temporarily boost Polygon/Base in recommendations
+
+   → Message: "Consider Polygon: same protocols, 95% lower gas"
+
+- Protocol X has security incident
+
+   → AI: Immediately remove from recommendations
+
+   → Message: "Protocol X quarantined due to incident"
+
+- New protocol passes 90-day vetting period
+
+   → AI: Add to suggestions if matches profile
+
+   → Message: "New option available: Protocol Y"
+
+- Your staked protocol's APY drops 30%
+
+   → AI: Notify + suggest alternatives
+
+   → Message: "APY dropped to 2.2%. Migrate to Protocol Z (3.1%)?"
+
+:::warning[IMPORTANT]
+
+All adaptations are SUGGESTIONS. You can accept, ignore, or manually override anytime. AI cannot execute changes without your signature.
+
+:::
+
+
+## Profile Mechanics
+
+### Declarative configuration
+UI-based setup (checkboxes, sliders, limits).
+
+### Security policies
+Hard limits on exposure per protocol/chain (e.g., allow-list), least-privilege principle for smart contract permissions.
+
+### Privacy
+Profile data is used for personalization and does not authorize the Agent to execute transactions; processing in accordance with Privacy Policy.
+
+## Module Output
+
+**"Profile Card"** displaying: goals → risk level → preferred chains → constraints → settlement currency.
+
+:::tip[User control]
+
+The profile serves purely as input for recommendations – the Agent never acts autonomously, and all transactions require explicit user signature.
+
+:::
