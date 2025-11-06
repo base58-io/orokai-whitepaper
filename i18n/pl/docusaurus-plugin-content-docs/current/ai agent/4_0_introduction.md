@@ -1,26 +1,59 @@
 ---
-sidebar_label: AI Agent OROKAI
+sidebar_label: Agent AI OROKAI
 sidebar_position: 1
 custom_edit_url: null
 ---
 
-# AI Agent OROKAI
+# Agent AI OROKAI
 
-## AI Module
+## Moduł AI
 
-AI Agent OROKAI is a module that <mark>supports users</mark> in understanding options and organizing decisions. Based on the user profile (goals, preferences, experience, risk tolerance) and current market parameters, the agent suggests (does not advise) strategies and protocols aligned with the user's priorities. <mark>The agent does not take actions on behalf of the user</mark>: 
+Agent AI OROKAI to moduł, który <mark>wspiera użytkowników</mark> w zrozumieniu opcji i organizowaniu decyzji. Na podstawie profilu użytkownika (cele, preferencje, doświadczenie, tolerancja ryzyka) oraz bieżących parametrów rynkowych, agent sugeruje (nie doradza) strategie i protokoły zgodne z priorytetami użytkownika. <mark>Agent nie podejmuje działań w imieniu użytkownika</mark>: 
 
->it prepares proposals and explanations
+>przygotowuje propozycje i wyjaśnienia
 
->every transaction is independently signed by the user in their wallet
+>każda transakcja jest samodzielnie podpisywana przez użytkownika w jego portfelu
 
-### Nature of the module 
-Informational only; does not constitute investment, legal, or tax advice. Returns are variable and not guaranteed; they result from parameters of external protocols.
+:::tip[Pomyśl o AI OROKAI jak o Mapach Google] 
 
-:::warning[Informational only]
-
-AI Agent recommendations are designed to help users navigate options, not to provide investment advice. All decisions and actions remain entirely in the user's control.
-
+> Mapy Google pokazują Ci trasy do celu, wyjaśniają dlaczego (najkrótsza, najszybsza, malownicza), pokazują warunki drogowe, ALE to Ty decydujesz, którą trasę wybrać i TY prowadzisz samochód.
+ 
+> AI OROKAI pokazuje Ci 3 strategie DeFi, wyjaśnia dlaczego (konserwatywna, zbalansowana, oportunistyczna), pokazuje koszty/ryzyka, ALE to Ty decydujesz, którą wybrać i TY podpisujesz transakcje.
 :::
 
+## Problem, który rozwiązuje AI: „Paraliż decyzyjny"
 
+### Bez AI:
+
+import decisionLight from '@site/static/img/decision.png';
+import decisionDark from '@site/static/img/decision.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={decisionLight} className="light-only" style={{ width: '100%' }} />
+    <img src={decisionDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
+### Z AI OROKAI:
+
+import decisionaiLight from '@site/static/img/decisionai.png';
+import decisionaiDark from '@site/static/img/decisionai.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={decisionaiLight} className="light-only" style={{ width: '100%' }} />
+    <img src={decisionaiDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
+## Charakter modułu 
+Wyłącznie informacyjny; nie stanowi porady inwestycyjnej, prawnej ani podatkowej. Zwroty są zmienne i niegwarantowane; wynikają z parametrów zewnętrznych protokołów.
+
+:::warning[Wyłącznie informacyjnie]
+
+Rekomendacje Agenta AI mają na celu pomoc użytkownikom w poruszaniu się po opcjach, a nie udzielanie porad inwestycyjnych. Wszystkie decyzje i działania pozostają całkowicie pod kontrolą użytkownika.
+
+:::

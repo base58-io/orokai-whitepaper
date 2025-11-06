@@ -1,0 +1,168 @@
+---
+sidebar_label: Granice i odpowiedzialne użycie
+sidebar_position: 5
+custom_edit_url: null
+---
+
+# Granice i odpowiedzialne użycie AI (zastrzeżenia)
+
+## Rola i granice AGENTA AI
+
+### Co robi AGENT AI:
+
+import yesLight from '@site/static/img/yes.png';
+import yesDark from '@site/static/img/yes.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={yesLight} className="light-only" style={{ width: '100%' }} />
+    <img src={yesDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
+> Analizuje Twój profil
+
+   - Cele: ochrona kapitału / pasywny dochód / wzrost
+   - Tolerancja ryzyka: konserwatywna / zbalansowana / oportunistyczna
+   - Horyzont czasowy: krótkoterminowy / średnioterminowy / długoterminowy
+   - Preferencje: łańcuchy, aktywa, ograniczenia lock-up
+   - Poziom doświadczenia: początkujący / średniozaawansowany / zaawansowany
+
+> Filtruje protokoły 
+
+   - Allow-lista: Pokazuje tylko zaudytowane, zweryfikowane protokoły
+   - Punktacja ryzyka: Oparta na TVL, audytach, czasie działania, incydentach
+   - Dopasowanie: Zgodne z Twoim zadeklarowanym profilem
+   - Wyklucza: Opcje w kwarantannie/wysokiego ryzyka automatycznie
+
+> Pokazuje opcje
+
+   - Opcja A: „Najlepsze dopasowanie" do Twojego profilu
+   - Opcja B: Alternatywa (inna równowaga ryzyko/zysk)
+   - Opcja C: Alternatywa (inne łańcuchy/protokoły)
+   - Każda z: Oczekiwane APY, koszty, ryzyka, kroki
+
+> Wyjaśnia dlaczego („Kody przyczyn")
+
+   - „Rekomendowane, ponieważ: [Twój cel] + [niskie ryzyko] + [wysoka płynność]"
+   - „Alternatywa, ponieważ: [wyższe APY] ale [okres lock-up]"
+   - „Unikaj, ponieważ: [niedawny incydent] / [niska płynność] / [wysoki koszt]"
+
+> Monitoruje i sugeruje dostosowania 
+
+   - „APY spadło o 2% → Rozważyć migrację?"
+   - „Nowy protokół pasuje do Twojego profilu → Przejrzeć?"
+   - „Ceny gazu niskie → Dobry moment na rebalans?"
+   - TY zatwierdzasz wszelkie zmiany (AI nie wykonuje)
+
+### Czego AGENT AI nie robi:
+
+import noLight from '@site/static/img/no.png';
+import noDark from '@site/static/img/no.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={noLight} className="light-only" style={{ width: '100%' }} />
+    <img src={noDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
+> Nie udziela porad finansowych
+
+   - Sugestie AI są INFORMACYJNE, nie są poradą inwestycyjną
+   - Jesteś odpowiedzialny za własne decyzje
+
+> Nie gwarantuje zwrotów
+
+   - Wszystkie zyski są zmienne i zależne od protokołów
+   - AI nie może przewidzieć przyszłych warunków rynkowych
+
+> Nie wykonuje transakcji
+
+   - AI przygotowuje intencje transakcyjne
+   - TY musisz podpisać każdą transakcję w swoim portfelu
+
+> Nie ma dostępu do Twoich środków 
+
+   - AI nie może przenosić Twoich pieniędzy
+   - Zachowany model non-custodial
+
+> Nie zastępuje należytej staranności
+
+   - Zawsze czytaj dokumentację protokołów, rozumiej ryzyka
+   - AI jest narzędziem pomocniczym, nie substytutem badań
+
+
+:::tip[TRANSPARENTNOŚĆ I WYJAŚNIALNOŚĆ:]
+- Każda rekomendacja pokazuje kody przyczyn „Dlaczego to?"
+- Możesz zobaczyć, które czynniki wpłynęły na sugestię
+- Możesz dostosować swój profil w każdej chwili (AI ponownie ocenia)
+- Pełna historia sugestii i Twoich działań (ścieżka audytu)
+:::
+
+## Dlaczego „wyłącznie informacyjne" ma znaczenie 
+
+### Aspekty prawne i regulacyjne
+
+| Gdyby AI było „doradcze" | Podejście OROKAI „informacyjne" |
+|----------------------|-----------------------------------|
+| Wymagałoby licencji doradcy inwestycyjnego (SEC, FCA, MAS...) | Oprogramowanie dostarczające dane i narzędzia |
+| Obowiązek powierniczy (działanie w najlepszym interesie klienta) | Użytkownik podejmuje własne decyzje |
+| Odpowiedzialność za straty („zła rada") | Zastrzeżenia: zmienne zwroty, odpowiedzialność użytkownika |
+| Obowiązkowe oceny odpowiedniości | Opcjonalny profil do personalizacji |
+| Obowiązek ciągłego monitorowania | Monitoring jako funkcja, nie obowiązek |
+| Szczegółowe raportowanie zgodności | Standardowe ToS oprogramowania i Polityka Prywatności |
+
+### Precedensy regulacyjne:
+
+- **Robinhood "Learn"**: Treści edukacyjne, nie porady → Nie wymaga licencji RIA  
+- **Alerty CoinGecko**: Powiadomienie „BTC spadł o 5%" → Informacyjne, nie porada  
+- **Wskaźniki TradingView**: Narzędzia analizy technicznej → Użytkownik interpretuje, nie porada  
+- **AI OROKAI**: Sugestie protokołów z uzasadnieniem → Użytkownik decyduje, nie porada
+
+## Zakres i ograniczenia
+
+### Brak porad inwestycyjnych
+Rekomendacje mają <mark>charakter informacyjny.</mark> Decyzje i autoryzacje pozostają po stronie użytkownika.
+
+### Brak gwarancji zwrotów/cen
+Zwroty i stawki są zmienne i zależą od protokołów i rynku; <mark>agent nie gwarantuje najlepszej ceny ani egzekucji.</mark>
+
+### Non-custodial
+<mark>Agent nie ma dostępu do kluczy</mark> i nie wykonuje transakcji; działa w modelu przygotuj-i-wyjaśnij.
+
+## Kontrole bezpieczeństwa („guardrails")
+
+### Allow-lista protokołów
+Allow-lista protokołów/mostów/DEX, limity ekspozycji na protokół i łańcuch.
+
+### Weryfikacje przed podpisem
+Lista kroków, koszty (gas/slippage/opłaty), <mark>wymagane uprawnienia smart kontraktów.</mark>
+
+### Wykrywanie anomalii
+Sygnały ryzyka (likwidacja, płynność, incydenty) → wstrzymaj i ostrzeż.
+
+### Odwołanie uprawnień
+Szybkie linki do odwołania/ograniczenia zatwierdzeń.
+
+### Zgodność
+Geo-restrykcje, sankcje, zasady partnerów (on/off-ramp, karty) po ich stronie; egzekwujemy ograniczenia w UI.
+
+## Transparentność i wyjaśnialność
+
+### Kody przyczyn
+Każda propozycja ma kody przyczyn, listę założeń i czynniki ryzyka.
+
+### Log decyzji
+Co, kiedy i na jakiej podstawie zostało zasugerowane – dostępne dla użytkowników.
+
+### Kontrola użytkownika
+<mark>Użytkownicy mogą wyłączyć personalizację</mark> lub zresetować swój profil.
+
+:::warning[Ważne zastrzeżenie]
+
+**Agent AI OROKAI** dostarcza informacje i propozycje zgodne z zadeklarowanym profilem użytkownika. To nie jest porada inwestycyjna. Wszystkie operacje wymagają świadomego podpisu użytkownika w jego portfelu. Zwroty są zmienne i niegwarantowane.
+
+:::

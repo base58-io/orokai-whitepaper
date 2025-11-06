@@ -1,49 +1,71 @@
 ---
-sidebar_label: Protocol and Strategy
+sidebar_label: Protokoły i strategie
 sidebar_position: 3
 custom_edit_url: null
 ---
 
-# Protocol and Strategy Recommendations (Tilting, Diversification)
+# Rekomendacje protokołów i strategii (tilting, dywersyfikacja)
 
-## Recommendation Logic (High Level)
+## Logika rekomendacji (wysoki poziom)
 
-### Protocol filtering
-Filter by allow-list of protocols (staking/LST, lending, DEX), according to <mark>quality criteria</mark> (audit, liquidity, incident history).
+### Filtrowanie protokołów
+Filtrowanie według allow-listy protokołów (staking/LST, lending, DEX), zgodnie z <mark>kryteriami jakości</mark> (audyt, płynność, historia incydentów).
 
-### Profile matching
-Map goals/risk to strategy classes (e.g., LST staking vs. variable pools).
+### Dopasowanie do profilu
+Mapowanie celów/ryzyka na klasy strategii (np. stakowanie LST vs. pule zmienne).
 
-### Tilting/diversification
-Propose allocation ranges (brackets) across multiple strategies/chains instead of single-bet, with per-protocol limits.
+### Tilting/dywersyfikacja
+Propozycje zakresów alokacji (widełki) na wiele strategii/łańcuchów zamiast pojedynczego zakładu, z limitami na protokół.
 
-### Costs and operations
-Estimate number of steps (approve, swap, bridge, stake) and costs (gas, slippage, DEX fees).
+### Koszty i operacje
+Oszacowanie liczby kroków (approve, swap, bridge, stake) i kosztów (gas, slippage, opłaty DEX).
 
-## Recommendation Presentation in UI
+### Dashboard wyjaśnień: Jak AI ocenił każdą opcję
 
-### Options list
-"<mark>Proposals</mark> matching your profile" with risk tags and estimated setup cost.
+Kliknij „Dlaczego to?" przy każdej rekomendacji, aby zobaczyć szczegółową punktację.
 
-### Explainability
-"Why am I seeing this?" – 2–3 key reason codes (e.g., "conservative profile," "short horizon," "USDT preference").
+:::tip[ROZBICIE PUNKTACJI]
 
-### Confidence and alternatives
-Confidence/uncertainty range + 1–2 alternatives with similar parameters.
+> ZGODNOŚĆ Z CELAMI           25%      
 
-### No "best execution"
-<mark>Agent does not guarantee best price</mark>; we display cost sources and risks, not a final verdict.
+> ZGODNOŚĆ Z RYZYKIEM         20%     
 
-## User Control
+> DYWERSYFIKACJA              15%       
 
-### Edit allocations
-Sliders, exclude strategies, set max gas cost and slippage limits.
+> PŁYNNOŚĆ                    15%       
 
-### "Prepare Transactions" button
-Generates a set of operations for independent signature.
+> EFEKTYWNOŚĆ KOSZTOWA        10%       
 
-:::warning[User decision required]
+> DOPASOWANIE DOŚWIADCZENIA   10%       
 
-Recommendations are informational suggestions, not instructions. Every allocation decision and transaction signature remains entirely under user control.
+> POTENCJAŁ ZYSKU             5%  
+
+:::     
+
+## Prezentacja rekomendacji w UI
+
+### Lista opcji
+"<mark>Propozycje</mark> dopasowane do Twojego profilu" z tagami ryzyka i szacowanym kosztem uruchomienia.
+
+### Wyjaśnienia
+„Dlaczego to widzę?" – 2–3 kluczowe kody przyczyn (np. „konserwatywny profil", „krótki horyzont", „preferencja USDT").
+
+### Pewność i alternatywy
+Zakres pewności/niepewności + 1–2 alternatywy o zbliżonych parametrach.
+
+### Brak „najlepszej egzekucji"
+<mark>Agent nie gwarantuje najlepszej ceny</mark>; pokazujemy źródła kosztów i ryzyk, a nie ostateczny werdykt.
+
+## Kontrola użytkownika
+
+### Edycja alokacji
+Suwaki, wykluczanie strategii, ustawianie maksymalnego kosztu gazu i limitów slippage.
+
+### Przycisk „Przygotuj transakcje"
+Generuje zestaw operacji do samodzielnego podpisu.
+
+:::warning[Wymagana decyzja użytkownika]
+
+Rekomendacje są sugestiami informacyjnymi, nie instrukcjami. Każda decyzja o alokacji i podpis transakcji pozostają całkowicie pod kontrolą użytkownika.
 
 :::

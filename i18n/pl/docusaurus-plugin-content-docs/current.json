@@ -28,11 +28,11 @@
     "description": "The generated-index page description for category 'Solution' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AI Agent": {
-    "message": "AI Agent",
+    "message": "Agent AI",
     "description": "The label for category 'AI Agent' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AI Agent.link.generated-index.description": {
-    "message": "AI Agent OROKAI is a module that supports users in understanding options and organizing decisions.",
+    "message": "Agent AI OROKAI to moduł wspierający użytkowników w zrozumieniu opcji i organizowaniu decyzji.",
     "description": "The generated-index page description for category 'AI Agent' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.How it works": {

@@ -10,6 +10,17 @@ custom_edit_url: null
 
 ### What AI AGENT does:
 
+import yesLight from '@site/static/img/yes.png';
+import yesDark from '@site/static/img/yes.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={yesLight} className="light-only" style={{ width: '100%' }} />
+    <img src={yesDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
 > Analyzes your profile
 
    - Goals: capital preservation / passive income / growth
@@ -46,6 +57,17 @@ custom_edit_url: null
    -  YOU approve any changes (AI doesn't execute)
 
 ### What AI AGENT does not do:
+
+import noLight from '@site/static/img/no.png';
+import noDark from '@site/static/img/no.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={noLight} className="light-only" style={{ width: '100%' }} />
+    <img src={noDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
 
 > Does not provide financial advice
 

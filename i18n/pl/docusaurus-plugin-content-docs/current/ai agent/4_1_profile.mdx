@@ -1,0 +1,261 @@
+---
+sidebar_label: Profil użytkownika
+sidebar_position: 2
+custom_edit_url: null
+---
+
+# Profil użytkownika (cele, preferencje, tolerancja ryzyka)
+
+## Zakres profilu (deklarowany przez użytkownika)
+
+### Cele
+Ochrona kapitału / pasywny dochód / ekspozycja na LST/LRT / dywersyfikacja multi-chain.
+
+### Horyzont czasowy i płynność
+Brak lock-up / dopuszczalny lock-up / elastyczne wyjście.
+
+### Preferencje ryzyka
+Konserwatywne / zbalansowane / oportunistyczne (z limitami).
+
+### Poziom doświadczenia
+Spoza web3 / początkujący / zaawansowany (wpływa na głębokość wyjaśnień).
+
+### Preferencje operacyjne
+Waluta rozliczeniowa (np. USDT), koszyk łańcuchów/protokołów, maksymalna liczba kroków, ograniczenia opłat.
+
+## Jak działa budowanie profilu: krok po kroku
+
+Rekomendacje Agenta AI są tak dobre, jak dane profilowe, które otrzymuje. Oto jak OROKAI buduje kompleksowy profil użytkownika **zachowując prostotę**:
+
+> Proces budowania profilu (5-10 minut)
+
+import stepsLight from '@site/static/img/steps.png';
+import stepsDark from '@site/static/img/steps.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={stepsLight} className="light-only" style={{ width: '100%' }} />
+    <img src={stepsDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
+### KROK 1: Cele
+
+Co chcesz osiągnąć dzięki DeFi?
+```
+PRZYKŁADY:
+[   ] Ochrona kapitału
+     → Skupienie na stabilnych protokołach, minimalizacja ryzyka
+     → Przykład: Pożyczanie stablecoinów do AAVE
+
+[   ] Pasywny dochód
+     → Regularne nagrody, przewidywalne zyski 
+     → Przykład: Stakowanie ETH przez Lido
+
+[   ] Wzrost kapitału
+     → Wyższe cele APY, akceptacja większej zmienności
+     → Przykład: Dostarczanie płynności do pul DEX
+
+[   ] Dywersyfikacja
+     → Rozłożenie na wiele łańcuchów/protokołów
+     → Przykład: 40% staking, 30% lending, 30% LP
+
+[   ] Poznanie DeFi
+     → Tryb nauki, mniejsze kwoty, doświadczenie z przewodnikiem
+     → Przykład: Start z $100-500 na 2-3 protokołach
+```
+
+### KROK 2: Tolerancja ryzyka
+
+Z jakim poziomem ryzyka czujesz się komfortowo?
+``` 
+PRZYKŁADY:
+  Konserwatywne    Zbalansowane      Oportunistyczne
+  ◀────────────────●──────────────────────▶
+  Niskie ryzyko        Średnie              Wyższe ryzyko
+
+Twoja pozycja: Zbalansowane
+
+Co to oznacza:
+ ✓ Gotowość zaakceptować pewną zmienność dla lepszych zwrotów
+ ✓ Mix protokołów uznanych + nowszych (zweryfikowanych)
+ ✓ Pewne okresy lock-up akceptowalne (< 30 dni)
+ ✓ Rozumienie, że APY może fluktuować 10-20% 
+```
+
+### KROK 3: Horyzont czasowy
+
+Jak długo planujesz utrzymywać środki w protokołach?
+``` 
+PRZYKŁADY:
+[   ] Krótkoterminowo (< 3 miesiące)
+    → Potrzebujesz elastyczności, brak lock-upów
+    → Możesz priorytetyzować płynność nad maksymalnym APY
+
+[●] Średnioterminowo (3-12 miesięcy)
+    → Możesz zaakceptować pewien lock-up dla lepszych stawek
+    → Zbalansowane podejście
+
+[   ] Długoterminowo (1+ lat)
+    → Maksymalizacja składania, komfort z lock-upami
+    → Niższa częstotliwość transakcji = niższe koszty gazu
+```
+
+### KROK 4: Preferencje płynności
+Jak ważne jest dla Ciebie wypłacenie środków w dowolnym momencie?
+``` 
+PRZYKŁADY:
+[   ] Musi być natychmiastowe (tylko tokeny płynne)
+    → stETH, rETH, aTokens - można wymienić w każdej chwili
+    → Możesz zaakceptować nieco niższe APY dla elastyczności
+
+[●] Elastyczne (pewna kolejka/opóźnienie akceptowalne)
+    → Możesz poczekać 1-7 dni na unstaking, jeśli potrzeba
+    → Otwiera więcej opcji protokołów
+
+[   ] Zaangażowane (lock-up dla wyższych zwrotów)
+    → Gotowość zablokowania na 30-90 dni dla lepszego APY
+    → Przykład: Lending o stałym terminie, staking governance
+```
+
+### KROK 5: Preferencje łańcuchów i aktywów 
+Które blockchainy i aktywa preferujesz?
+``` 
+PRZYKŁADY:
+Preferowane łańcuchy: (Wybierz 1-3)
+[✓] Ethereum      [✓] Polygon      [   ] BNB Chain      [   ] Solana        [   ] Base         [   ] Cosmos
+
+Preferowane aktywa: (Wybierz 1-5)
+[✓] ETH           [✓] USDC         [✓] USDT      [   ] BTC (wrapped) [   ] MATIC        [   ] SOL
+```
+
+### KROK 6: Ograniczenia operacyjne
+Jakieś preferencje lub limity operacyjne?
+``` 
+PRZYKŁADY:
+Maksymalny koszt gazu na transakcję:
+[   ] Bez limitu   [●] $20   [   ] $10   [   ] Własny: $_____
+
+Maksymalna liczba kroków w jednym przepływie:
+[   ] Bez limitu   [●] 5 kroków   [   ] 3 kroki   [   ] Tylko 1 krok 
+
+Preferencje rozliczania nagród:
+[●] Auto-konwersja do USDT (gdy opłacalne)
+[   ] Zachowaj w natywnych tokenach (przekonwertuję ręcznie)
+[   ] Automatyczne re-stakowanie (składanie)
+
+Limity ekspozycji (na protokół):
+[   ] Bez limitu   [●] Maks. 50% w jednym protokole   [   ] Maks. 30%
+```
+
+### KROK 7: Poziom doświadczenia
+Jak opisałbyś swoje doświadczenie z DeFi?
+``` 
+PRZYKŁADY:
+
+[●] Nowy w DeFi
+    → UI pokaże więcej wyjaśnień i ostrzeżeń
+    → Rekomendacje skłaniają się ku konserwatywnym
+    → Przewodnik krok po kroku włączony
+
+[   ] Pewne doświadczenie (używałem 1-3 protokołów)
+    → Zbalansowane wyjaśnienia i swoboda
+    → Rekomendacje zawierają opcje średniozaawansowane
+
+[   ] Zaawansowany (używałem 5+ protokołów, rozumiem ryzyka)
+    → Minimalne prowadzenie za rękę, zaawansowane funkcje włączone
+    → Rekomendacje zawierają najnowsze protokoły
+```
+
+:::tip[UWAGA] 
+
+OROKAI również monitoruje Twoje zachowanie:
+   • Częstotliwość transakcji → dostosowanie rekomendacji złożoności
+   • Typy używanych protokołów → rozszerzenie/zawężenie sugestii
+   • Reakcja na ostrzeżenia o ryzyku → udoskonalenie oceny ryzyka
+
+:::
+
+### Dynamiczna adaptacja profilu
+
+Twój profil nie jest statyczny. AI uczy się z Twojego zachowania i warunków rynkowych:
+
+> **SYGNAŁY ZACHOWANIA UŻYTKOWNIKA:**
+
+- Konsekwentnie ignorujesz opcje „wyższego APY"
+
+   → AI: Przesunięcie rekomendacji w stronę stabilności/bezpieczeństwa
+
+   → Aktualizacja: Tolerancja ryzyka obniżona do „Konserwatywne"
+
+- Ukończyłeś 10+ transakcji bez problemów
+
+   → AI: Włączenie bardziej zaawansowanych funkcji
+
+   → Aktualizacja: Poziom doświadczenia → „Średniozaawansowany"
+
+- Zawsze wybierasz Ethereum mimo wyższego gazu
+
+   → AI: Depriorytetyzacja innych łańcuchów w rekomendacjach
+
+   → Aktualizacja: Preferencja łańcucha → „ETH silnie preferowane"
+
+- Ręcznie konwertujesz nagrody na USDT za każdym razem
+
+   → AI: Sugestia włączenia auto-konwersji
+
+   → Aktualizacja: Preferencja rozliczania → „Auto-USDT"
+
+> **SYGNAŁY WARUNKÓW RYNKOWYCH:**
+
+- Gas Ethereum skacze do >$50 za transakcję
+
+   → AI: Czasowe zwiększenie Polygon/Base w rekomendacjach
+
+   → Wiadomość: "Rozważ Polygon: te same protokoły, 95% niższy gas"
+
+- Protokół X ma incydent bezpieczeństwa
+
+   → AI: Natychmiastowe usunięcie z rekomendacji
+
+   → Wiadomość: "Protokół X w kwarantannie z powodu incydentu"
+
+- Nowy protokół przechodzi 90-dniowy okres weryfikacji
+
+   → AI: Dodanie do sugestii, jeśli pasuje do profilu
+
+   → Wiadomość: "Nowa opcja dostępna: Protokół Y"
+
+- APY Twojego zastakowanego protokołu spada o 30%
+
+   → AI: Powiadomienie + sugestia alternatyw
+
+   → Wiadomość: "APY spadło do 2,2%. Migrować do Protokołu Z (3,1%)?"
+
+:::warning[WAŻNE]
+
+Wszystkie adaptacje są SUGESTIAMI. Możesz zaakceptować, zignorować lub ręcznie nadpisać w każdej chwili. AI nie może wykonać zmian bez Twojego podpisu.
+
+:::
+
+## Mechanika profilu
+
+### Konfiguracja deklaratywna
+Konfiguracja oparta na UI (pola wyboru, suwaki, limity).
+
+### Polityki bezpieczeństwa
+Twarde limity ekspozycji na protokół/łańcuch (np. allow-lista), zasada least-privilege dla uprawnień smart kontraktów.
+
+### Prywatność
+Dane profilu są używane do personalizacji i nie upoważniają Agenta do wykonywania transakcji; przetwarzanie zgodnie z Polityką Prywatności.
+
+## Wynik modułu
+
+**„Karta profilu"** wyświetlająca: cele → poziom ryzyka → preferowane łańcuchy → ograniczenia → waluta rozliczeniowa.
+
+:::tip[Kontrola użytkownika]
+
+Profil służy wyłącznie jako dane wejściowe dla rekomendacji – Agent nigdy nie działa autonomicznie, a wszystkie transakcje wymagają wyraźnego podpisu użytkownika.
+
+:::

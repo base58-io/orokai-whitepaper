@@ -1,8 +1,8 @@
 {
-  "label": "AI Agent",
+  "label": "AIエージェント",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "AI Agent OROKAI is a module that supports users in understanding options and organizing decisions."
+    "description": "AI Agent OROKAIは、選択肢の理解と意思決定の整理においてユーザーをサポートするモジュールです。"
   }
 }

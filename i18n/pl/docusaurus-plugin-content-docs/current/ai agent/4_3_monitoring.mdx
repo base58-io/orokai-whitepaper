@@ -1,0 +1,184 @@
+---
+sidebar_label: Monitoring i adaptacja
+sidebar_position: 4
+custom_edit_url: null
+---
+
+# Monitoring i adaptacja (uczenie się z danych użytkownika)
+
+## Monitorowane sygnały (przykłady)
+
+### Status pozycji
+Stan on-chain, statusy claimów, odchylenia od docelowych alokacji, koszty utrzymania pozycji.
+
+### Zmiany protokołów
+Parametry nagród/APR, limity, ostrzeżenia, wersje kontraktów.
+
+### Ryzyko operacyjne
+Alerty mostów/łańcuchów, anomalie DEX (np. płynność, trasy wrażliwe na MEV).
+
+### Sygnały monitoringu: Co obserwuje AI
+Monitorowane sygnały i progi alertów
+
+> KATEGORIA: WYDAJNOŚĆ ZYSKÓW
+
+| Sygnał | Próg | Typ alertu | Pilność |
+|--------|------|------------|---------|
+| Spadek APY (Twój protokół) | >10% | Ostrzeżenie | Średnia |
+| Spadek APY (Twój protokół) | >25% | Krytyczne | Wysoka |
+| Przewaga APY alternatywy | >0,5% | Okazja | Niska |
+| Zatrzymanie naliczania nagród | 24h | Błąd | Wysoka |
+| Dostępne nagrody do odbioru | >$50 | Przypomnienie | Niska |
+
+> KATEGORIA: RYZYKO I BEZPIECZEŃSTWO
+
+| Sygnał | Próg | Typ alertu | Pilność |
+|--------|------|------------|---------|
+| Incydent bezpieczeństwa protokołu | Jakikolwiek | Krytyczne | Natychmiastowa |
+| Obniżenie oceny audytu | Jakikolwiek | Ostrzeżenie | Wysoka |
+| Spadek TVL | >30% w 7 dni | Ostrzeżenie | Średnia |
+| Aktualizacja smart kontraktu | Jakikolwiek | Info | Niska |
+| Exploit w podobnym protokole | Jakikolwiek | Ostrzeżenie | Średnia |
+| Twoja pozycja blisko likwidacji | LTV >75% | Krytyczne | Natychmiastowa |
+
+> KATEGORIA: OPTYMALIZACJA KOSZTÓW
+
+| Sygnał | Próg | Typ alertu | Pilność |
+|--------|------|------------|---------|
+| Cena gazu poniżej średniej | 30% | Okazja | Niska |
+| Skok ceny gazu | >2x śr. | Ostrzeżenie | Średnia |
+| Zatory mostu/wysokie opłaty | >$50 | Ostrzeżenie | Niska |
+| Zwiększony slippage DEX | >1% | Ostrzeżenie | Średnia |
+
+> KATEGORIA: WARUNKI RYNKOWE
+
+| Sygnał | Próg | Typ alertu | Pilność |
+|--------|------|------------|---------|
+| Zmiana ceny ETH | ±10% w 24h | Info | Niska |
+| Depeg stablecoina | >1% | Krytyczne | Natychmiastowa |
+| Depeg LST/LRT | >2% | Ostrzeżenie | Wysoka |
+| Okres wysokiej zmienności | Skok VIX | Info | Niska |
+
+> KATEGORIA: ZDROWIE PORTFELA
+
+| Sygnał | Próg | Typ alertu | Pilność |
+|--------|------|------------|---------|
+| Odchylenie alokacji od celu | >15% | Rebalans | Niska |
+| Ekspozycja na jeden protokół | >60% | Ostrzeżenie | Średnia |
+| Bezczynne środki (brak zysku) | >$1000 | Okazja | Niska |
+| Wygasające wkrótce zatwierdzenie | 30 dni | Przypomnienie | Niska |
+| Kończący się okres lock-up | 7 dni | Przypomnienie | Niska |
+
+> KATEGORIA: NOWE MOŻLIWOŚCI
+
+| Sygnał | Próg | Typ alertu | Pilność |
+|--------|------|------------|---------|
+| Nowy protokół przeszedł weryfikację | Jakikolwiek | Okazja | Niska |
+| Dostępna strategia wyższych zysków | >0,7% przewagi | Okazja | Niska |
+| Uruchomiony program motywacyjny | Pasuje do Ciebie | Okazja | Średnia |
+| Lepsza opcja płynności | -50% slipp. | Okazja | Niska |
+
+KONTROLE UŻYTKOWNIKA:
+- Dostosuj progi dla każdego typu sygnału
+- Wyłącz określone typy alertów
+- Ustaw godziny ciszy (brak powiadomień 22:00-8:00)
+- Wybierz metodę dostarczania (w aplikacji / email / push / brak)
+- Wycisz alerty dla określonych pozycji (7/30/90 dni)
+
+### Adaptacja: Jak AI uczy się od Ciebie
+PRZYKŁADY UCZENIA BEHAWIORALNEGO AI
+```
+SCENARIUSZ 1: Użytkownik konsekwentnie ignoruje sugestie wysokiego ryzyka
+─────────────────────────────────────────────────────────────────────
+AI obserwuje:
+- 5 kolejnych alertów „wysokiego APY" odrzuconych
+- Użytkownik akceptuje tylko sugestie z oceną ryzyka <60
+
+AI adaptuje:
+✓ Obniżenie tolerancji ryzyka w profilu: Zbalansowane → Konserwatywne
+✓ Przestań pokazywać protokoły z ryzykiem >65
+✓ Zwiększ wagę czynnika „stabilności" w punktacji
+✓ Powiadom użytkownika: „Dostosowaliśmy się, aby pokazywać bardziej konserwatywne opcje"
+```
+```
+SCENARIUSZ 2: Użytkownik zawsze czeka na niższy gas
+─────────────────────────────────────────────────────────────────────
+AI obserwuje:
+- Użytkownik odłożył 4 alerty migracji
+- Wszystkie wykonane gdy gas <15 gwei
+
+AI adaptuje:
+✓ Podnieś próg wyzwalania gazu: Alert tylko gdy <15 gwei (vs <25)
+✓ Dodaj sugestię funkcji „Ustaw alert gazu"
+✓ Oszacuj dłuższe czasy oczekiwania w rekomendacjach
+✓ Priorytetyzuj oszczędności gazu nad natychmiastową okazją
+```
+```
+SCENARIUSZ 3: Użytkownik preferuje Ethereum mimo wyższych kosztów
+─────────────────────────────────────────────────────────────────────
+AI obserwuje:
+- Użytkownik odrzucił 3 sugestie Polygon (niższy gas)
+- Zawsze wybiera alternatywy Ethereum
+
+AI adaptuje:
+✓ Aktualizacja preferencji łańcucha: Ethereum = „Silnie preferowane"
+✓ Depriorytetyzacja Polygon w rekomendacjach
+✓ Sugeruj Polygon tylko jeśli przewaga >2% APY (vs 0,5%)
+✓ Zakładaj, że użytkownik ceni bezpieczeństwo Ethereum nad oszczędności kosztów
+```
+```
+SCENARIUSZ 4: Użytkownik uwielbia funkcje auto-składania
+─────────────────────────────────────────────────────────────────────
+AI obserwuje:
+- Użytkownik ręcznie re-stakował nagrody 10+ razy
+- Zawsze włącza „auto-składanie" gdy dostępne
+
+AI adaptuje:
+✓ Priorytetyzuj protokoły z natywnym auto-składaniem
+✓ Sugeruj konfigurację automatycznych przepływów claim→re-stake
+✓ Oblicz i podkreśl składane APY (vs. proste APY)
+✓ Rekomenduj vaults (styl Yearn) z auto-składaniem
+```
+```
+SCENARIUSZ 5: Użytkownik szybko reaguje na krytyczne alerty
+─────────────────────────────────────────────────────────────────────
+AI obserwuje:
+- Użytkownik działał w ciągu 30 min po 2 ostrzeżeniach bezpieczeństwa
+- Średni czas reakcji na okazje: 3 dni
+
+AI adaptuje:
+✓ Oznacz użytkownika jako „Responsywny na krytyczne"
+✓ Włącz powiadomienia push dla alertów bezpieczeństwa (nie dla okazji)
+✓ Używaj pilnego języka tylko dla prawdziwie krytycznych zdarzeń
+✓ Grupuj niepilne sugestie w tygodniowy digest
+```
+:::warning[WAŻNE ZASADY:]
+✓ AI uczy się OD ciebie, nie ZA ciebie (zachowujesz kontrolę)
+
+✓ Wszystkie adaptacje są transparentne (możesz zobaczyć co się zmieniło)
+
+✓ Możesz nadpisać nauczone preferencje AI w każdej chwili
+
+✓ Żadna akcja nie jest wykonywana bez Twojego podpisu
+:::
+
+## Adaptacja (zasady)
+
+### Propozycje rebalansowania/migracji
+Agent <mark>informuje</mark> o istotnych zmianach (np. nagrody spadają poniżej progu, zwiększone ryzyko protokołu) i przygotowuje alternatywy.
+
+### Tryby powiadomień
+W aplikacji + opcjonalne email/push (gdzie dostępne).
+
+### Human-in-the-loop
+Żadne zmiany nie zachodzą automatycznie; użytkownik akceptuje i podpisuje transakcje.
+
+## Uwaga dotycząca danych i prywatności
+
+Uczenie obejmuje metryki użycia i wybory użytkownika; <mark>nie obejmuje danych wrażliwych poza niezbędnym zakresem.</mark> Dane mogą być agregowane/anonimizowane w celu poprawy jakości rekomendacji; polityka zgodna z dokumentem Polityki Prywatności.
+
+:::tip[Transparentne uczenie]
+
+Agent AI uczy się z interakcji użytkownika, aby zapewniać lepsze sugestie z czasem, ale nigdy nie działa autonomicznie – wszystkie decyzje wymagają wyraźnej zgody użytkownika.
+
+:::

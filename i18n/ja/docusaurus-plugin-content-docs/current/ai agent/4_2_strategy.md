@@ -1,49 +1,78 @@
 ---
-sidebar_label: Protocol and Strategy
+sidebar_label: プロトコルと戦略
 sidebar_position: 3
 custom_edit_url: null
 ---
 
-# Protocol and Strategy Recommendations (Tilting, Diversification)
+# プロトコルと戦略の推奨（傾斜、分散化）
 
-## Recommendation Logic (High Level)
+## 推奨ロジック（ハイレベル）
 
-### Protocol filtering
-Filter by allow-list of protocols (staking/LST, lending, DEX), according to <mark>quality criteria</mark> (audit, liquidity, incident history).
+### プロトコルフィルタリング
+<mark>品質基準</mark>（監査、流動性、インシデント履歴）に従って、プロトコルのホワイトリスト（ステーキング/LST、レンディング、DEX）でフィルタリング。
 
-### Profile matching
-Map goals/risk to strategy classes (e.g., LST staking vs. variable pools).
+### プロファイルマッチング
+目標/リスクを戦略クラスにマッピング（例：LSTステーキング vs. 変動プール）。
 
-### Tilting/diversification
-Propose allocation ranges (brackets) across multiple strategies/chains instead of single-bet, with per-protocol limits.
+### 傾斜/分散化
+シングルベットの代わりに、プロトコルごとの制限付きで、複数の戦略/チェーンにわたる配分範囲（ブラケット）を提案。
 
-### Costs and operations
-Estimate number of steps (approve, swap, bridge, stake) and costs (gas, slippage, DEX fees).
+### コストと操作
+ステップ数（承認、スワップ、ブリッジ、ステーク）とコスト（ガス、スリッページ、DEX手数料）を見積もり。
 
-## Recommendation Presentation in UI
+### 説明可能性ダッシュボード：AIが各オプションをどのようにスコアリングしたか
 
-### Options list
-"<mark>Proposals</mark> matching your profile" with risk tags and estimated setup cost.
+任意の推奨で「なぜこれ？」をクリックして、詳細なスコアリングを確認します。
 
-### Explainability
-"Why am I seeing this?" – 2–3 key reason codes (e.g., "conservative profile," "short horizon," "USDT preference").
+:::tip[スコアリング内訳]
 
-### Confidence and alternatives
-Confidence/uncertainty range + 1–2 alternatives with similar parameters.
+> 目標の整合性           25%      
 
-### No "best execution"
-<mark>Agent does not guarantee best price</mark>; we display cost sources and risks, not a final verdict.
 
-## User Control
+> リスクの整合性         20%     
 
-### Edit allocations
-Sliders, exclude strategies, set max gas cost and slippage limits.
 
-### "Prepare Transactions" button
-Generates a set of operations for independent signature.
 
-:::warning[User decision required]
+> 分散化                 15%       
 
-Recommendations are informational suggestions, not instructions. Every allocation decision and transaction signature remains entirely under user control.
+
+> 流動性                 15%       
+
+
+> コスト効率             10%       
+
+
+> 経験マッチ             10%       
+
+
+> 利回りポテンシャル     5%  
+
+:::     
+
+## UIでの推奨提示
+
+### オプションリスト
+リスクタグと推定セットアップコスト付きの「あなたのプロファイルに一致する<mark>提案</mark>」。
+
+### 説明可能性
+「なぜこれを見ているのか？」 – 2～3の主要な理由コード（例：「保守的なプロファイル」、「短期ホライゾン」、「USDT好み」）。
+
+### 信頼性と代替案
+信頼性/不確実性の範囲 + 類似パラメータを持つ1～2の代替案。
+
+### 「ベストエグゼキューション」なし
+<mark>エージェントは最良価格を保証しません</mark>。コストの源泉とリスクを表示しますが、最終的な判断は示しません。
+
+## ユーザーコントロール
+
+### 配分の編集
+スライダー、戦略の除外、最大ガスコストとスリッページ制限の設定。
+
+### 「取引を準備」ボタン
+独立した署名のための操作セットを生成。
+
+:::warning[ユーザー決定が必要]
+
+推奨は情報提供の提案であり、指示ではありません。すべての配分決定と取引署名は完全にユーザーの管理下に留まります。
 
 :::
