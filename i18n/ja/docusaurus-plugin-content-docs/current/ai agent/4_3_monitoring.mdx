@@ -17,6 +17,20 @@ custom_edit_url: null
 ### 運用リスク
 ブリッジ/チェーンアラート、DEX異常（例：流動性、MEV影響を受けやすいルート）。
 
+
+### 継続的なモニタリングと適応ループ
+
+import loopLight from '@site/static/img/loop.png';
+import loopDark from '@site/static/img/loop.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={loopLight} className="light-only" style={{ width: '100%' }} />
+    <img src={loopDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
 ### モニタリングシグナル：AIが監視するもの
 モニタリングされるシグナルとアラート閾値
 
