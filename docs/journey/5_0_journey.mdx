@@ -12,6 +12,40 @@ Crypto exchanges are executed by external DEX from the list of approved integrat
 
 ## Frictionless Onboarding
 
+### Time Comparison
+
+| Milestone | Traditional DeFi | OROKAI | Time Saved |
+|-----------|------------------|--------|------------|
+| **From signup to first funds** | 2-5 days (CEX KYC) | 5-15 minutes (card purchase) | **99%** |
+| **Research & choose protocol** | 4-8 hours | 10-15 minutes (AI-guided) | **95%** |
+| **First allocation complete** | 30-60 minutes (manual steps) | 10-15 minutes (orchestrated) | **75%** |
+| **Monthly management overhead** | 2-4 hours (manual checks) | 10-20 minutes (dashboard + alerts) | **90%** |
+| **Migration between protocols** | 1-2 hours (+ research) | 15-30 minutes (one-click flow) | **80%** |
+
+**Total time saved in first month:** ~15-25 hours → ~2-3 hours  
+**Efficiency gain:** **~90% reduction in time/effort**
+
+:::warning[IMPORTANT] 
+Time savings don't mean OROKAI controls your funds.  
+You still sign every transaction. We just prepare them better.
+:::
+
+## The Complete User Journey
+
+### Stage 1: Entry
+
+**Goal:** Get user from "I want to try DeFi" to "I have funds ready"
+
+**Traditional DeFi Path:**
+1. Research wallets (30-60 min)
+2. Install wallet, save seed phrase (anxiety: "what if I lose it?")
+3. Register on CEX, wait for KYC (1-3 days)
+4. Buy crypto on CEX
+5. Learn how to withdraw to wallet
+6. Pay withdrawal fee + wait for confirmations
+
+**Total time:** 2-5 days | Steps: 15+ | Stress level: High
+
 import StartLight from '@site/static/img/start_light.svg';
 import StartDark from '@site/static/img/start_dark.svg';
 
@@ -21,18 +55,19 @@ import StartDark from '@site/static/img/start_dark.svg';
     <StartDark className="dark-only" />
   </div>
 <div>
-   
-  ### Getting started
+#### OROKAI Path:
+> Sign up (email/social)
 
-  User selects country/currency and proceeds to on-ramp with a licensed provider. At this step, KYC/AML is handled by the partner (if required in the jurisdiction).
+> Zero-setup wallet created (keys on YOUR device)
 
-  ### "Zero-setup wallet"
+> Buy crypto with card (via licensed partner)
 
-  Wallet is created on the user's side (e.g., smart wallet/MPC); <mark>OROKAI does not store keys.</mark> Users can export keys and transfer assets at any time.
+> Funds arrive in YOUR wallet
 
-  ### Cost preview
+**Total time:** 5-15 minutes;
+Steps: 4;
+Stress level: Low
 
-    UI displays estimated fees (provider/on-ramp, network/gas) before authorization.
   </div>
 </div>
 
@@ -41,4 +76,160 @@ import StartDark from '@site/static/img/start_dark.svg';
   "Zero-setup" does not mean custody; it's a UX abstraction over a wallet operating in the self-custody model.
   :::
 
+### Stage 2: Education & Profile
 
+**Goal:** Help user understand options without information overload
+
+**Traditional DeFi Path:**
+1. Research protocols (Reddit, YouTube, Discord) - 4-8 hours
+2. Try to understand: APY, TVL, audits, risks
+3. Comparison paralysis ("Which one is best?")
+4. Pick based on incomplete information or FOMO
+
+**Result:** Often suboptimal choice or no choice at all     
+
+#### OROKAI Path:            
+
+> Quick profile setup (5-10 min): Goals, risk, horizon
+
+> AI shows 3 options matched to YOUR Profile
+
+> Clear explanations: "Why this?" reason-codes
+
+> Compare side-by-side (costs, risks, steps)
+
+**Result:** Informed decision in 10-15 minutes 
+
+### Stage 3: First Allocation
+
+**Goal:** Deploy funds into chosen strategy safely
+
+**Traditional DeFi Path:**
+1. Go to protocol website (verify URL - phishing risk)
+2. Connect wallet (hope it's the real site)
+3. Approve contract (often "unlimited" - scary)
+4. Wait, sign, pay gas (surprise cost)
+5. Stake/deposit (another tx, more gas)
+6. Wait for confirmation, check if it worked
+7. Realize you need to manually track rewards
+
+**Result:** 5-7 separate transactions | Each with hidden gas cost | 30-60 minutes
+
+#### OROKAI Path:
+
+> Review prepared transaction flow (all steps visible upfront)
+
+> See total costs BEFORE signing anything
+
+> Sign steps in YOUR wallet (we prepare, you authorize)
+
+> Track automatically in unified dashboard
+
+**Result:** Same transactions, but orchestrated & transparent | 10-15 minutes
+
+**Key Difference:** Cost transparency upfront | You still sign everything
+
+### Stage 4: Ongoing Management
+
+**Goal:** Monitor performance, claim rewards, adapt to changes
+
+**Traditional DeFi Path:**
+1. Manually check each protocol website for rewards
+2. Claim rewards (separate tx + gas each time)
+3. Swap rewards to stablecoin (if desired) - more txs
+4. Monitor APY changes manually
+5. Research alternatives when APY drops
+6. Miss opportunities due to time/effort required
+
+**Result:** Suboptimal returns | High overhead (2-4 hours/month)
+
+#### OROKAI Path:
+
+> Unified dashboard shows all positions
+
+> Optional auto-claim + convert to USDT (you authorize once)
+
+> AI monitors APY changes, suggests adjustments
+
+> Notifications for opportunities (low gas, better rates)
+
+> One-click migration flows (you review & sign)
+
+**Result:** Optimized returns | Minimal time (10-20 min/month)
+
+**Key Difference:** Automation ≠ custody | You approve all actions
+
+### Stage 5: Rebalancing / Migration
+
+**Goal:** Move funds to better opportunities efficiently
+
+**Traditional DeFi Path:**
+1. Unstake/withdraw from Protocol A (tx + gas)
+2. Wait for lock-up period / unstaking queue
+3. Bridge to another chain (if needed) - complex, risky
+4. Swap asset (if needed) - DEX tx + gas + slippage
+5. Approve new protocol (tx + gas)
+6. Stake/deposit in Protocol B (tx + gas)
+
+**Result:** 4-6 transactions | High error risk | Hours to days
+
+#### OROKAI Path:
+
+> Compare current vs. alternative (side-by-side)
+
+> Review full migration path (all steps + costs shown upfront)
+
+> Approve flow, sign steps in YOUR wallet
+
+> Track progress in real-time
+
+**Result:** Same txs, but orchestrated | Lower error risk | 15-30 minutes
+
+**Key Difference:** One-click = one flow, multiple signatures | You control each step
+
+### Stage 6: Exit / Off-Ramp
+
+**Goal:** Convert crypto back to fiat or withdraw
+
+**Traditional DeFi Path:**
+1. Unstake/withdraw (wait for lock-up)
+2. Swap to major asset (ETH/BTC) if needed
+3. Send to CEX (check addresses, networks - error risk)
+4. Sell on CEX
+5. Withdraw to bank (1-3 days)
+
+**Result:** Multiple steps | High error risk (wrong network = lost funds)
+
+#### OROKAI Path:
+
+> Initiate withdrawal flow
+
+> OROKAI prepares: unstake → swap → off-ramp (via partner)
+
+> Review all steps & costs, sign in YOUR wallet
+
+> Partner handles fiat conversion (KYC on their side)
+
+**Result:** Orchestrated flow | Network verification built-in | Reduced error risk
+
+**Key Difference:** Partner handles fiat, not us | OROKAI = software layer only
+
+:::warning[KEY PRINCIPLES]
+> **Self-Custody Throughout**
+Your keys, your funds. Always. OROKAI never has access.
+
+> **You Sign Everything**
+Every transaction requires your explicit signature. Automation = prepared flows, not execution without permission.
+
+> **Transparent Costs**
+All fees (gas, DEX, bridge, OROKAI) shown BEFORE you sign.
+
+> **No Guarantees**
+Yields are variable. Protocols are external. We inform, not advise.
+
+> **Blockchain Rules Apply**
+Transactions are final (blockchain nature). OROKAI doesn't add or remove this property.
+
+> **Risk Warnings**
+Clear labels on complexity, liquidity, protocol risk. YOU decide what level of risk to accept
+:::
