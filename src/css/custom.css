@@ -429,7 +429,7 @@ mark {
   color: var(--markdown-text);
   margin-bottom: 0.5rem;
   line-height: 1.7;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 /* === LINKS IN CONTENT === */

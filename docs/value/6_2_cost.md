@@ -20,12 +20,42 @@ Funds and keys remain on the user's side; smart contract <mark>permissions are m
 
 Exchanges executed by external DEX from allow-list; fiat/card settlements and KYC/AML handled by licensed partners; <mark>OROKAI is not a party to settlements.</mark>
 
-### History and auditability
-
-Complete operation log with on-chain links; CSV/JSON export for personal accounting.
-
 :::tip[Security by design]
 
 Transparency and minimal permissions aren't features – they're fundamental principles embedded in every aspect of OROKAI's architecture.
 
 :::
+
+## Security Model: Layers of Protection
+
+### Layer 1
+> Your Wallet (Non-Custodial)
+- Keys stored on YOUR device only
+- OROKAI has zero access to private keys
+- Can export/migrate to any wallet anytime
+
+### Layer 2
+> Permissions (Least-Privilege)
+- Minimal approvals (exact amounts when possible)
+- Time-limited permissions (where supported)
+- Clear revoke links always available
+
+### Layer 3
+> Protocol Vetting (Allow-List)
+- Only audited, battle-tested protocols
+- Continuous monitoring for incidents
+- Quarantine system for elevated risks
+
+### Layer 4
+> Transaction Validation (Pre-Flight Checks)
+- Network verification (prevent wrong chain)
+- Address validation (checksum, format)
+- Balance checks (sufficient gas + tokens)
+- Slippage protection (won't execute if exceeded)
+
+### Layer 5
+> User Controls (Always Final Say)
+- Review every step before signing
+- Cancel anytime before signature
+- Pause/disable automation
+- Emergency withdrawal paths

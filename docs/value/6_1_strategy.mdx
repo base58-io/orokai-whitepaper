@@ -1,0 +1,121 @@
+---
+sidebar_label: Time Savings
+sidebar_position: 2
+custom_edit_url: null
+---
+
+# Time Savings and Reduction of Operational Errors
+
+## Streamlined Operations
+
+### Fewer technical steps
+
+OROKAI <mark>prepares</mark> transaction sequences for independent user signature (approve → DEX swap → stake/deposit).
+
+### "One-click" migrations
+
+Composition of complex paths (unstake/withdraw → bridge → swap → deposit) into one flow with an upfront visible signature sequence.
+
+### Warnings and limits
+
+Slippage, bridge liquidity, smart contract permissions — UI displays warnings and enables limits (e.g., amounts, costs).
+
+### AI as informational assistant
+
+Reduces "decision paralysis" through <mark>explainable proposals</mark> aligned with declared profile (not investment advice).
+
+## Time Investment Analysis
+
+### Traditional DeFi vs OROKAI
+
+| Activity | Traditional DeFi | OROKAI | Time Saved | Frequency |
+|----------|------------------|--------|------------|-----------|
+| **Checking positions** | 15 min/day × 30 = 450 min | 5 min/day × 30 = 150 min | **300 min** (83%) | Daily |
+| **Claiming rewards** | 30 min × 4 = 120 min | 5 min × 4 = 20 min | **100 min** (83%) | Weekly |
+| **Monitoring APY changes** | 20 min × 8 = 160 min | 0 min (AI alerts) | **160 min** (100%) | 2-3x/week |
+| **Researching migrations** | 90 min × 1 = 90 min | 15 min × 1 = 15 min | **75 min** (83%) | Monthly |
+| **Executing migrations** | 60 min × 1 = 60 min | 20 min × 1 = 20 min | **40 min** (67%) | Monthly |
+| **Gas price monitoring** | 15 min × 4 = 60 min | 0 min (AI alerts) | **60 min** (100%) | Weekly |
+| **Risk/security checking** | 30 min × 2 = 60 min | 5 min × 2 = 10 min | **50 min** (83%) | Bi-weekly |
+| **Record keeping/taxes** | 45 min × 1 = 45 min | 10 min × 1 = 10 min | **35 min** (78%) | Monthly |
+| **Learning new protocols** | 120 min × 1 = 120 min | 30 min × 1 = 30 min | **90 min** (75%) | Monthly |
+| **Troubleshooting issues** | 60 min × 1 = 60 min | 15 min × 1 = 15 min | **45 min** (75%) | Monthly |
+| | | | | |
+| **TOTAL MONTHLY** | **1,225 minutes** | **280 minutes** | **945 minutes** | |
+| | **(20.4 hours)** | **(4.7 hours)** | **(15.7 hours saved)** | |
+| | | | **77% reduction** | |
+
+**Annual Time Savings: ~188 hours (equivalent to nearly 5 full work weeks)**
+
+## Error Reduction
+
+| Error Type | Traditional Risk | OROKAI Risk | How OROKAI Prevents It |
+|------------|------------------|-------------|------------------------|
+| **Wrong network selected** | High (10-15% of new users) | Very Low (0-1%) | Network validation, clear warnings, dropdown with icons |
+| **Wrong token contract** | Medium (5-10%) | Very Low (0-1%) | Allow-listed tokens only, checksum validation |
+| **Insufficient gas** | High (15-20%) | Very Low (0-2%) | Pre-flight check, shows required amount before signing |
+| **Excessive gas paid** | High (30-40% overpay) | Low (10-15%) | AI alerts for low gas windows, estimates shown |
+| **Unlimited approvals** | Very High (60-70% users) | Low (5-10%) | Least-privilege default, clear scope explanation |
+| **Phishing site** | Medium (5-8% encounter) | Very Low (0-1%) | Integrated interface, no external protocol visits |
+| **Wrong recipient address** | Low (2-3%) | Very Low (0-0.5%) | Address validation, no manual entry for migrations |
+| **Slippage too low (tx fails)** | Medium (10-15%) | Low (2-3%) | Dynamic slippage recommendations based on liquidity |
+| **Slippage too high (value loss)** | Medium (5-10%) | Low (1-2%) | Warnings when slippage exceeds safe thresholds |
+| **Forgot to claim rewards** | High (30-40% miss optimal windows) | Very Low (5% if using alerts) | Proactive notifications, optional automation |
+| **Missed migration opportunity** | High (50-60% react too late) | Low (10-15%) | AI monitors 24/7, suggests when beneficial |
+| **Didn't revoke old approvals** | Very High (80-90% forget) | Low (20-30%) | Visible permission dashboard, easy revoke links |
+
+**Overall Error Rate Reduction: ~85%**  
+**Average Cost of Errors Prevented: Varies widely (from minor gas waste to total loss)**
+
+:::tip[Efficiency without sacrifice]
+
+Automation of complexity, not automation of control – users save time while maintaining full oversight of every operation.
+
+:::
+
+## Complexity Reduction
+
+One of the biggest time and error multipliers in traditional DeFi is multi-step operations. Here's how OROKAI simplifies them:
+
+### Example: Migrate Staking Position
+
+GOAL: Move staked ETH from Protocol A (Ethereum) to Protocol B (Polygon)
+
+#### Traditional DeFi Process:
+
+import tradfiLight from '@site/static/img/tradfi.png';
+import tradfiDark from '@site/static/img/tradfi.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={tradfiLight} className="light-only" style={{ width: '100%' }} />
+    <img src={tradfiDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
+#### OROKAI Process:
+
+import defiLight from '@site/static/img/defi.png';
+import defiDark from '@site/static/img/defi.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={defiLight} className="light-only" style={{ width: '100%' }} />
+    <img src={defiDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
+
+### "Invisible Work" That OROKAI Handles
+
+| Invisible Work | Traditional DeFi | OROKAI |
+|----------------|------------------|--------|
+| **Remembering to check** | Set multiple calendar reminders, check Discord/Twitter for protocol updates | AI monitors 24/7, alerts you when action needed |
+| **Worrying about security** | Constant anxiety about approvals, phishing, hacks | Allow-listed protocols, clear permission management |
+| **FOMO and second-guessing** | "Did I choose the right protocol?" endless comparison | AI-guided selection with clear reasoning |
+| **Fear of missing opportunities** | Manual checking of APY changes across protocols | Proactive suggestions when better options emerge |
+| **Paralysis by analysis** | Too many options, afraid to pull the trigger | Filtered options matched to your profile |
+| **"Did I do it right?" anxiety** | Constant checking if position is active, rewards accruing | Clear dashboard shows everything |
+| **Decision fatigue** | Every action requires full research | Pre-researched options, you just choose |
