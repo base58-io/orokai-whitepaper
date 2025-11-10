@@ -48,7 +48,7 @@ Organized unstake/withdraw paths and partner off-ramp; ability to migrate to oth
 
 <mark>User can</mark> disable automations, change preferences (e.g., settlement currency), and revoke permissions at any time.
 
-**Control mechanisms:** See [Section AI Agent: Boundaries and Responsible](docs/ai-agent/4_4_boundaries) for guardrails and [Section How it works: Intelligent Asset Management](/docs/journey/5_5_management) for automation controls.
+**Control mechanisms:** See [Section How it works: Intelligent Asset Management](/docs/journey/5_5_management) for automation controls.
 
 **Key benefits:**
 - Pause/disable any automation instantly
