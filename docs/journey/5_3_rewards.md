@@ -27,6 +27,12 @@ How it works:
 
 ### OPTION B: Automated claim + convert to USDT/USDC (Optional)
 
+:::warning[Note]
+
+This feature will be developed in a later phase.
+
+:::
+
 How it works:
 > YOU authorize a schedule ONCE (e.g., "weekly" or "monthly")
 
