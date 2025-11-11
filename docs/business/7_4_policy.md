@@ -1,6 +1,6 @@
 ---
 sidebar_label: Fee Policy and Discounts
-sidebar_position: 3
+sidebar_position: 5
 custom_edit_url: null
 ---
 

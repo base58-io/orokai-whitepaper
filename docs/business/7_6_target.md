@@ -1,6 +1,6 @@
 ---
 sidebar_label: Target Customer Segments
-sidebar_position: 5
+sidebar_position: 7
 custom_edit_url: null
 ---
 

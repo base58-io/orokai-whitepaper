@@ -1,6 +1,6 @@
 ---
 sidebar_label: Affiliate Program
-sidebar_position: 7
+sidebar_position: 4
 custom_edit_url: null
 ---
 
