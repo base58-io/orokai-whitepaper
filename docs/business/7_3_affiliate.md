@@ -376,7 +376,7 @@ This is <mark>OROKAI's most innovative feature</mark> — the ability to <mark>s
 
 ### How It Works
 
-Every OROKAI account has a <mark> dedicated affiliate NFT </mark> that can be minted at any time. This NFT represents:
+Every OROKAI account has a <mark>dedicated affiliate NFT</mark> that can be minted at any time. This NFT represents:
 
 > NFT Contents:
 - Your complete referral tree (all Level A, B, C users)
