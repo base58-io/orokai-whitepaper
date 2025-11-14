@@ -6,51 +6,144 @@ custom_edit_url: null
 
 # Phase 3 — Regulated Integrations and OROKAI Chain
 
-## Functional Scope
+## Scope: Institutional & Regulated Features
 
-### CEX lending
+### Enhanced KYC (Where Required)
 
-Access through licensed partners, potentially requires KYC and geographic restrictions.
+- Tiered KYC (optional for DeFi, required for fiat/CEX/RWA)
+- Partner-managed (Stripe, V Plus Pay, CEX partners)
+- Privacy-preserving (minimal data to OROKAI)
+- Regional variations (US vs EU vs Asia requirements)
 
-### KYC
+### Real-World Assets (RWA) Integration
 
-Enabled only where partner features require it (fiat/CEX/RWA/securities).
+- Tokenized securities (via licensed issuers only)
+- Tokenized commodities (gold, real estate)
+- OROKAI = UI/aggregation layer only
+- Partner assumes regulatory burden (issuer, custodian)
 
-### RWA (Real-World Assets)
+### Securities Trading Integration (Conditional)
 
-Integrations exclusively through licensed entities offering RWA; OROKAI = software/UI layer.
+- View tokenized stocks/bonds in portfolio
+- Execute via licensed broker-dealer partner
+- OROKAI never acts as broker
+- Highly jurisdiction-dependent (may not launch in some regions)
 
-### Securities trading integration
+### Token Generation Event (TGE)
 
-Optional, dependent on jurisdiction/partner; OROKAI is not a broker/PSP.
+- OROKAI token launch (utility, not security)
+- Fee discounts, governance, staking
+- See Chapter 8 for full details [TBD]
+- Subject to legal clearance in all major markets
 
-### Token ICO / TGE
+### OROKAI Chain Mainnet v1
 
-We use the neutral term "TGE (Token Generation Event)"; details dependent on jurisdiction and legal opinions (utility, no return promises).
-
-### Blockchain L1 (OROKAI Chain)
-
-OROKAI Chain launch according to Chapter 8 (mainnet v1, gas policy and fee distribution, buyback burn/rebate).
+- L1 or L2 architecture (decision by Month 24)
+- Gas in OROKAI token
+- Orchestration layer (batching, routing, messaging)
+- Validator set or sequencer infrastructure
+- Cross-chain communication with existing networks
 
 ## Milestones
+### Milestone 8
+#### Scale & Profitability
+> Deliverables:
+- Legal framework finalized (entity structure, licenses)
+- Partner agreements signed (CEX, RWA issuers, brokers)
+- KYC flows designed (partner integrations)
+- Compliance documentation complete
 
-> CEX lending (partner) — pilot + compliance gates
+### Milestone 9
+#### TGE Preparation
+> Deliverables:
+- Token economics finalized (see Chapter 8 [TBD])
+- Token contracts deployed (testnet)
+- Distribution plan confirmed (team, community, treasury)
+- Marketing campaign prepared
+- Exchange listings negotiated (DEX + CEX)
 
-> KYC module (only where required; privacy-by-design)
+### Milestone 10
+#### TGE Preparation
+> Deliverables:
+- Public testnet live (validators/sequencers operational)
+- Developer documentation published
+- Initial dApps deployed (OROKAI platform itself)
+- Bug bounty + incentivized testnet program
+- Cross-chain bridge connections tested
 
-> RWA/securities — PoC with partner, jurisdictional sandbox
+## Technical Deliverables
+### Regulated Feature Integrations
+- Partner API connections (CEX, RWA platforms, brokers)
+- KYC verification flows (pass-through to partners)
+- Compliance reporting tools (transaction logs, AML alerts)
+- Geo-restriction enhancements (VPN detection, IP verification)
 
-> TGE — utility documentation + marketing guidelines (no financial promises)
+### OROKAI Chain (if pursued)
 
-> OROKAI Chain mainnet v1 (routing/batching, bridge/DEX allow-list)
+#### Smart Contracts:
+- Token contract (ERC-20 compatible or native)
+- Staking/delegation contracts
+- Gas fee distribution logic
+- Governance module (if enabled)
 
-## Compliance Gates
+#### Infrastructure:
+- Validator/sequencer software
+- Block explorer
+- RPC endpoints (public + premium)
+- Bridge contracts (to Ethereum, Polygon, etc.)
+- Developer SDK/tools
 
-Legal opinions for TGE, partner agreements and licenses for CEX/RWA/securities, chain security audits.
+#### Observability:
+- Network monitoring (validators, TPS, finality)
+- Token economics dashboard (supply, staking, burns)
+- Governance portal (if applicable)
 
-## Success Metrics
+### Platform Enhancements
+- Enterprise API (for institutional clients)
+- White-label SDK (for B2B partners)
+- Advanced analytics (cohort analysis, predictive models)
+- Multi-sig support (for DAOs, funds, family offices)
 
-SLA of CEX/RWA integrations, on-chain activity (gas), share of operations routed through OROKAI Chain.
+## Compliance & Legal
+
+### Token Legal Opinion
+- Howey test analysis (US)
+- MiFID II compliance (EU)
+- Securities classification in each jurisdiction
+- Safe harbor strategies (if applicable)
+
+### RWA/Securities Framework
+- Broker-dealer relationships (no OROKAI as broker)
+- Transfer agent coordination (for tokenized securities)
+- Custody arrangements (partner-held, not OROKAI)
+- Investor accreditation verification (where required)
+
+### Multi-Jurisdictional Strategy
+- Entity structure (US vs offshore entities)
+- Geo-blocking where necessary (restricted countries)
+- Local counsel in major markets (US, EU, Singapore, Japan, Saudi Arabia)
+- Regulatory sandbox participation (where available)
+
+## Conditional Execution (Flexibility)
+
+**Phase 3 features are HIGHLY conditional:**
+
+IF legal opinion = "token is security" 
+   THEN delay/cancel TGE OR restructure as governance-only token
+
+IF RWA partnerships fail to materialize 
+   THEN skip RWA integration, focus on core DeFi
+
+IF OROKAI Chain costs exceed $10M+ 
+   THEN reassess viability, potentially abandon chain (use existing L1/L2)
+
+IF regulated features blocked in US 
+   THEN focus on Asia/EU markets, accept lower TAM
+
+IF profitability achieved WITHOUT regulated features 
+   THEN deprioritize Phase 3, optimize Phase 2 features instead
+
+Philosophy: Phase 3 is EXPANSION, not SURVIVAL
 
 :::tip[Regulated expansion]
 

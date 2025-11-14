@@ -6,45 +6,113 @@ custom_edit_url: null
 
 # Phase 1 — Foundations
 
-## Functional Scope
+## Scope: Minimum Viable Product
 
 ### DeFi staking
 
-Integrations for ATOM (Cosmos), SOL (Solana), ETH (Ethereum) — protocol allow-list, rewards view, claim schedule.
+> Integrations for 
+- ETH (via Lido - stETH)
+- ATOM (Cosmos)
+- SOL (Solana)
+- protocol allow-list, rewards view.
 
-### On-ramp / off-ramp (card)
+### On/Off-Ramp (via Partners)
 
-Entry/exit through licensed partners (issuance/settlements/KYC/AML on partner side).
+> Entry/exit through licensed partners (issuance/settlements/KYC/AML on partner side).
+- Stripe integration (primary)
+- Onramper integration (backup)
+- Credit card on-ramp
+- Bank transfer off-ramp
 
-### On-ramp / off-ramp (payment provider)
+### Payment Card (via V Plus Pay)
 
-Fiat↔crypto payments via PSP (partner).
+> Virtual card first (physical in Phase 2)
+- Spend from wallet balance
+- Basic fee structure (2.5%)
 
 ### DEX domestic & swap
 
-Basic crypto swaps within supported chains through DEX from allow-list.
+> Basic crypto swaps within supported chains:
+- Uniswap V3 (Ethereum, Polygon, Base)
+- Raydium (Solana)
+- Allow-list approach (vetted pools only)
+- Transparent fee breakdown 
 
-### Virtual card
+### Zero-Setup Wallet
 
-Virtual card (if partner agreement provides).
+> Smart wallet creation
+- user-side, non-custodial
+- Email/social login (MPC key management)
+- Seed phrase backup option
+- WalletConnect support (existing wallets)
 
 ## Milestones
 
-> MVP staking (ATOM/SOL/ETH) with results view and claims
+### Milestone 1
+#### Core Infrastructure
+> Deliverables:
+- Multi-chain RPC integration (Ethereum, Solana, Cosmos)
+- Wallet creation flow tested
+- Basic UI/UX (web app)
+- Smart contracts deployed (testnet)
 
-> On/off-ramp integration (provider + card) with transparent costs before authorization
+### Milestone 2
+#### Partner Integrations
+> Deliverables:
+- Stripe/Onramper live (testnet/sandbox)
+- V Plus Pay card integration complete
+- Lido staking functional
+- Uniswap swap routing working
 
-> DEX-swap + basic warnings (slippage, permissions)
+### Milestone 3
+#### Beta Launch
+> Deliverables:
+- Closed beta (100-500 users, invite-only)
+- Monitoring & observability live
+- Support infrastructure ready
+- Bug bounty program launched
 
-> Virtual card (pilot) — only through partner, no PAN/CVV processing by OROKAI
+### Milestone 4
+#### Public Launch
+> Deliverables:
+- Public availability (open signups)
+- Marketing campaign (content, paid ads, partnerships)
+- Documentation complete (user guides, FAQs)
+- Initial liquidity partnerships (protocols, wallets)
 
-## Compliance Gates (Go/No-Go)
+## Technical Deliverables
 
-Smart contract audit of MVP, geo/sanctions policy in UI, KYC/AML testing on partner side.
+### Smart Contracts
+- AllocationRouter (orchestrates multi-step flows)
+- Protocol adapters (Lido, Cosmos validators, Solana staking)
+- DEX router (Uniswap integration)
+- Emergency pause mechanism
 
-## Success Metrics (Examples)
+### Backend Services
+- RPC aggregation layer (multi-provider redundancy)
+- Indexer (transaction history, balances)
+- Quote/routing engine (DEX price aggregation)
+- Webhook handlers (partner events)
+- Job queue (async operations)
 
-TTFV (time to first allocation), % completed "prepare→sign" flows, onboarding NPS.
+### Frontend
+
+- Web app (React, responsive)
+- Wallet adapter (WalletConnect, smart wallet creation)
+- Transaction flow (prepare, preview costs, sign)
+- Dashboard (balances, history, positions)
+- Support chat (Intercom or similar)
+
+## Compliance & Partnerships
+### Regulatory
+- Legal review of ToS, Privacy Policy
+- Geo-restrictions implemented (sanctions compliance)
+- Partner KYC/AML (handled by Stripe, V Plus Pay)
+### Key Partnerships
+- Stripe (on-ramp) - Priority 1
+- Onramper (on-ramp backup) - Priority 2
+- V Plus Pay (card issuer) - Priority 1
+- 1-2 DeFi protocols (Lido confirmed, others TBD)
 
 :::tip[Foundation building]
 

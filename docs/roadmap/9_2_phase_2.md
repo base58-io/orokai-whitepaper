@@ -6,45 +6,96 @@ custom_edit_url: null
 
 # Phase 2 — Functionality Expansion and AI
 
-## Functional Scope
+## Scope: Advanced Features
 
-### DeFi collateral loans
+### AI Agent v1 (Recommendations)
 
-Integrations with selected lending protocols (allow-list; warnings regarding LTV/liquidation).
+- User profiling (risk tolerance, goals, TVL)
+- Strategy suggestions (staking, lending, yield)
+- Explainability (reason codes for recommendations)
+- Informational only (no auto-execution)
 
-### Wallet & financials audits
+### Cross-Chain Bridges
 
-Tools for reviewing permissions (revoke), on-chain history, and reports (CSV/JSON).
+- CCTP integration (USDC native bridging)
+- Wormhole or LayerZero (general messaging)
+- Bridge cost preview + health checks
+- Allow-list approach (vetted bridges only)
 
-### Account management
+### Collateral Lending (DeFi Credit)
 
-Profiles, limits, automation rules for "claim/re-stake/rebalance" — still requiring user signature.
+- AAVE v3 integration (Ethereum, Polygon)
+- Borrow/repay flows
+- LTV monitoring & liquidation warnings
+- Risk dashboard (health factor tracking)
 
-### AI optimization
+### Wallet & Financial Audits
 
-AI agent with extended "explainability" (reason codes, costs, risk) — without investment advice.
+- Permission management (view/revoke approvals)
+- Transaction history export (CSV/JSON)
+- Cost analytics (fees paid, gas spent)
 
-### Order book & connection to CEX
+### Account Management Enhancements
 
-Optional, exclusively through licensed partners; potentially requires KYC and will be geographically restricted.
+- Multi-device sync
+- Notification preferences (email, push, SMS)
+- Security settings (2FA, biometric)
+- Profile customization
+
+### Physical Card
+- Plastic card option (via V Plus Pay)
+- Apple Pay / Google Pay integration
+- Dependent on: V Plus Pay partnership expansion
 
 ## Milestones
 
-> Collateral loans v1 + risk dashboard (LTV, thresholds)
+### Milestone 5
+#### Lending + AI Launch
+> Deliverables:
+- AAVE integration live
+- AI Agent v1 recommendations working
+- User testing completed (both features)
+- Documentation updated
 
-> Audit module (permissions, revoke, activity log) and financial reports
+### Milestone 6
+#### Cross-Chain Operational
+> Deliverables:
+- CCTP bridge functional (USDC transfers)
+- At least 1 general bridge live (Wormhole or LayerZero)
+- Bridge monitoring & alerts operational
+- User flow tested (swap → bridge → swap)
 
-> AI v2 (profile matching, alternatives, confidence)
+### Milestone 7
+#### Scale & Profitability
+> Success Metrics:
+- Users: 50,000-100,000 active monthly
+- Revenue: $5M-$10M/month
+- Margin: Break-even or profitable
 
-> CEX connection (read-only → potentially order preparation for signing) after legal-regulatory approval
+## Technical Deliverables
+### Smart Contracts (New)
+- AAVE adapter (supply, borrow, repay)
+- Bridge orchestration contracts
+- Automation scheduler (claim/rebalance logic)
+- Updated router (handle lending + bridge flows)
 
-## Compliance Gates
+### AI/ML Infrastructure
+- Feature store (user profiles, preferences, TVL)
+- Recommendation engine (strategy ranking)
+- Explainability layer (reason codes)
+- Model registry (versioning, rollback capability)
+- A/B testing framework (experiment with recommendations)
 
-Risk assessment of lending integrations, KYC impact evaluation (for CEX), update of ToS and warning policies.
+### Backend Enhancements
+- Bridge indexers (track cross-chain transactions)
+- Automation job scheduler (cron-like, idempotent)
+- Enhanced analytics (user cohorts, retention)
 
-## Success Metrics
-
-% of users using audit/revoke, AI proposal→signature conversion, response time to risk alerts.
+### Frontend Updates
+- Lending UI (borrow/repay, health factor display)
+- AI recommendations panel (strategies + explanations)
+- Bridge flow (multi-step with cost preview)
+- Advanced dashboard (portfolio analytics, tax reports)
 
 :::tip[Intelligence and control]
 
