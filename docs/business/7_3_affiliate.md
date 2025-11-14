@@ -372,7 +372,7 @@ Each tier sees progressively more detailed analytics. Here's what affiliates see
 
 ### Sell Your Affiliate Business
 
-This is <mark>OROKAI's most innovative feature</mark> — the ability to <mark>>sell your entire affiliate network as an NFT asset.</mark> This has never been done before in crypto affiliate programs.
+This is <mark>OROKAI's most innovative feature</mark> — the ability to <mark>sell your entire affiliate network as an NFT asset.</mark> This has never been done before in crypto affiliate programs.
 
 ### How It Works
 
