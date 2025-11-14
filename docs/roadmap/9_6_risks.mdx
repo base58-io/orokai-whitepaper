@@ -1,0 +1,61 @@
+---
+sidebar_label: Risks and Mitigations
+sidebar_position: 7
+custom_edit_url: null
+---
+
+# Risks and Mitigations (Summary)
+
+## Risk Categories and Responses
+
+### Technical risks
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|------------|--------|------------|
+| **Smart contract exploit** | Low | Critical | • 2 independent audits <br /> • Bug bounty program <br /> • Emergency pause mechanism <br /> • Insurance fund reserves <br /> • Gradual rollout (limit TVL exposure) |
+| **Bridge failure/exploit** | Medium | High | • Allow-list vetted bridges only <br /> • Health monitoring + quarantine <br /> • Multi-provider redundancy <br /> • User warnings before bridging <br /> • Kill-switch per bridge |
+| **RPC provider outage** | Medium | High | • Multi-provider setup (3+ RPC nodes) <br /> • Automatic failover <br /> • Circuit breakers <br /> • Self-hosted backup nodes |
+| **DEX liquidity crisis** | Medium | Medium | • Route through multiple DEXs <br /> • Real-time liquidity checks <br /> • Slippage warnings <br /> • Fallback to alternative DEXs |
+| **Database failure/data loss** | Low | Critical | • Daily backups (automated) <br /> • Multi-region replication <br /> • Point-in-time recovery <br /> • Disaster recovery drills (quarterly) |
+| **Scaling bottlenecks** | Medium | Medium | • Load testing before growth phases <br /> • Horizontal scaling architecture <br /> • CDN for static assets <br /> • Database read replicas |
+| **AI model hallucinations** | Medium | Medium | • Conservative recommendations <br /> • Human review of outputs (sampling) <br /> • User feedback loop ("report bad advice") <br /> • Model versioning + rollback |
+
+### Operational risks
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|------------|--------|------------|
+| **Key person dependency** | Medium | High | • Document tribal knowledge <br /> • Cross-train team members <br /> • Succession planning <br /> • Retention incentives (equity) |
+| **Team attrition** | Medium | High | • Competitive compensation <br /> • Strong culture + mission <br /> • Career development paths <br /> • Hire pipeline (always recruiting) |
+| **Partner exits (Stripe, V Plus Pay)** | Low | High | • Multiple provider agreements <br /> • Contractual lock-in periods <br /> • Migration plans documented <br /> • Backup partners identified |
+| **Support overwhelm** | Medium | Medium | • Self-service docs (reduce tickets) <br /> • Chatbot for common issues <br /> • Tiered support (L1/L2/L3) <br /> • Scale support team with users |
+| **Infrastructure costs spike** | Medium | Medium | • Volume discounts negotiated <br /> • Cost monitoring + alerts <br /> • Optimize queries/caching <br /> • Budget contingency (20%) |
+| **Security breach (internal)** | Low | Critical | • Background checks (employees) <br /> • Least-privilege access <br /> • Audit logs (all actions) <br /> • Regular security training |
+
+
+### Regulatory risks
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|------------|--------|------------|
+| **Non-custodial model challenged** | Low | Critical | • Legal opinions pre-launch <br /> • Compliance-by-design <br /> • Clear user disclosures <br /> • Separate entities if needed (US/offshore) |
+| **Affiliate program deemed pyramid** | Low | High | • Legal review of structure <br /> • Revenue from real activity (not recruitment) <br /> • No upfront costs to join <br /> • Clear disclosures (variable earnings) |
+| **Token classified as security** | Medium | Critical | • Legal opinions (multiple jurisdictions) <br /> • Utility-first design <br /> • No promises of returns <br /> • Delay/cancel TGE if necessary |
+| **DeFi protocol regulatory action** | Medium | High | • Diversify protocol integrations <br /> • Monitor regulatory news <br /> • Quick removal of flagged protocols <br /> • Geo-block where required |
+| **Sanctions/AML violation** | Low | Critical | • Partner KYC/AML (Stripe, V Plus Pay) <br /> • Geo-restrictions enforced <br /> • No mixing/privacy features <br /> • Compliance team monitoring |
+| **Jurisdiction-specific ban** | Medium | High | • Operate in multiple jurisdictions <br /> • Entity structure flexibility <br /> • Prepared to geo-block <br /> • Focus on permissive markets |
+
+### Market & Competitive Risks
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|------------|--------|------------|
+| **Low user adoption** | Medium | Critical | • MVP testing (validate PMF) <br /> • Iterate based on feedback <br /> • Flexible roadmap (pivot if needed) <br /> • Marketing diversification |
+| **High user churn** | Medium | High | • Onboarding optimization <br /> • Engagement features (notifications, insights) <br /> • Network effects (affiliate ties users) <br /> • Monitor NPS, act on feedback |
+| **Competitor launches similar product** | High | Medium | • Speed to market (first-mover advantage) <br /> • Unique features (NFT transferability, AI) <br /> • Strong brand/community <br /> • Continuous innovation |
+| **Bear market (crypto winter)** | Medium | High | • Diversified revenue (not just yield-seeking) <br /> • Card + fiat useful in bear markets <br /> • Extend runway (conservative burn) <br /> • Focus on retention over acquisition |
+| **DeFi yields collapse** | Medium | High | • Not solely yield-dependent <br /> • Value prop = convenience, not "best APY" <br /> • Expand to non-yield features (cards, swaps) <br /> • Messaging adjustment (safety over yield) |
+| **Partner increases fees** | Medium | Medium | • Contractual fee caps (where possible) <br /> • Multi-provider strategy <br /> • Pass-through costs (transparent to users) <br /> • Renegotiate or switch partners |
+
+:::warning[Multi-layered risk management]
+
+OROKAI addresses risks at technical, operational, and regulatory levels through proactive controls, clear communication, and strategic partnerships.
+
+:::
