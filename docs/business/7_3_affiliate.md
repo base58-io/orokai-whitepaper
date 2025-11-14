@@ -492,12 +492,19 @@ Step 4: Post-Transfer
 
 :::warning[OROKAI Disclaimers]
 We provide NFT minting infrastructure
+
 We update earning recipient when NFT transfers
+
 We do NOT operate a marketplace
+
 We do NOT facilitate or endorse any sales
+
 We do NOT provide valuation guidance
+
 We do NOT mediate disputes between buyers/sellers
+
 We are NOT responsible for tax implications
+
 Users trade NFTs peer-to-peer at their own risk.
 :::
 
