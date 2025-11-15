@@ -44,12 +44,12 @@
     "description": "The generated-index page description for category 'How it works' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Value for Users": {
-    "message": "Value for Users",
+    "message": "Wartość dla użytkowników",
     "description": "The label for category 'Value for Users' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Value for Users.link.generated-index.description": {
     "message": "Minimal effort with controlled risk.",
-    "description": "The generated-index page description for category 'Value for Users' in sidebar 'tutorialSidebar'"
+    "description": "Minimalny wysiłek przy kontrolowanym ryzyku."
   },
   "sidebar.tutorialSidebar.category.Business Model": {
     "message": "Business Model",
