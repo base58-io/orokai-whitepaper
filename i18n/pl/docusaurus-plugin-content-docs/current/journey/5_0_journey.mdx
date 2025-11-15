@@ -1,16 +1,50 @@
 ---
-sidebar_label: User Journey
+sidebar_label: Ścieżka użytkownika
 sidebar_position: 1
 custom_edit_url: null
 ---
 
-# How It Works (User Journey)
+# Jak to działa (ścieżka użytkownika)
 
-OROKAI <mark>simplifies DeFi entry:</mark> from on-ramp through "zero-setup wallet," strategy selection, first allocation, to monitoring and potential "one-click" migrations between protocols and chains - with full user control (self-custody). 
+OROKAI <mark>upraszcza wejście do DeFi:</mark> od on-ramp przez „zero-setup wallet", wybór strategii, pierwszą alokację, aż po monitoring i potencjalne migracje „one-click" między protokołami i łańcuchami - przy pełnej kontroli użytkownika (self-custody). 
 
-Crypto exchanges are executed by external DEX from the list of approved integrations; fiat/card settlements are handled by licensed partners. <mark>Protocol returns are variable and not guaranteed;</mark> every operation is signed by the user in their wallet.
+Wymiany krypto są wykonywane przez zewnętrzne DEX z listy zatwierdzonych integracji; rozliczenia fiat/karta są obsługiwane przez licencjonowanych partnerów. <mark>Zwroty z protokołów są zmienne i niegwarantowane;</mark> każda operacja jest podpisywana przez użytkownika w jego portfelu.
 
-## Frictionless Onboarding
+## Onboarding bez tarcia
+
+### Porównanie czasu
+
+| Kamień milowy | Tradycyjne DeFi | OROKAI | Zaoszczędzony czas |
+|-----------|------------------|--------|------------|
+| **Od rejestracji do pierwszych środków** | 2-5 dni (KYC CEX) | 5-15 minut (zakup kartą) | **99%** |
+| **Badanie i wybór protokołu** | 4-8 godzin | 10-15 minut (prowadzenie AI) | **95%** |
+| **Pierwsza alokacja zakończona** | 30-60 minut (kroki ręczne) | 10-15 minut (zorkiestrowane) | **75%** |
+| **Miesięczny narzut zarządzania** | 2-4 godziny (ręczne sprawdzanie) | 10-20 minut (dashboard + alerty) | **90%** |
+| **Migracja między protokołami** | 1-2 godziny (+ badania) | 15-30 minut (przepływ one-click) | **80%** |
+
+**Całkowity zaoszczędzony czas w pierwszym miesiącu:** ~15-25 godzin → ~2-3 godziny  
+**Zysk efektywności:** **~90% redukcji czasu/wysiłku**
+
+:::warning[WAŻNE] 
+Oszczędność czasu nie oznacza, że OROKAI kontroluje Twoje środki.  
+Nadal podpisujesz każdą transakcję. Po prostu lepiej je przygotowujemy.
+:::
+
+## Kompletna ścieżka użytkownika
+
+### Etap 1: Wejście
+
+**Cel:** Przeprowadzić użytkownika od „Chcę spróbować DeFi" do „Mam gotowe środki"
+
+**Tradycyjna ścieżka DeFi:**
+1. Badanie portfeli (30-60 min)
+2. Instalacja portfela, zapisanie frazy seed (niepokój: „co jeśli to zgubię?")
+3. Rejestracja na CEX, oczekiwanie na KYC (1-3 dni)
+4. Zakup krypto na CEX
+5. Nauka jak wypłacić do portfela
+6. Płacenie opłaty wypłaty + oczekiwanie na potwierdzenia
+
+**Całkowity czas:** 2-5 dni | Kroki: 15+ | Poziom stresu: Wysoki
 
 import StartLight from '@site/static/img/start_light.svg';
 import StartDark from '@site/static/img/start_dark.svg';
@@ -21,24 +55,185 @@ import StartDark from '@site/static/img/start_dark.svg';
     <StartDark className="dark-only" />
   </div>
 <div>
-   
-  ### Getting started
+#### Ścieżka OROKAI:
+> Rejestracja (email/social)
 
-  User selects country/currency and proceeds to on-ramp with a licensed provider. At this step, KYC/AML is handled by the partner (if required in the jurisdiction).
+> Utworzony zero-setup wallet
 
-  ### "Zero-setup wallet"
+> Zakup krypto kartą (przez licencjonowanego partnera)
 
-  Wallet is created on the user's side (e.g., smart wallet/MPC); <mark>OROKAI does not store keys.</mark> Users can export keys and transfer assets at any time.
+> Środki trafiają do TWOJEGO portfela
 
-  ### Cost preview
+**Całkowity czas:** 15-30 minut;
+Kroki: 4;
+Poziom stresu: Niski
 
-    UI displays estimated fees (provider/on-ramp, network/gas) before authorization.
   </div>
 </div>
 
  <div style={{ margin: '24px 0' }}></div>
-  :::tip[UX abstraction, not custody]
-  "Zero-setup" does not mean custody; it's a UX abstraction over a wallet operating in the self-custody model.
+  :::tip[Abstrakcja UX, nie custody]
+  „Zero-setup" nie oznacza custody; to abstrakcja UX nad portfelem działającym w modelu self-custody.
   :::
 
+### Etap 2: Edukacja i profil
 
+**Cel:** Pomóc użytkownikowi zrozumieć opcje bez przeciążenia informacjami
+
+**Tradycyjna ścieżka DeFi:**
+1. Badanie protokołów (Reddit, YouTube, Discord) - 4-8 godzin
+2. Próba zrozumienia: APY, TVL, audyty, ryzyka
+3. Paraliż porównania („Który jest najlepszy?")
+4. Wybór na podstawie niekompletnych informacji lub FOMO
+
+**Wynik:** Często nieoptymalny wybór lub brak wyboru w ogóle     
+
+#### Ścieżka OROKAI:            
+
+> Szybka konfiguracja profilu (5-10 min): Cele, ryzyko, horyzont
+
+> AI pokazuje 3 opcje dopasowane do TWOJEGO profilu
+
+> Jasne wyjaśnienia: kody przyczyn „Dlaczego to?"
+
+> Porównanie obok siebie (koszty, ryzyka, kroki)
+
+**Wynik:** Świadoma decyzja w 10-15 minut 
+
+### Etap 3: Pierwsza alokacja
+
+**Cel:** Bezpiecznie ulokować środki w wybranej strategii
+
+**Tradycyjna ścieżka DeFi:**
+1. Przejście na stronę protokołu (weryfikacja URL - ryzyko phishingu)
+2. Podłączenie portfela (nadzieja, że to prawdziwa strona)
+3. Zatwierdzenie kontraktu (często „nieograniczone" - przerażające)
+4. Czekanie, podpisywanie, płacenie gasu (niespodziewany koszt)
+5. Stake/deposit (kolejna tx, więcej gasu)
+6. Oczekiwanie na potwierdzenie, sprawdzanie czy zadziałało
+7. Uświadomienie, że trzeba ręcznie śledzić nagrody
+
+**Wynik:** 5-7 oddzielnych transakcji | Każda z ukrytym kosztem gasu | 30-60 minut
+
+#### Ścieżka OROKAI:
+
+> Przegląd przygotowanego przepływu transakcji (wszystkie kroki widoczne z góry)
+
+> Zobacz całkowite koszty PRZED podpisaniem czegokolwiek
+
+> Podpisz kroki w SWOIM portfelu (my przygotowujemy, Ty autoryzujesz)
+
+> Automatyczne śledzenie w zunifikowanym dashboardzie
+
+**Wynik:** Te same transakcje, ale zorkiestrowane i transparentne | 10-15 minut
+
+**Kluczowa różnica:** Transparentność kosztów z góry | Nadal podpisujesz wszystko
+
+### Etap 4: Bieżące zarządzanie
+
+**Cel:** Monitorowanie wydajności, odbieranie nagród, adaptacja do zmian
+
+**Tradycyjna ścieżka DeFi:**
+1. Ręczne sprawdzanie każdej strony protokołu w poszukiwaniu nagród
+2. Odbieranie nagród (oddzielna tx + gas za każdym razem)
+3. Wymiana nagród na stablecoin (jeśli pożądane) - więcej txs
+4. Ręczne monitorowanie zmian APY
+5. Badanie alternatyw gdy APY spada
+6. Przegapione okazje z powodu wymaganego czasu/wysiłku
+
+**Wynik:** Nieoptymalne zwroty | Wysoki narzut (2-4 godziny/miesiąc)
+
+#### Ścieżka OROKAI:
+
+> Zunifikowany dashboard pokazuje wszystkie pozycje
+
+> Opcjonalne auto-claim + konwersja do USDT (autoryzujesz raz)
+
+> AI monitoruje zmiany APY, sugeruje dostosowania
+
+> Powiadomienia o okazjach (niski gas, lepsze stawki)
+
+> Przepływy migracji one-click (przeglądasz i podpisujesz)
+
+**Wynik:** Zoptymalizowane zwroty | Minimalny czas (10-20 min/miesiąc)
+
+**Kluczowa różnica:** Automatyzacja ≠ custody | Zatwierdzasz wszystkie działania
+
+### Etap 5: Rebalansowanie / migracja
+
+**Cel:** Efektywne przeniesienie środków do lepszych możliwości
+
+**Tradycyjna ścieżka DeFi:**
+1. Unstake/withdraw z Protokołu A (tx + gas)
+2. Oczekiwanie na okres lock-up / kolejkę unstakingu
+3. Bridge do innego łańcucha (jeśli potrzeba) - złożone, ryzykowne
+4. Wymiana aktywów (jeśli potrzeba) - tx DEX + gas + slippage
+5. Zatwierdzenie nowego protokołu (tx + gas)
+6. Stake/deposit w Protokole B (tx + gas)
+
+**Wynik:** 4-6 transakcji | Wysokie ryzyko błędu | Godziny do dni
+
+#### Ścieżka OROKAI:
+
+> Porównanie obecnej vs. alternatywnej (obok siebie)
+
+> Przegląd pełnej ścieżki migracji (wszystkie kroki + koszty pokazane z góry)
+
+- Wszystkie kroki wyraźnie wymienione
+- Całkowity koszt migracji (gas + opłaty + slippage)
+- Analiza break-even: „Migracja zwróci się w X dni"
+
+> Zatwierdzenie przepływu, podpisanie kroków w TWOIM portfelu
+
+> Śledzenie postępu w czasie rzeczywistym
+
+**Wynik:** Te same txs, ale zorkiestrowane | Niższe ryzyko błędu | 15-30 minut
+
+**Kluczowa różnica:** One-click = jeden przepływ, wiele podpisów | Kontrolujesz każdy krok
+
+### Etap 6: Wyjście / off-ramp
+
+**Cel:** Konwersja krypto z powrotem na fiat lub wypłata
+
+**Tradycyjna ścieżka DeFi:**
+1. Unstake/withdraw (czekaj na lock-up)
+2. Wymiana na główne aktywo (ETH/BTC) jeśli potrzeba
+3. Wysłanie do CEX (sprawdzanie adresów, sieci - ryzyko błędu)
+4. Sprzedaż na CEX
+5. Wypłata do banku (1-3 dni)
+
+**Wynik:** Wiele kroków | Wysokie ryzyko błędu (zła sieć = utracone środki)
+
+#### Ścieżka OROKAI:
+
+> Inicjacja przepływu wypłaty
+
+> OROKAI przygotowuje: unstake → swap → off-ramp (przez partnera)
+
+> Przegląd wszystkich kroków i kosztów, podpisanie w TWOIM portfelu
+
+> Partner obsługuje konwersję fiat (KYC po ich stronie)
+
+**Wynik:** Zorkiestrowany przepływ | Wbudowana weryfikacja sieci | Zredukowane ryzyko błędu
+
+**Kluczowa różnica:** Partner obsługuje fiat, nie my | OROKAI = tylko warstwa oprogramowania
+
+:::warning[KLUCZOWE ZASADY]
+> **Self-Custody przez cały czas**
+Twoje klucze, Twoje środki. Zawsze. OROKAI nigdy nie ma dostępu.
+
+> **Podpisujesz wszystko**
+Każda transakcja wymaga Twojego wyraźnego podpisu. Automatyzacja = przygotowane przepływy, nie wykonanie bez pozwolenia.
+
+> **Transparentne koszty**
+Wszystkie opłaty (gas, DEX, bridge, OROKAI) pokazane PRZED podpisaniem.
+
+> **Brak gwarancji**
+Zyski są zmienne. Protokoły są zewnętrzne. Informujemy, nie doradzamy.
+
+> **Obowiązują zasady blockchain**
+Transakcje są ostateczne (natura blockchain). OROKAI nie dodaje ani nie usuwa tej właściwości.
+
+> **Ostrzeżenia o ryzyku**
+Jasne etykiety złożoności, płynności, ryzyka protokołu. TY decydujesz, jaki poziom ryzyka zaakceptować
+:::

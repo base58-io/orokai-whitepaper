@@ -1,27 +1,75 @@
 ---
-sidebar_label: Rewards Overview
+sidebar_label: 報酬概要
 sidebar_position: 4
 custom_edit_url: null
 ---
 
-# Rewards Overview and History
+# 報酬概要と履歴
 
-## Tracking and Automation
+## 追跡と自動化
 
-### "Rewards" view
+### 「報酬」ビュー
 
-Aggregate presentation of active positions, accumulated rewards, and upcoming claim windows (per protocol/chain).
+アクティブポジション、累積報酬、今後のクレームウィンドウ（プロトコル/チェーンごと）の集約プレゼンテーション。
 
-### "Auto-claim" (optional)
+### オプションA：手動報酬管理
 
-User can enable claim/re-stake scenario or claim → USDT (exchange through DEX); this is still a <mark>set of transactions requiring signature</mark> upon configuration or according to schedule.
+仕組み：
+> OROKAIはすべてのポジションで発生した報酬を追跡
 
-### History
+> ダッシュボードに「クレーム可能」金額を表示
 
-Every claim/swap/stake reflected in history with costs (gas/fee/slippage) and on-chain links.
+> いつクレームするかはあなたが決定（自動アクションなし）
 
-:::warning[Variable rewards and conversion risks]
+>  各クレーム = あなたが署名する個別の取引
 
-Reward levels are variable; conversion to USDT occurs through DEX with price/slippage risk.
+> 報酬はネイティブトークン（例：stETH、AAVE）のまま
+
+### オプションB：自動クレーム + USDT/USDCへの変換（オプション）
+
+:::warning[注意]
+
+この機能は後のフェーズで開発されます。
 
 :::
+
+仕組み：
+> 一度スケジュールを承認（例：「週次」または「月次」）
+
+> OROKAIがクレーム + USDTへのスワップ取引を準備
+
+> 条件が満たされたときに自動実行（閾値を設定）
+
+> 各実行でもあなたのウォレット署名を使用（事前承認済み）
+
+> 報酬はDEX経由でUSDTに変換（ホワイトリストから）
+
+:::warning[これはカストディアル自動化ではありません]
+   - あなたの鍵は<mark>あなたの</mark>デバイスに残ります
+   - 各取引は<mark>あなたが</mark>付与した権限を使用
+   - <mark>いつでも</mark>承認を取り消せます
+   - <mark>OROKAI</mark>は事前承認なしにクレームできません
+:::
+### 履歴
+
+すべてのクレーム/スワップ/ステークは、コスト（ガス/手数料/スリッページ）とオンチェーンリンク付きで履歴に反映されます。
+
+:::warning[変動する報酬と変換リスク]
+
+報酬レベルは変動します。USDTへの変換は、価格/スリッページリスクを伴うDEXを通じて行われます。
+
+:::
+
+### 重要な原則
+
+#### OROKAIにおける自動化
+
+| 原則 | 意味 |
+|-----------|---------------|
+| **オプション、決して必須ではない** | 手動制御がデフォルト。自動化はあなたの選択。 |
+| **事前承認、自動ではない** | 一度権限を付与。各実行はその権限を使用。 |
+| **いつでも取り消し可能** | 自動化を即座に無効化。ワンクリックで権限を取り消し。 |
+| **コスト認識** | ガスが最大値を超える場合、OROKAIは実行しない。高コスト期間をスキップ。 |
+| **透明な履歴** | すべての自動クレームは、コスト、結果、オンチェーンリンクとともに記録。 |
+| **ノンカストディアル** | あなたの鍵はあなたのデバイスに留まる。権限は私たちにカストディを与えない。 |
+| **条件ベース** | あなたの条件が満たされた場合のみ実行（最小額、最大ガスなど）。 |

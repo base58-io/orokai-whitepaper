@@ -36,11 +36,11 @@
     "description": "The generated-index page description for category 'AI Agent' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.How it works": {
-    "message": "How it works",
+    "message": "Jak to działa",
     "description": "The label for category 'How it works' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.How it works.link.generated-index.description": {
-    "message": "OROKAI simplifies DeFi entry: from on-ramp through 'zero-setup wallet,' strategy selection, first allocation, to monitoring and potential 'one-click' migrations between protocols and chains - with full user control (self-custody).",
+    "message": "OROKAI upraszcza wejście do DeFi: od on-ramp przez 'zero-setup wallet', wybór strategii, pierwszą alokację, aż po monitoring i potencjalne migracje 'one-click' między protokołami i łańcuchami - przy pełnej kontroli użytkownika (self-custody).",
     "description": "The generated-index page description for category 'How it works' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Value for Users": {

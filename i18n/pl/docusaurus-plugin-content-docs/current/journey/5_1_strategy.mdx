@@ -1,0 +1,242 @@
+---
+sidebar_label: Wybór strategii
+sidebar_position: 2
+custom_edit_url: null
+---
+
+# Wybór strategii i pierwsza alokacja
+
+## Proces sześciokrokowy
+
+Pierwsza alokacja każdego użytkownika odbywa się zgodnie z przewodnikiem drzewa decyzyjnego opartym na jego profilu i preferencjach.
+
+### Krok 1 – Przegląd profilu
+
+import step1Light from '@site/static/img/step1.png';
+import step1Dark from '@site/static/img/step1.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={step1Light} className="light-only" style={{ width: '100%' }} />
+    <img src={step1Dark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+```
+START: Masz środki w swoim portfelu
+│
+├─ Krok 1: PRZEGLĄD PROFILU
+│  │
+│  ├─ Profil kompletny? 
+│  │  ├─ TAK → Przejdź do Kroku 2
+│  │  └─ NIE → Szybka konfiguracja (5-10 min)
+│  │           ├─ Cele (pasywny dochód / wzrost / ochrona)
+│  │           ├─ Tolerancja ryzyka (konserwatywna / zbalansowana / oportunistyczna)
+│  │           ├─ Horyzont czasowy (krótki / średni / długi)
+│  │           └─ Preferencje (łańcuchy, aktywa, potrzeby płynności)
+│  │
+│  └─ Profil przejrzany → Kontynuuj
+│
+├─ Krok 2: AI POKAZUJE DOPASOWANE OPCJE
+```
+
+### Krok 2 – AI pokazuje dopasowane opcje
+```
+├─ Krok 2: AI POKAZUJE DOPASOWANE OPCJE (zazwyczaj 3)
+│  │
+│  ├─ Opcja A: Rekomendowana (najlepsze dopasowanie do profilu)
+│  │  ├─ Szczegóły protokołu (nazwa, typ, zakres APY)
+│  │  ├─ Ocena ryzyka (dopasowana do tolerancji)
+│  │  ├─ Szacunek kosztów (gas + opłaty)
+│  │  ├─ Wymagane kroki (np. „3 kroki: approve → swap → stake")
+│  │  └─ Kody przyczyn („Dlaczego to?")
+│  │
+│  ├─ Opcja B: Alternatywa (inny kompromis)
+│  │  └─ [Ta sama struktura jak Opcja A]
+│  │
+│  └─ Opcja C: Alternatywa (inne podejście)
+│     └─ [Ta sama struktura jak Opcja A]
+│
+├─ Krok 3: PUNKT DECYZYJNY UŻYTKOWNIKA
+```
+
+### Krok 3 – Punkt decyzyjny użytkownika
+```
+├─ Krok 3: PUNKT DECYZYJNY UŻYTKOWNIKA
+│  │
+│  ├─ „Chcę Opcję A" → Przejdź do Kroku 4
+│  │
+│  ├─ „Chcę dostosować alokację" 
+│  │  ├─ Dostosuj procenty między opcjami
+│  │  ├─ Mieszaj wiele strategii
+│  │  └─ Ustaw własne limity → Przejdź do Kroku 4
+│  │
+│  ├─ „Pokaż mi więcej opcji"
+│  │  ├─ AI pokazuje kolejne 3 alternatywy
+│  │  └─ Powrót do Kroku 2
+│  │
+│  ├─ „Muszę najpierw dostosować profil"
+│  │  ├─ Modyfikuj cele/ryzyko/preferencje
+│  │  ├─ AI przelicza rekomendacje
+│  │  └─ Powrót do Kroku 2
+│  │
+│  └─ „Chcę zbadać sam"
+│     ├─ Wyjście do listy protokołów (tylko z allow-listy)
+│     └─ Ręczny wybór → Przejdź do Kroku 4
+│
+├─ Krok 4: PRZEGLĄD PRZEPŁYWU TRANSAKCJI
+```
+
+### Krok 4 – Przegląd przepływu transakcji
+```
+├─ Krok 4: PRZEGLĄD PRZEPŁYWU TRANSAKCJI
+│  │
+│  │  OROKAI przygotowuje kompletny przepływ:
+│  │
+│  ├─ Podgląd przepływu:
+│  │  ├─ Krok 1: [Akcja] (np. „Zatwierdź kontrakt Lido")
+│  │  │   ├─ Co: „Pozwól Lido na dostęp do X kwoty"
+│  │  │   ├─ Koszt: Szacowany gas
+│  │  │   └─ Bezpieczeństwo: Zakres zatwierdzenia (limited vs unlimited)
+│  │  │
+│  │  ├─ Krok 2: [Akcja] (np. „Wymień USDC → ETH przez Uniswap")
+│  │  │   ├─ Co: „Wymień aktywa do stakowania"
+│  │  │   ├─ Koszt: Gas + opłata LP + szacunek slippage
+│  │  │   └─ Oczekiwany wynik: Kwota którą otrzymasz
+│  │  │
+│  │  └─ Krok 3: [Akcja] (np. „Stakuj ETH w Lido")
+│  │      ├─ Co: „Zdeponuj w protokole stakowania"
+│  │      ├─ Koszt: Szacowany gas
+│  │      └─ Oczekiwana pozycja: Kwota tokenu + zakres APY
+│  │
+│  ├─ Podsumowanie całkowite:
+│  │  ├─ Całkowity koszt gasu: [Szacunek]
+│  │  ├─ Całkowite opłaty: [DEX + bridge + OROKAI]
+│  │  ├─ Całkowita liczba kroków: [Liczba]
+│  │  ├─ Szacowany czas: [Minuty]
+│  │  └─ Oczekiwana wartość pozycji: [Kwota w Twoich aktywach]
+│  │
+│  └─ Użytkownik widzi WSZYSTKO przed podpisaniem CZEGOKOLWIEK
+│
+├─ Krok 5: POTWIERDZENIE KOSZTÓW I RYZYKA
+```
+### Krok 5 – Potwierdzenie kosztów i ryzyka
+```
+├─ Krok 5: POTWIERDZENIE KOSZTÓW I RYZYKA
+│  │
+│  ├─ Ekran przeglądu pokazuje:
+│  │  ├─ Ostrzeżenia o ryzyku:
+│  │  │   ├─ Poziom ryzyka protokołu (niski/średni/wysoki)
+│  │  │   ├─ Ograniczenia płynności (jeśli są)
+│  │  │   ├─ Okresy lock-up (jeśli są)
+│  │  │   └─ Zastrzeżenie zmiennego APY
+│  │  │
+│  │  ├─ Rozbicie kosztów:
+│  │  │   ├─ Opłaty gasu sieciowego
+│  │  │   ├─ Opłaty DEX/bridge (jeśli dotyczy)
+│  │  │   ├─ Opłaty protokołu (jeśli dotyczy)
+│  │  │   ├─ Opłata UI OROKAI
+│  │  │   └─ Całkowity maksymalny koszt (najgorszy przypadek)
+│  │  │
+│  │  └─ Lista kontrolna bezpieczeństwa:
+│  │      ├─ ✓ Protokół na allow-liście (zaudytowany)
+│  │      ├─ ✓ Adresy kontraktów zweryfikowane
+│  │      ├─ ✓ Poprawna sieć (Ethereum/Polygon/etc.)
+│  │      ├─ ✓ Zakres zatwierdzenia: [Dokładna kwota lub ograniczona]
+│  │      └─ ✓ Twój portfel ma wystarczający gas
+│  │
+│  ├─ Decyzja użytkownika:
+│  │  ├─ „Wygląda dobrze, kontynuuj" → Krok 6
+│  │  ├─ „Dostosuj ustawienia" (slippage, priorytet gasu) → Przelicz → Krok 5
+│  │  ├─ „Za drogie, poczekaj na niższy gas" → Ustaw alert → Wyjście
+│  │  └─ „Anuluj" → Powrót do Kroku 2
+│  │
+│  └─ Wymagane potwierdzenie: [Checkbox] „Rozumiem ryzyka i koszty"
+│
+├─ Krok 6: FAZA PODPISU (Krytyczne - TY kontrolujesz)
+```
+### Krok 6 – Faza podpisu
+```
+├─ Krok 6: FAZA PODPISU (Krytyczne - TY kontrolujesz)
+│  │
+│  │  OROKAI NIGDY NIE PODPISUJE ZA CIEBIE
+│  │
+│  ├─ Dla każdego kroku w przepływie:
+│  │  │
+│  │  ├─ Transakcja pojawia się w TWOIM portfelu (MetaMask/WalletConnect/etc.)
+│  │  │  ├─ Przegląd szczegółów transakcji
+│  │  │  ├─ Weryfikacja: adres odbiorcy, kwota, sieć
+│  │  │  ├─ Sprawdź opłatę gazu (ostatni raz)
+│  │  │  └─ Podpisz lub odrzuć (Twój wybór)
+│  │  │
+│  │  ├─ Jeśli PODPISANE:
+│  │  │  ├─ Transakcja wysłana do blockchain
+│  │  │  ├─ OROKAI śledzi status (oczekująca → potwierdzona)
+│  │  │  ├─ Aktualizacja paska postępu
+│  │  │  └─ Przejście do następnego kroku po potwierdzeniu
+│  │  │
+│  │  └─ Jeśli ODRZUCONE:
+│  │     ├─ Przepływ wstrzymany
+│  │     ├─ Opcja wznowienia później
+│  │     └─ Opcja anulowania całego przepływu
+│  │
+│  └─ Obsługa wielu kroków:
+│     ├─ Krok 1 podpisany → Czekaj na potwierdzenie → Prezentuj Krok 2
+│     ├─ Krok 2 podpisany → Czekaj na potwierdzenie → Prezentuj Krok 3
+│     └─ Wszystkie kroki zakończone → Przejdź do Kroku 7
+│
+├─ Krok 7: POTWIERDZENIE I ŚLEDZENIE POZYCJI
+```
+### Krok 7 – Potwierdzenie i śledzenie pozycji
+```
+├─ Krok 7: POTWIERDZENIE I ŚLEDZENIE POZYCJI
+│  │
+│  ├─ Ekran sukcesu:
+│  │  ├─ Wszystkie transakcje potwierdzone
+│  │  ├─ Twoja nowa pozycja:
+│  │  │   ├─ Protokół: [Nazwa]
+│  │  │   ├─ Kwota zastakowana: [X tokenów]
+│  │  │   ├─ Obecna wartość: [Ekwiwalent $]
+│  │  │   ├─ Oczekiwany zakres APY: [Zmienny]
+│  │  │   └─ Następne naliczenie nagrody: [Ramy czasowe]
+│  │  │
+│  │  ├─ Rzeczywiste koszty:
+│  │  │   ├─ Całkowity wydany gas: [Rzeczywisty vs szacowany]
+│  │  │   ├─ Zapłacone opłaty: [Rozbicie]
+│  │  │   └─ Linki do eksploratora bloków
+│  │  │
+│  │  └─ Co możesz teraz zrobić:
+│  │      ├─ Zobacz pozycję w dashboardzie
+│  │      ├─ Ustaw powiadomienia o nagrodach
+│  │      ├─ Włącz auto-claim (opcjonalnie)
+│  │      └─ Przegląd/odwołanie zatwierdzeń
+│  │
+│  └─ Pozycja teraz widoczna w zunifikowanym dashboardzie
+│
+└─ CIĄGŁE: Rozpoczyna się ciągłe monitorowanie (zobacz Sekcja 5.4)
+   ├─ AI śledzi zmiany APY
+   ├─ Monitoruje możliwości rebalansowania
+   ├─ Alerty dla okien claimu
+   └─ Sugeruje migracje gdy korzystne
+```
+
+### Kluczowe punkty decyzyjne, gdzie UŻYTKOWNIK kontroluje wynik
+
+| Punkt decyzyjny | Opcje użytkownika | Rola OROKAI |
+|----------------|-------------|-------------|
+| **Konfiguracja profilu** | Cele, ryzyko, horyzont, preferencje | Sugeruje domyślne, użytkownik decyduje |
+| **Wybór strategii** | Wybierz rekomendowaną lub alternatywy | Pokazuje opcje, użytkownik wybiera |
+| **Dostosowanie** | Dostosuj alokacje, mieszaj strategie | Przygotowuje przepływ, użytkownik zatwierdza |
+| **Akceptacja kosztów** | Kontynuuj lub czekaj na lepsze warunki | Pokazuje koszty, użytkownik decyduje |
+| **Każdy podpis** | Podpisz lub odrzuć każdą transakcję | Przygotowuje tx, użytkownik podpisuje |
+| **Zakres zatwierdzenia** | Ograniczone vs nieograniczone uprawnienia | Rekomenduje ograniczone, użytkownik wybiera |
+| **Po alokacji** | Monitoruj, claimuj, migruj, wyjdź | Sugeruje działania, użytkownik wykonuje |
+
+:::tip[Podstawowa zasada]
+W każdym punkcie decyzyjnym TY masz ostatnie słowo.  
+OROKAI informuje, przygotowuje i prowadzi — TY decydujesz i wykonujesz.
+:::
+
+:::warning[Brak „najlepszej egzekucji"]
+OROKAI nie gwarantuje najlepszej ceny; pokazujemy koszty i slippage przed podpisaniem.
+:::

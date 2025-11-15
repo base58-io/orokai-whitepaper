@@ -1,31 +1,31 @@
 ---
-sidebar_label: One-Click Fund Migration
+sidebar_label: ワンクリック資金マイグレーション
 sidebar_position: 5
 custom_edit_url: null
 ---
 
-# "One-Click" Fund Migration Between Protocols and Chains
+# プロトコルとチェーン間の「ワンクリック」資金マイグレーション
 
-## Simplified Cross-Protocol Movement
+## 簡素化されたクロスプロトコル移動
 
-### Compare and decide
+### 比較して決定
 
-"Migration" screen displays current strategy versus alternative (metrics, costs, risk, number of steps).
+「マイグレーション」画面は、現在の戦略と代替案（指標、コスト、リスク、ステップ数）を比較表示します。
 
-### "One-click" = one flow, multiple signatures
+### 「ワンクリック」 = 1つのフロー、複数の署名
 
-OROKAI composes the route (e.g., unstake/withdraw → bridge → swap → deposit) and displays the entire sequence upfront for signing.
+OROKAIはルート（例：アンステーク/引き出し → ブリッジ → スワップ → デポジット）を構成し、署名のために全シーケンスを事前に表示します。
 
-### Operational protection
+### 運用保護
 
-Amount limits, warnings (e.g., about bridge liquidity, high slippage), permission control (revoke/limit approve).
+金額制限、警告（ブリッジの流動性、高スリッページなど）、権限制御（承認の取り消し/制限）。
 
-### Interruption/withdrawal
+### 中断/撤回
 
-<mark>User can interrupt the process</mark> at any time before the next signature.
+<mark>ユーザーは次の署名の前にいつでもプロセスを中断できます。</mark>
 
-:::tip[Full visibility, maintained control]
+:::tip[完全な可視性、維持された制御]
 
-"One-click" simplifies the user experience but doesn't eliminate user control – every step requires explicit authorization.
+「ワンクリック」はユーザー体験を簡素化しますが、ユーザー制御を排除しません – すべてのステップには明示的な承認が必要です。
 
 :::

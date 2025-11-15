@@ -1,31 +1,31 @@
 ---
-sidebar_label: One-Click Fund Migration
+sidebar_label: Migracja środków jednym kliknięciem
 sidebar_position: 5
 custom_edit_url: null
 ---
 
-# "One-Click" Fund Migration Between Protocols and Chains
+# Migracja środków „jednym kliknięciem" między protokołami i łańcuchami
 
-## Simplified Cross-Protocol Movement
+## Uproszczone przenoszenie między protokołami
 
-### Compare and decide
+### Porównaj i zdecyduj
 
-"Migration" screen displays current strategy versus alternative (metrics, costs, risk, number of steps).
+Ekran „Migracja" wyświetla obecną strategię w porównaniu z alternatywą (metryki, koszty, ryzyko, liczba kroków).
 
-### "One-click" = one flow, multiple signatures
+### „Jedno kliknięcie" = jeden przepływ, wiele podpisów
 
-OROKAI composes the route (e.g., unstake/withdraw → bridge → swap → deposit) and displays the entire sequence upfront for signing.
+OROKAI komponuje trasę (np. unstake/withdraw → bridge → swap → deposit) i wyświetla całą sekwencję z góry do podpisania.
 
-### Operational protection
+### Ochrona operacyjna
 
-Amount limits, warnings (e.g., about bridge liquidity, high slippage), permission control (revoke/limit approve).
+Limity kwot, ostrzeżenia (np. o płynności mostu, wysokim slippage), kontrola uprawnień (revoke/limit approve).
 
-### Interruption/withdrawal
+### Przerwanie/wycofanie
 
-<mark>User can interrupt the process</mark> at any time before the next signature.
+<mark>Użytkownik może przerwać proces</mark> w dowolnym momencie przed następnym podpisem.
 
-:::tip[Full visibility, maintained control]
+:::tip[Pełna widoczność, zachowana kontrola]
 
-"One-click" simplifies the user experience but doesn't eliminate user control – every step requires explicit authorization.
+„Jedno kliknięcie" upraszcza doświadczenie użytkownika, ale nie eliminuje kontroli użytkownika – każdy krok wymaga wyraźnej autoryzacji.
 
 :::

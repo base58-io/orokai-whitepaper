@@ -1,27 +1,26 @@
 ---
-sidebar_label: Intelligent Asset Management
+sidebar_label: インテリジェント資産管理
 sidebar_position: 6
 custom_edit_url: null
 ---
-
-# Intelligent Asset Management
-
-## Informed Decision Support
-
-### Alerts and recommendations (informational)
-
-Upon significant changes (e.g., reward drop, increased protocol risk, cheaper DEX route), user receives notification and rebalancing/migration proposal.
-
-### Rules and schedules
-
-User can set rules (thresholds, intervals) for claim/re-stake or rebalancing — always as a set of transactions to sign.
-
-### Reports and export
-
-History export (CSV/JSON), transaction tagging, aggregation per chain/protocol/strategy/currency (including USDT).
-
-:::warning[No autonomous execution]
-
-No decisions are executed automatically; OROKAI does not manage the user's wallet — it only prepares operations and explains their consequences.
-
+# インテリジェント資産管理
+## 情報に基づいた意思決定のサポート
+### アラートと推奨（情報提供）
+重要な変更（報酬の低下、プロトコルリスクの増加、より安価なDEXルートなど）が発生した場合、ユーザーは通知とリバランス/マイグレーションの提案を受け取ります。
+AI Agentはあなたのポジションと市場状況を継続的に監視しますが、<mark>特定のトリガーが満たされた場合にのみアクションを提案します。</mark>完全な制御を維持できます — すべての提案はオプションであり、すべてのアクションにはあなたの署名が必要です。
+### ルールとスケジュール
+ユーザーは、クレーム/再ステークまたはリバランスのためのルール（閾値、間隔）を設定できます — 常に署名するための取引セットとして。
+### 重要な原則：OROKAIのインテリジェント管理
+| 原則 | 意味 |
+|-----------|---------------|
+| **モニタリング ≠ 制御** | AIは24時間365日観察しますが、すべてのアクションを決定するのはあなたです。 |
+| **提案であって命令ではない** | すべてのアラートはオプションです。自由に拒否/スヌーズできます。 |
+| **データだけでなくコンテキスト** | AIは何かを提案する理由を説明します（理由コード）。 |
+| **コスト意識** | コスト > 利益の場合、アクションを提案しません。 |
+| **リスクを最優先** | セキュリティアラートが機会よりも優先されます。 |
+| **あなたのペース** | あなたのスタイルに合った閾値、頻度、チャネルを設定します。 |
+| **非侵襲的** | デフォルト：日次ダイジェスト。本当に重大な場合のみ重大アラート。 |
+| **常に取り消し可能** | いつでもポジションのモニタリングを一時停止、アラートタイプを無効化できます。 |
+:::warning[自律的な実行なし]
+決定は自動的には実行されません。OROKAIはユーザーのポートフォリオを管理しません — 操作を準備し、その結果を説明するだけです。
 :::
