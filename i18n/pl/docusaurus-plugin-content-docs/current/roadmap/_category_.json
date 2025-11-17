@@ -1,8 +1,8 @@
 {
-  "label": "Roadmap",
+  "label": "Roadmapa",
   "position": 9,
   "link": {
     "type": "generated-index",
-    "description": "The OROKAI roadmap describes development in three phases. Each phase has clearly defined product goals, milestones, compliance gates (go/no-go), and success metrics."
+    "description": "Roadmapa OROKAI opisuje rozwój w trzech fazach. Każda faza ma jasno zdefiniowane cele produktowe, kamienie milowe, bramki zgodności (go/no-go) i metryki sukcesu."
   }
 }

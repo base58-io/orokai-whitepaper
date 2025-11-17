@@ -1,53 +1,121 @@
 ---
-sidebar_label: Phase 1 — Foundations
+sidebar_label: Faza 1 — Fundamenty
 sidebar_position: 2
 custom_edit_url: null
 ---
 
-# Phase 1 — Foundations
+# Faza 1 — Fundamenty
 
-## Functional Scope
+## Zakres: Minimum Viable Product
 
-### DeFi staking
+### Staking DeFi
 
-Integrations for ATOM (Cosmos), SOL (Solana), ETH (Ethereum) — protocol allow-list, rewards view, claim schedule.
+> Integracje dla 
+- ETH (przez Lido - stETH)
+- ATOM (Cosmos)
+- SOL (Solana)
+- allow-lista protokołów, widok nagród.
 
-### On-ramp / off-ramp (card)
+### On/Off-Ramp (przez partnerów)
 
-Entry/exit through licensed partners (issuance/settlements/KYC/AML on partner side).
+> Wejście/wyjście przez licencjonowanych partnerów (emisja/rozliczenia/KYC/AML po stronie partnera).
+- Integracja Stripe (główna)
+- Integracja Onramper (backup)
+- On-ramp kartą kredytową
+- Off-ramp przelewem bankowym
 
-### On-ramp / off-ramp (payment provider)
+### Karta płatnicza (przez V Plus Pay)
 
-Fiat↔crypto payments via PSP (partner).
+> Najpierw karta wirtualna (fizyczna w Fazie 2)
+- Wydawaj z salda portfela
+- Podstawowa struktura opłat (2.5%)
 
-### DEX domestic & swap
+### DEX krajowy i swap
 
-Basic crypto swaps within supported chains through DEX from allow-list.
+> Podstawowe swapy krypto w obrębie wspieranych łańcuchów:
+- Uniswap V3 (Ethereum, Polygon, Base)
+- Raydium (Solana)
+- Podejście allow-list (tylko zweryfikowane pule)
+- Transparentne rozbicie opłat 
 
-### Virtual card
+### Portfel Zero-Setup
 
-Virtual card (if partner agreement provides).
+> Tworzenie smart wallet
+- po stronie użytkownika, non-custodial
+- Logowanie email/social (zarządzanie kluczami MPC)
+- Opcja backupu seed phrase
+- Wsparcie WalletConnect (istniejące portfele)
 
-## Milestones
+## Kamienie milowe
 
-> MVP staking (ATOM/SOL/ETH) with results view and claims
+### Kamień milowy 1
+#### Podstawowa infrastruktura
+> Deliverables:
+- Integracja RPC multi-chain (Ethereum, Solana, Cosmos)
+- Przepływ tworzenia portfela przetestowany
+- Podstawowy UI/UX (aplikacja webowa)
+- Smart kontrakty wdrożone (testnet)
 
-> On/off-ramp integration (provider + card) with transparent costs before authorization
+### Kamień milowy 2
+#### Integracje partnerów
+> Deliverables:
+- Stripe/Onramper live (testnet/sandbox)
+- Integracja karty V Plus Pay ukończona
+- Staking Lido funkcjonalny
+- Routing swap Uniswap działający
 
-> DEX-swap + basic warnings (slippage, permissions)
+### Kamień milowy 3
+#### Uruchomienie beta
+> Deliverables:
+- Zamknięta beta (100-500 użytkowników, tylko zaproszenia)
+- Monitoring i observability live
+- Infrastruktura wsparcia gotowa
+- Program bug bounty uruchomiony
 
-> Virtual card (pilot) — only through partner, no PAN/CVV processing by OROKAI
+### Kamień milowy 4
+#### Publiczne uruchomienie
+> Deliverables:
+- Dostępność publiczna (otwarte rejestracje)
+- Kampania marketingowa (treści, płatne reklamy, partnerstwa)
+- Dokumentacja kompletna (przewodniki użytkownika, FAQ)
+- Początkowe partnerstwa płynnościowe (protokoły, portfele)
 
-## Compliance Gates (Go/No-Go)
+## Deliverables techniczne
 
-Smart contract audit of MVP, geo/sanctions policy in UI, KYC/AML testing on partner side.
+### Smart kontrakty
+- AllocationRouter (orkiestruje przepływy wieloetapowe)
+- Adaptery protokołów (Lido, walidatorzy Cosmos, staking Solana)
+- Router DEX (integracja Uniswap)
+- Mechanizm awaryjnej pauzy
 
-## Success Metrics (Examples)
+### Usługi backendowe
+- Warstwa agregacji RPC (redundancja wielu dostawców)
+- Indexer (historia transakcji, salda)
+- Silnik quote/routing (agregacja cen DEX)
+- Handlery webhook (wydarzenia partnerów)
+- Kolejka zadań (operacje asynchroniczne)
 
-TTFV (time to first allocation), % completed "prepare→sign" flows, onboarding NPS.
+### Frontend
 
-:::tip[Foundation building]
+- Aplikacja webowa (React, responsywna)
+- Adapter portfela (WalletConnect, tworzenie smart wallet)
+- Przepływ transakcji (przygotuj, podgląd kosztów, podpisz)
+- Dashboard (salda, historia, pozycje)
+- Chat wsparcia (Intercom lub podobny)
 
-Phase 1 establishes core infrastructure and validates the non-custodial model with essential DeFi integrations.
+## Zgodność i partnerstwa
+### Regulacyjne
+- Przegląd prawny ToS, Polityki prywatności
+- Ograniczenia geograficzne wdrożone (zgodność z sankcjami)
+- KYC/AML partnera (obsługiwane przez Stripe, V Plus Pay)
+### Kluczowe partnerstwa
+- Stripe (on-ramp) - Priorytet 1
+- Onramper (backup on-ramp) - Priorytet 2
+- V Plus Pay (emitent kart) - Priorytet 1
+- 1-2 protokoły DeFi (Lido potwierdzone, inne TBD)
+
+:::tip[Budowanie fundamentów]
+
+Faza 1 ustanawia podstawową infrastrukturę i waliduje model non-custodial z istotnymi integracjami DeFi.
 
 :::

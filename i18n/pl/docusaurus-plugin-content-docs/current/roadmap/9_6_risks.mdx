@@ -1,0 +1,60 @@
+---
+sidebar_label: Ryzyka i mitygacje
+sidebar_position: 7
+custom_edit_url: null
+---
+
+# Ryzyka i mitygacje (Podsumowanie)
+
+## Kategorie ryzyk i odpowiedzi
+
+### Ryzyka techniczne
+
+| Ryzyko | Prawdopodobieństwo | Wpływ | Mitygacja |
+|------|------------|--------|------------|
+| **Exploit smart kontraktu** | Niskie | Krytyczny | • 2 niezależne audyty <br /> • Program bug bounty <br /> • Mechanizm awaryjnej pauzy <br /> • Rezerwy funduszu ubezpieczeniowego <br /> • Stopniowe wdrożenie (ogranicz ekspozycję TVL) |
+| **Awaria/exploit mostu** | Średnie | Wysoki | • Allow-lista tylko zweryfikowanych mostów <br /> • Monitoring zdrowia + kwarantanna <br /> • Redundancja wielu dostawców <br /> • Ostrzeżenia użytkownika przed bridgowaniem <br /> • Kill-switch per most |
+| **Awaria dostawcy RPC** | Średnie | Wysoki | • Konfiguracja wielu dostawców (3+ węzły RPC) <br /> • Automatyczny failover <br /> • Circuit breakers <br /> • Self-hosted węzły backupowe |
+| **Kryzys płynności DEX** | Średnie | Średni | • Kieruj przez wiele DEX <br /> • Sprawdzenia płynności w czasie rzeczywistym <br /> • Ostrzeżenia slippage <br /> • Fallback do alternatywnych DEX |
+| **Awaria bazy danych/utrata danych** | Niskie | Krytyczny | • Codzienne backupy (zautomatyzowane) <br /> • Replikacja multi-region <br /> • Odzyskiwanie point-in-time <br /> • Ćwiczenia disaster recovery (kwartalne) |
+| **Wąskie gardła skalowania** | Średnie | Średni | • Testy obciążeniowe przed fazami wzrostu <br /> • Architektura skalowania horyzontalnego <br /> • CDN dla zasobów statycznych <br /> • Repliki odczytu bazy danych |
+| **Halucynacje modelu AI** | Średnie | Średni | • Konserwatywne rekomendacje <br /> • Przegląd ludzki outputów (próbkowanie) <br /> • Pętla feedbacku użytkownika ("zgłoś złą poradę") <br /> • Wersjonowanie modelu + rollback |
+
+### Ryzyka operacyjne
+
+| Ryzyko | Prawdopodobieństwo | Wpływ | Mitygacja |
+|------|------------|--------|------------|
+| **Zależność od kluczowej osoby** | Średnie | Wysoki | • Dokumentuj wiedzę plemienną <br /> • Cross-train członków zespołu <br /> • Planowanie sukcesji <br /> • Zachęty retencyjne (equity) |
+| **Odpływ zespołu** | Średnie | Wysoki | • Konkurencyjne wynagrodzenie <br /> • Silna kultura + misja <br /> • Ścieżki rozwoju kariery <br /> • Pipeline rekrutacyjny (zawsze rekrutuj) |
+| **Wyjście partnera (Stripe, V Plus Pay)** | Niskie | Wysoki | • Umowy z wieloma dostawcami <br /> • Kontraktowe okresy lock-in <br /> • Plany migracji udokumentowane <br /> • Partnerzy backupowi zidentyfikowani |
+| **Przeciążenie wsparcia** | Średnie | Średni | • Dokumenty self-service (zredukuj zgłoszenia) <br /> • Chatbot dla typowych problemów <br /> • Wsparcie warstwowe (L1/L2/L3) <br /> • Skaluj zespół wsparcia z użytkownikami |
+| **Skok kosztów infrastruktury** | Średnie | Średni | • Wynegocjowane zniżki wolumenowe <br /> • Monitoring kosztów + alerty <br /> • Optymalizuj zapytania/cache <br /> • Bufor budżetowy (20%) |
+| **Naruszenie bezpieczeństwa (wewnętrzne)** | Niskie | Krytyczny | • Sprawdzenia przeszłości (pracownicy) <br /> • Dostęp least-privilege <br /> • Logi audytu (wszystkie akcje) <br /> • Regularne szkolenia bezpieczeństwa |
+
+### Ryzyka regulacyjne
+
+| Ryzyko | Prawdopodobieństwo | Wpływ | Mitygacja |
+|------|------------|--------|------------|
+| **Model non-custodial zakwestionowany** | Niskie | Krytyczny | • Opinie prawne przed uruchomieniem <br /> • Compliance-by-design <br /> • Jasne ujawnienia użytkownika <br /> • Oddzielne podmioty jeśli potrzeba (US/offshore) |
+| **Program afiliacyjny uznany za piramidę** | Niskie | Wysoki | • Przegląd prawny struktury <br /> • Przychód z prawdziwej aktywności (nie rekrutowania) <br /> • Brak kosztów z góry na dołączenie <br /> • Jasne ujawnienia (zmienne zarobki) |
+| **Token sklasyfikowany jako papier wartościowy** | Średnie | Krytyczny | • Opinie prawne (wiele jurysdykcji) <br /> • Projekt utility-first <br /> • Brak obietnic zwrotów <br /> • Opóźnij/anuluj TGE jeśli konieczne |
+| **Działania regulacyjne protokołu DeFi** | Średnie | Wysoki | • Dywersyfikuj integracje protokołów <br /> • Monitoruj wiadomości regulacyjne <br /> • Szybkie usunięcie oflagowanych protokołów <br /> • Geo-blokuj gdzie wymagane |
+| **Naruszenie sankcji/AML** | Niskie | Krytyczny | • KYC/AML partnera (Stripe, V Plus Pay) <br /> • Ograniczenia geograficzne egzekwowane <br /> • Brak funkcji mieszania/prywatności <br /> • Monitoring zespołu zgodności |
+| **Ban specyficzny dla jurysdykcji** | Średnie | Wysoki | • Działaj w wielu jurysdykcjach <br /> • Elastyczność struktury podmiotu <br /> • Przygotowany do geo-blokowania <br /> • Skup się na rynkach permisywnych |
+
+### Ryzyka rynkowe i konkurencyjne
+
+| Ryzyko | Prawdopodobieństwo | Wpływ | Mitygacja |
+|------|------------|--------|------------|
+| **Niska adopcja użytkowników** | Średnie | Krytyczny | • Testowanie MVP (waliduj PMF) <br /> • Iteruj na podstawie feedbacku <br /> • Elastyczna roadmapa (pivot jeśli potrzeba) <br /> • Dywersyfikacja marketingu |
+| **Wysoki churn użytkowników** | Średnie | Wysoki | • Optymalizacja onboardingu <br /> • Funkcje zaangażowania (powiadomienia, insights) <br /> • Efekty sieciowe (afiliacja wiąże użytkowników) <br /> • Monitoruj NPS, działaj na podstawie feedbacku |
+| **Konkurent uruchamia podobny produkt** | Wysokie | Średni | • Szybkość na rynek (przewaga first-mover) <br /> • Unikalne funkcje (transferowalność NFT, AI) <br /> • Silna marka/społeczność <br /> • Ciągła innowacja |
+| **Bessa (krypto zima)** | Średnie | Wysoki | • Zdywersyfikowany przychód (nie tylko poszukiwanie zysku) <br /> • Karta + fiat użyteczne w bessie <br /> • Przedłuż runway (konserwatywne spalanie) <br /> • Skup się na retencji nad akwizycją |
+| **Kolaps zysków DeFi** | Średnie | Wysoki | • Nie wyłącznie zależne od zysku <br /> • Propozycja wartości = wygoda, nie "najlepszy APY" <br /> • Rozszerz na funkcje nie-zysku (karty, swapy) <br /> • Dostosowanie przekazu (bezpieczeństwo nad zyskiem) |
+| **Partner zwiększa opłaty** | Średnie | Średni | • Kontraktowe limity opłat (gdzie możliwe) <br /> • Strategia wielu dostawców <br /> • Koszty pass-through (transparentne dla użytkowników) <br /> • Renegocjuj lub zmień partnerów |
+
+:::warning[Wielowarstwowe zarządzanie ryzykiem]
+
+OROKAI adresuje ryzyka na poziomach technicznym, operacyjnym i regulacyjnym przez proaktywne kontrole, jasną komunikację i strategiczne partnerstwa.
+
+:::

@@ -1,8 +1,8 @@
 {
-  "label": "Business Model",
+  "label": "Model Biznesowy",
   "position": 7,
   "link": {
     "type": "generated-index",
-    "description": "OROKAI monetizes the software layer and network infrastructure, not user funds."
+    "description": "OROKAI monetyzuje warstwę oprogramowania i infrastrukturę sieciową, a nie środki użytkowników."
   }
 }

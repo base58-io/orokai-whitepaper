@@ -52,11 +52,11 @@
     "description": "Minimalny wysiłek przy kontrolowanym ryzyku."
   },
   "sidebar.tutorialSidebar.category.Business Model": {
-    "message": "Business Model",
+    "message": "Model Biznesowy",
     "description": "The label for category 'Business Model' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Business Model.link.generated-index.description": {
-    "message": "OROKAI monetizes the software layer and network infrastructure, not user funds.",
+    "message": "OROKAI monetyzuje warstwę oprogramowania i infrastrukturę sieciową, a nie środki użytkowników.",
     "description": "The generated-index page description for category 'Business Model' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Token and Blockchain": {
@@ -68,11 +68,11 @@
     "description": "The generated-index page description for category 'Token and Blockchain' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Roadmap": {
-    "message": "Roadmap",
+    "message": "Roadmapa",
     "description": "The label for category 'Roadmap' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Roadmap.link.generated-index.description": {
-    "message": "The OROKAI roadmap describes development in three phases. Each phase has clearly defined product goals, milestones, compliance gates (go/no-go), and success metrics.",
+    "message": "Roadmapa OROKAI opisuje rozwój w trzech fazach. Każda faza ma jasno zdefiniowane cele produktowe, kamienie milowe, bramki zgodności (go/no-go) i metryki sukcesu.",
     "description": "The generated-index page description for category 'Roadmap' in sidebar 'tutorialSidebar'"
   }
 }
