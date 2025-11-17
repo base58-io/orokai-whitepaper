@@ -1,31 +1,86 @@
 ---
-sidebar_label: Entry and Exit
+sidebar_label: 入出金
 sidebar_position: 4
 custom_edit_url: null
 ---
 
-# Entry and Exit from Investments Without Technical Complexity
+# 技術的複雑さなしの投資の入出金
 
-## Complete Lifecycle Management
+## 完全なライフサイクル管理
 
-### Entry
+### 入金
 
-From crypto purchase (partner on-ramp) to first allocation — in a few <mark>transparent steps,</mark> with cost and consequence preview.
+暗号資産購入（パートナーオンランプ）から最初の配分まで — コストと結果のプレビューを伴う、いくつかの<mark>透明なステップ</mark>で。
 
-### Ongoing operations
+**詳細プロセス：** 完全なユーザーフロー、手数料内訳、プロバイダー詳細については、[セクション 仕組み：オンランプ/オフランプ](/docs/journey/5_2_on-ramp)を参照してください。
 
-Rewards view and claim schedule; optional claim → USDT scenarios through DEX (with user signature).
+**主な利点：**
+- CEXアカウント不要
+- 透明な手数料（プロバイダー + OROKAI 1% + ネットワークガス）
+- 資金はあなたのウォレットに直接配信
+- KYCはライセンス取得済みパートナー（Stripe/Onramper）によって処理
 
-### Exit
+### 継続的な操作
 
-Organized unstake/withdraw paths and partner off-ramp; ability to migrate to other protocols/chains without manual orchestration.
+報酬ビューとクレームスケジュール。DEX経由のオプションのクレーム → USDTシナリオ（ユーザー署名付き）。
 
-### Flexibility
+**詳細プロセス：** 手動 vs 自動報酬管理オプションについては、[セクション 仕組み：報酬概要](/docs/journey/5_3_rewards)を参照してください。
 
-<mark>User can</mark> disable automations, change preferences (e.g., settlement currency), and revoke permissions at any time.
+**主な利点：**
+- すべてのポジション用の統一ダッシュボード
+- オプションの自動化（一度承認、いつでも取り消し可能）
+- コスト認識実行（ガスが高すぎる場合はスキップ）
+- オンチェーンリンク付きの透明な履歴
 
-:::tip[Full lifecycle support]
+### 出金
 
-OROKAI supports users from first purchase to final exit, making the entire DeFi journey accessible while preserving complete control.
+整理されたアンステーク/引き出しパスとパートナーオフランプ。手動オーケストレーションなしで他のプロトコル/チェーンへマイグレーションする能力。
+
+**詳細プロセス：** オフランプフローについては[セクション 仕組み：オンランプ/オフランプ](/docs/journey/5_2_on-ramp)、マイグレーションオーケストレーションについては[セクション 仕組み：ワンクリック資金マイグレーション](/docs/journey/5_4_one_click)を参照してください。
+
+**主な利点：**
+- 明確な出金パス（時間見積もり、コスト表示）
+- ネットワーク検証（間違ったチェーンエラーを防止）
+- オーケストレーションされたマルチステップフロー（各ステップに署名）
+- パートナーがフィアット変換を処理（CEX不要）
+
+### 柔軟性
+
+<mark>ユーザーは</mark>自動化を無効化し、好み（例：決済通貨）を変更し、いつでも権限を取り消すことができます。
+
+**制御メカニズム：** 自動化制御については、[セクション 仕組み：インテリジェント資産管理](/docs/journey/5_5_management)を参照してください。
+
+**主な利点：**
+- 任意の自動化を即座に一時停止/無効化
+- ワンクリックですべての権限を取り消し
+- いつでもプロファイル/好みを調整
+- 変更に基づいてAIが再評価
+- 緊急コントロールが常に利用可能
+
+:::tip[完全なライフサイクルサポート]
+
+OROKAIは、最初の購入から最終的な出金まで、完全な制御を維持しながら、DeFiジャーニー全体をアクセス可能にします。
 
 :::
+
+### よくある出金に関する質問への回答
+
+#### 緊急に資金が必要だがポジションがロックされている場合は？
+- OROKAIが表示：残りのロックアップ時間、代替の流動的なポジション
+- 提案：ポジションを担保に借入（サポートされている場合）またはX日待つ
+- 行わない：ペナルティで早期出金を強制（あなたが決定）
+
+#### 出金したいがガスが高すぎる場合は？
+- OROKAIが表示：現在のガス、過去平均、あなたの最大閾値
+- 提案：低ガスを待つ（アラート設定）または低コストチェーンを使用
+- 行わない：高コストでの出金を強制（あなたがタイミングを決定）
+
+#### 使用しているプロトコルがハッキングされた場合は？
+- OROKAIがアラート：インシデント検出時の即時通知
+- 表示：緊急出金オプション、代替プロトコル
+- 行わない：自動的に資金を移動（あなたが制御を維持）
+
+#### すべてをコールドストレージに移動したい場合は？
+- OROKAIが表示：すべてをアンステーク → 1つのチェーンに統合 → 転送ステップ
+- 提供：明確なアドレス、ネットワーク、推定総コスト
+- 行わない：あなたを妨げる（完全な可搬性を保証）

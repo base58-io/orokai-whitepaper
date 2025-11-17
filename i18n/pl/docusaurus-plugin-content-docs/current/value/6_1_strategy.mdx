@@ -1,0 +1,121 @@
+---
+sidebar_label: Oszczędność czasu
+sidebar_position: 2
+custom_edit_url: null
+---
+
+# Oszczędność czasu i redukcja błędów operacyjnych
+
+## Usprawnienie operacji
+
+### Mniej kroków technicznych
+
+OROKAI <mark>przygotowuje</mark> sekwencje transakcji do samodzielnego podpisu użytkownika (approve → swap DEX → stake/deposit).
+
+### Migracje „jednym kliknięciem"
+
+Kompozycja złożonych ścieżek (unstake/withdraw → bridge → swap → deposit) w jeden przepływ z widoczną z góry sekwencją podpisów.
+
+### Ostrzeżenia i limity
+
+Slippage, płynność mostów, uprawnienia smart kontraktów — UI wyświetla ostrzeżenia i umożliwia limity (np. kwot, kosztów).
+
+### AI jako asystent informacyjny
+
+Redukuje „paraliż decyzyjny" przez <mark>wyjaśnialne propozycje</mark> zgodne z zadeklarowanym profilem (nie porada inwestycyjna).
+
+## Analiza inwestycji czasu
+
+### Tradycyjne DeFi vs OROKAI
+
+| Aktywność | Tradycyjne DeFi | OROKAI | Zaoszczędzony czas | Częstotliwość |
+|----------|------------------|--------|------------|-----------|
+| **Sprawdzanie pozycji** | 15 min/dzień × 30 = 450 min | 5 min/dzień × 30 = 150 min | **300 min** (83%) | Codziennie |
+| **Odbieranie nagród** | 30 min × 4 = 120 min | 5 min × 4 = 20 min | **100 min** (83%) | Tygodniowo |
+| **Monitorowanie zmian APY** | 20 min × 8 = 160 min | 0 min (alerty AI) | **160 min** (100%) | 2-3x/tydzień |
+| **Badanie migracji** | 90 min × 1 = 90 min | 15 min × 1 = 15 min | **75 min** (83%) | Miesięcznie |
+| **Wykonywanie migracji** | 60 min × 1 = 60 min | 20 min × 1 = 20 min | **40 min** (67%) | Miesięcznie |
+| **Monitorowanie cen gazu** | 15 min × 4 = 60 min | 0 min (alerty AI) | **60 min** (100%) | Tygodniowo |
+| **Sprawdzanie ryzyka/bezpieczeństwa** | 30 min × 2 = 60 min | 5 min × 2 = 10 min | **50 min** (83%) | Co dwa tygodnie |
+| **Prowadzenie zapisów/podatki** | 45 min × 1 = 45 min | 10 min × 1 = 10 min | **35 min** (78%) | Miesięcznie |
+| **Nauka nowych protokołów** | 120 min × 1 = 120 min | 30 min × 1 = 30 min | **90 min** (75%) | Miesięcznie |
+| **Rozwiązywanie problemów** | 60 min × 1 = 60 min | 15 min × 1 = 15 min | **45 min** (75%) | Miesięcznie |
+| | | | | |
+| **ŁĄCZNIE MIESIĘCZNIE** | **1,225 minut** | **280 minut** | **945 minut** | |
+| | **(20,4 godziny)** | **(4,7 godziny)** | **(15,7 godziny zaoszczędzone)** | |
+| | | | **77% redukcji** | |
+
+**Roczna oszczędność czasu: ~188 godzin (równowartość prawie 5 pełnych tygodni roboczych)**
+
+## Redukcja błędów
+
+| Typ błędu | Ryzyko tradycyjne | Ryzyko OROKAI | Jak OROKAI to zapobiega |
+|------------|------------------|-------------|------------------------|
+| **Wybrana zła sieć** | Wysokie (10-15% nowych użytkowników) | Bardzo niskie (0-1%) | Walidacja sieci, jasne ostrzeżenia, lista rozwijana z ikonami |
+| **Zły kontrakt tokenu** | Średnie (5-10%) | Bardzo niskie (0-1%) | Tylko tokeny z allow-listy, walidacja checksum |
+| **Niewystarczający gas** | Wysokie (15-20%) | Bardzo niskie (0-2%) | Kontrola przed lotem, pokazuje wymaganą kwotę przed podpisaniem |
+| **Przepłacony gas** | Wysokie (30-40% przepłaca) | Niskie (10-15%) | Alerty AI dla okien niskiego gasu, pokazane szacunki |
+| **Nieograniczone zatwierdzenia** | Bardzo wysokie (60-70% użytkowników) | Niskie (5-10%) | Domyślnie least-privilege, jasne wyjaśnienie zakresu |
+| **Strona phishingowa** | Średnie (5-8% napotyka) | Bardzo niskie (0-1%) | Zintegrowany interfejs, brak wizyt zewnętrznych protokołów |
+| **Zły adres odbiorcy** | Niskie (2-3%) | Bardzo niskie (0-0,5%) | Walidacja adresu, brak ręcznego wpisywania przy migracjach |
+| **Slippage za niski (tx się nie udaje)** | Średnie (10-15%) | Niskie (2-3%) | Dynamiczne rekomendacje slippage oparte na płynności |
+| **Slippage za wysoki (utrata wartości)** | Średnie (5-10%) | Niskie (1-2%) | Ostrzeżenia gdy slippage przekracza bezpieczne progi |
+| **Zapomniał odebrać nagrody** | Wysokie (30-40% przegapia optymalne okna) | Bardzo niskie (5% przy alertach) | Proaktywne powiadomienia, opcjonalna automatyzacja |
+| **Przegapiona okazja migracji** | Wysokie (50-60% reaguje za późno) | Niskie (10-15%) | AI monitoruje 24/7, sugeruje gdy korzystne |
+| **Nie odwołał starych zatwierdzeń** | Bardzo wysokie (80-90% zapomina) | Niskie (20-30%) | Widoczny dashboard uprawnień, łatwe linki do odwołania |
+
+**Ogólna redukcja wskaźnika błędów: ~85%**  
+**Średni koszt zapobiegniętych błędów: Różni się znacznie (od niewielkiego marnotrawstwa gazu do całkowitej straty)**
+
+:::tip[Efektywność bez poświęceń]
+
+Automatyzacja złożoności, nie automatyzacja kontroli – użytkownicy oszczędzają czas zachowując pełny nadzór nad każdą operacją.
+
+:::
+
+## Redukcja złożoności
+
+Jednym z największych mnożników czasu i błędów w tradycyjnym DeFi są operacje wieloetapowe. Oto jak OROKAI je upraszcza:
+
+### Przykład: Migracja pozycji stakowania
+
+CEL: Przenieś zastakowany ETH z Protokołu A (Ethereum) do Protokołu B (Polygon)
+
+#### Proces tradycyjnego DeFi:
+
+import tradfiLight from '@site/static/img/tradfi.png';
+import tradfiDark from '@site/static/img/tradfi.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={tradfiLight} className="light-only" style={{ width: '100%' }} />
+    <img src={tradfiDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
+#### Proces OROKAI:
+
+import defiLight from '@site/static/img/defi.png';
+import defiDark from '@site/static/img/defi.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
+    <img src={defiLight} className="light-only" style={{ width: '100%' }} />
+    <img src={defiDark} className="dark-only" style={{ width: '100%' }} />
+  </div>
+</div>
+<div style={{ margin: '24px 0' }}></div>
+
+
+### „Niewidzialna praca", którą obsługuje OROKAI
+
+| Niewidzialna praca | Tradycyjne DeFi | OROKAI |
+|----------------|------------------|--------|
+| **Pamiętanie o sprawdzeniu** | Ustawianie wielu przypomnień kalendarzowych, sprawdzanie Discord/Twitter dla aktualizacji protokołu | AI monitoruje 24/7, alertuje gdy potrzebne działanie |
+| **Niepokój o bezpieczeństwo** | Ciągły niepokój o zatwierdzenia, phishing, hacki | Protokoły z allow-listy, jasne zarządzanie uprawnieniami |
+| **FOMO i wątpienie** | "Czy wybrałem właściwy protokół?" niekończące się porównania | Wybór prowadzony przez AI z jasnym uzasadnieniem |
+| **Strach przed przegapieniem możliwości** | Ręczne sprawdzanie zmian APY w protokołach | Proaktywne sugestie gdy pojawiają się lepsze opcje |
+| **Paraliż przez analizę** | Za dużo opcji, strach przed podjęciem działania | Filtrowane opcje dopasowane do Twojego profilu |
+| **Niepokój "Czy zrobiłem to dobrze?"** | Ciągłe sprawdzanie czy pozycja aktywna, nagrody naliczane | Jasny dashboard pokazuje wszystko |
+| **Zmęczenie decyzjami** | Każde działanie wymaga pełnego badania | Wstępnie zbadane opcje, Ty tylko wybierasz |

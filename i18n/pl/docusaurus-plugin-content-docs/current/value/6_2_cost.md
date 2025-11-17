@@ -1,31 +1,61 @@
 ---
-sidebar_label: Cost Transparency
+sidebar_label: Transparentność kosztów
 sidebar_position: 3
 custom_edit_url: null
 ---
 
-# Cost Transparency and Fund Security
+# Transparentność kosztów i bezpieczeństwo środków
 
-## Full Visibility and Control
+## Pełna widoczność i kontrola
 
-### Costs before signing
+### Koszty przed podpisaniem
 
-At every step, estimated gas, protocol/bridge/DEX fees, and potential slippage are visible — before the user authorizes the operation.
+Na każdym etapie widoczny jest szacowany gas, opłaty protokołu/mostu/DEX oraz potencjalny slippage — zanim użytkownik autoryzuje operację.
 
-### Self-custody & least-privilege
+### Self-custody i least-privilege
 
-Funds and keys remain on the user's side; smart contract <mark>permissions are minimal and transparent,</mark> with quick links to revoke.
+Środki i klucze pozostają po stronie użytkownika; <mark>uprawnienia smart kontraktów są minimalne i transparentne,</mark> z szybkimi linkami do odwołania.
 
-### DEX-first and separation of roles
+### DEX-first i rozdzielenie ról
 
-Exchanges executed by external DEX from allow-list; fiat/card settlements and KYC/AML handled by licensed partners; <mark>OROKAI is not a party to settlements.</mark>
+Wymiany wykonywane przez zewnętrzne DEX z allow-listy; rozliczenia fiat/kartowe oraz KYC/AML obsługiwane przez licencjonowanych partnerów; <mark>OROKAI nie jest stroną rozliczeń.</mark>
 
-### History and auditability
+:::tip[Bezpieczeństwo przez projekt]
 
-Complete operation log with on-chain links; CSV/JSON export for personal accounting.
-
-:::tip[Security by design]
-
-Transparency and minimal permissions aren't features – they're fundamental principles embedded in every aspect of OROKAI's architecture.
+Transparentność i minimalne uprawnienia to nie funkcje – to fundamentalne zasady wbudowane w każdy aspekt architektury OROKAI.
 
 :::
+
+## Model bezpieczeństwa: Warstwy ochrony
+
+### Warstwa 1
+> Twój portfel (Non-Custodial)
+- Klucze przechowywane TYLKO na TWOIM urządzeniu
+- OROKAI ma zerowy dostęp do kluczy prywatnych
+- Możesz eksportować/migrować do dowolnego portfela w każdej chwili
+
+### Warstwa 2
+> Uprawnienia (Least-Privilege)
+- Minimalne zatwierdzenia (dokładne kwoty gdy możliwe)
+- Uprawnienia ograniczone czasowo (gdzie wspierane)
+- Jasne linki do odwołania zawsze dostępne
+
+### Warstwa 3
+> Weryfikacja protokołów (Allow-Lista)
+- Tylko zaudytowane, sprawdzone w boju protokoły
+- Ciągłe monitorowanie pod kątem incydentów
+- System kwarantanny dla podwyższonych ryzyk
+
+### Warstwa 4
+> Walidacja transakcji (Kontrole przed lotem)
+- Weryfikacja sieci (zapobieganie złemu łańcuchowi)
+- Walidacja adresu (checksum, format)
+- Kontrole salda (wystarczający gas + tokeny)
+- Ochrona slippage (nie wykona jeśli przekroczony)
+
+### Warstwa 5
+> Kontrole użytkownika (Zawsze ostatnie słowo)
+- Przegląd każdego kroku przed podpisaniem
+- Anulowanie w każdej chwili przed podpisem
+- Wstrzymanie/wyłączenie automatyzacji
+- Ścieżki awaryjnej wypłaty

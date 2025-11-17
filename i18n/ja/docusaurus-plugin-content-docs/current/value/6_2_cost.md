@@ -1,31 +1,61 @@
 ---
-sidebar_label: Cost Transparency
+sidebar_label: コスト透明性
 sidebar_position: 3
 custom_edit_url: null
 ---
 
-# Cost Transparency and Fund Security
+# コスト透明性と資金セキュリティ
 
-## Full Visibility and Control
+## 完全な可視性と制御
 
-### Costs before signing
+### 署名前のコスト
 
-At every step, estimated gas, protocol/bridge/DEX fees, and potential slippage are visible — before the user authorizes the operation.
+すべてのステップで、推定ガス、プロトコル/ブリッジ/DEX手数料、潜在的なスリッページが表示されます — ユーザーが操作を承認する前に。
 
-### Self-custody & least-privilege
+### セルフカストディと最小権限
 
-Funds and keys remain on the user's side; smart contract <mark>permissions are minimal and transparent,</mark> with quick links to revoke.
+資金と鍵はユーザー側に留まります。スマートコントラクト<mark>権限は最小限で透明</mark>であり、取り消すための迅速なリンクがあります。
 
-### DEX-first and separation of roles
+### DEXファーストと役割の分離
 
-Exchanges executed by external DEX from allow-list; fiat/card settlements and KYC/AML handled by licensed partners; <mark>OROKAI is not a party to settlements.</mark>
+ホワイトリストの外部DEXによって実行される交換。フィアット/カード決済とKYC/AMLはライセンス取得済みパートナーによって処理されます。<mark>OROKAIは決済の当事者ではありません。</mark>
 
-### History and auditability
+:::tip[設計によるセキュリティ]
 
-Complete operation log with on-chain links; CSV/JSON export for personal accounting.
-
-:::tip[Security by design]
-
-Transparency and minimal permissions aren't features – they're fundamental principles embedded in every aspect of OROKAI's architecture.
+透明性と最小限の権限は機能ではありません – それらはOROKAIのアーキテクチャのあらゆる側面に組み込まれた基本原則です。
 
 :::
+
+## セキュリティモデル：保護の層
+
+### レイヤー1
+> あなたのウォレット（ノンカストディアル）
+- 鍵はあなたのデバイスにのみ保存
+- OROKAIは秘密鍵へのアクセス権ゼロ
+- いつでも任意のウォレットにエクスポート/移行可能
+
+### レイヤー2
+> 権限（最小権限）
+- 最小限の承認（可能な場合は正確な金額）
+- 時間制限付き権限（サポートされている場合）
+- 明確な取り消しリンクが常に利用可能
+
+### レイヤー3
+> プロトコル精査（ホワイトリスト）
+- 監査済み、実戦テスト済みのプロトコルのみ
+- インシデントの継続的なモニタリング
+- リスクが高まった場合の隔離システム
+
+### レイヤー4
+> 取引検証（飛行前チェック）
+- ネットワーク検証（間違ったチェーンを防止）
+- アドレス検証（チェックサム、形式）
+- 残高チェック（十分なガス + トークン）
+- スリッページ保護（超過した場合実行されない）
+
+### レイヤー5
+> ユーザーコントロール（常に最終決定権）
+- 署名前にすべてのステップをレビュー
+- 署名前にいつでもキャンセル
+- 自動化を一時停止/無効化
+- 緊急出金パス

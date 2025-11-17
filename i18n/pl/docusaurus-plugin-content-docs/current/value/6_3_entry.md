@@ -1,31 +1,86 @@
 ---
-sidebar_label: Entry and Exit
+sidebar_label: Wejście i wyjście
 sidebar_position: 4
 custom_edit_url: null
 ---
 
-# Entry and Exit from Investments Without Technical Complexity
+# Wejście i wyjście z inwestycji bez złożoności technicznej
 
-## Complete Lifecycle Management
+## Kompleksowe zarządzanie cyklem życia
 
-### Entry
+### Wejście
 
-From crypto purchase (partner on-ramp) to first allocation — in a few <mark>transparent steps,</mark> with cost and consequence preview.
+Od zakupu krypto (on-ramp partnera) do pierwszej alokacji — w kilku <mark>transparentnych krokach,</mark> z podglądem kosztów i konsekwencji.
 
-### Ongoing operations
+**Szczegółowy proces:** Zobacz [Sekcja Jak to działa: On-ramp / off-ramp](/docs/journey/5_2_on-ramp) dla kompletnego przepływu użytkownika, rozbicia opłat i szczegółów dostawcy.
 
-Rewards view and claim schedule; optional claim → USDT scenarios through DEX (with user signature).
+**Kluczowe korzyści:**
+- Nie wymaga konta CEX
+- Transparentne opłaty (dostawca + OROKAI 1% + gas sieciowy)
+- Środki dostarczone bezpośrednio do TWOJEGO portfela
+- KYC obsługiwane przez licencjonowanych partnerów (Stripe/Onramper)
 
-### Exit
+### Bieżące operacje
 
-Organized unstake/withdraw paths and partner off-ramp; ability to migrate to other protocols/chains without manual orchestration.
+Widok nagród i harmonogram claimów; opcjonalne scenariusze claim → USDT przez DEX (z podpisem użytkownika).
 
-### Flexibility
+**Szczegółowy proces:** Zobacz [Sekcja Jak to działa: Przegląd nagród](/docs/journey/5_3_rewards) dla opcji ręcznego vs zautomatyzowanego zarządzania nagrodami.
 
-<mark>User can</mark> disable automations, change preferences (e.g., settlement currency), and revoke permissions at any time.
+**Kluczowe korzyści:**
+- Zunifikowany dashboard dla wszystkich pozycji
+- Opcjonalna automatyzacja (TY autoryzujesz raz, możesz odwołać w każdej chwili)
+- Świadoma kosztów egzekucja (pomija jeśli gas za wysoki)
+- Transparentna historia z linkami on-chain
 
-:::tip[Full lifecycle support]
+### Wyjście
 
-OROKAI supports users from first purchase to final exit, making the entire DeFi journey accessible while preserving complete control.
+Uporządkowane ścieżki unstake/withdraw i off-ramp partnera; możliwość migracji do innych protokołów/łańcuchów bez ręcznej orkiestracji.
+
+**Szczegółowy proces:** Zobacz [Sekcja Jak to działa: On-ramp / off-ramp](/docs/journey/5_2_on-ramp) dla przepływu off-ramp i [Sekcja Jak to działa: Migracja środków jednym kliknięciem](/docs/journey/5_4_one_click) dla orkiestracji migracji.
+
+**Kluczowe korzyści:**
+- Jasne ścieżki wyjścia (szacunki czasu, pokazane koszty)
+- Walidacja sieci (zapobiega błędom złego łańcucha)
+- Zorkiestrowane przepływy wieloetapowe (podpisujesz każdy krok)
+- Partner obsługuje konwersję fiat (nie potrzeba CEX)
+
+### Elastyczność
+
+<mark>Użytkownik może</mark> wyłączyć automatyzacje, zmienić preferencje (np. walutę rozliczeniową) i odwołać uprawnienia w dowolnym momencie.
+
+**Mechanizmy kontroli:** Zobacz [Sekcja Jak to działa: Inteligentne zarządzanie aktywami](/docs/journey/5_5_management) dla kontroli automatyzacji.
+
+**Kluczowe korzyści:**
+- Wstrzymaj/wyłącz dowolną automatyzację natychmiast
+- Odwołaj wszystkie uprawnienia jednym kliknięciem
+- Dostosuj profil/preferencje w każdej chwili
+- AI ponownie ocenia na podstawie zmian
+- Kontrole awaryjne zawsze dostępne
+
+:::tip[Wsparcie pełnego cyklu życia]
+
+OROKAI wspiera użytkowników od pierwszego zakupu do ostatecznego wyjścia, czyniąc całą podróż DeFi dostępną zachowując pełną kontrolę.
 
 :::
+
+### Odpowiedzi na częste pytania o wyjście
+
+#### Co jeśli potrzebuję środków pilnie, ale moja pozycja jest zablokowana?
+- OROKAI pokazuje: Pozostały czas lock-up, alternatywne płynne pozycje
+- Sugeruje: Pożycz pod pozycję (jeśli wspierane) lub poczekaj X dni
+- NIE: Wymusza wcześniejsze wyjście z karą (Ty decydujesz)
+
+#### Co jeśli chcę wyjść, ale gas jest za wysoki?
+- OROKAI pokazuje: Aktualny gas, historyczna średnia, Twój maksymalny próg
+- Sugeruje: Poczekaj na niższy gas (ustaw alert) lub użyj łańcucha o niższych kosztach
+- NIE: Wymusza wyjścia przy wysokim koszcie (Ty decydujesz o czasie)
+
+#### Co jeśli protokół którego używam zostanie zhakowany?
+- OROKAI alertuje: Natychmiastowe powiadomienie jeśli wykryto incydent
+- Pokazuje: Opcje awaryjnej wypłaty, alternatywne protokoły
+- NIE: Automatycznie nie przenosi środków (zachowujesz kontrolę)
+
+#### Co jeśli chcę przenieść wszystko do cold storage?
+- OROKAI pokazuje: Unstake wszystko → Konsoliduj do jednego łańcucha → Kroki transferu
+- Zapewnia: Jasne adresy, sieci, szacowany całkowity koszt
+- NIE: Nie zapobiega Ci (gwarantowana pełna przenośność)
