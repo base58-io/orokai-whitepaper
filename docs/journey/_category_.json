@@ -1,8 +1,8 @@
 {
-  "label": "Jak to działa",
+  "label": "How it works",
   "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "OROKAI upraszcza wejście do DeFi: od on-ramp przez 'zero-setup wallet', wybór strategii, pierwszą alokację, aż po monitoring i potencjalne migracje 'one-click' między protokołami i łańcuchami - przy pełnej kontroli użytkownika (self-custody)."
+    "description": "OROKAI simplifies DeFi entry: from on-ramp through 'zero-setup wallet,' strategy selection, first allocation, to monitoring and potential 'one-click' migrations between protocols and chains - with full user control (self-custody)."
   }
 }
