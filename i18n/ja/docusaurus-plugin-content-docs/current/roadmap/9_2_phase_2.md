@@ -1,53 +1,104 @@
 ---
-sidebar_label: Phase 2 — Functionality Expansion and AI
+sidebar_label: フェーズ2 — 機能拡張とAI
 sidebar_position: 3
 custom_edit_url: null
 ---
 
-# Phase 2 — Functionality Expansion and AI
+# フェーズ2 — 機能拡張とAI
 
-## Functional Scope
+## スコープ：高度な機能
 
-### DeFi collateral loans
+### AIエージェントv1（推奨）
 
-Integrations with selected lending protocols (allow-list; warnings regarding LTV/liquidation).
+- ユーザープロファイリング（リスク許容度、目標、TVL）
+- 戦略提案（ステーキング、レンディング、イールド）
+- 説明可能性（推奨の理由コード）
+- 情報提供のみ（自動実行なし）
 
-### Wallet & financials audits
+### クロスチェーンブリッジ
 
-Tools for reviewing permissions (revoke), on-chain history, and reports (CSV/JSON).
+- CCTP統合（USDCネイティブブリッジング）
+- WormholeまたはLayerZero（一般的なメッセージング）
+- ブリッジコストプレビュー + ヘルスチェック
+- ホワイトリストアプローチ（審査済みブリッジのみ）
 
-### Account management
+### 担保レンディング（DeFiクレジット）
 
-Profiles, limits, automation rules for "claim/re-stake/rebalance" — still requiring user signature.
+- AAVE v3統合（Ethereum、Polygon）
+- 借入/返済フロー
+- LTVモニタリングと清算警告
+- リスクダッシュボード（ヘルスファクター追跡）
 
-### AI optimization
+### ウォレットと財務監査
 
-AI agent with extended "explainability" (reason codes, costs, risk) — without investment advice.
+- 権限管理（承認の表示/取り消し）
+- 取引履歴エクスポート（CSV/JSON）
+- コスト分析（支払った手数料、使用したガス）
 
-### Order book & connection to CEX
+### アカウント管理の強化
 
-Optional, exclusively through licensed partners; potentially requires KYC and will be geographically restricted.
+- マルチデバイス同期
+- 通知設定（メール、プッシュ、SMS）
+- セキュリティ設定（2FA、生体認証）
+- プロファイルカスタマイズ
 
-## Milestones
+### 物理カード
+- プラスチックカードオプション（V Plus Pay経由）
+- Apple Pay / Google Pay統合
+- 依存：V Plus Payパートナーシップ拡大
 
-> Collateral loans v1 + risk dashboard (LTV, thresholds)
+## マイルストーン
 
-> Audit module (permissions, revoke, activity log) and financial reports
+### マイルストーン5
+#### レンディング + AIローンチ
+> デリバラブル：
+- AAVE統合ライブ
+- AIエージェントv1推奨機能
+- ユーザーテスト完了（両機能）
+- ドキュメント更新
 
-> AI v2 (profile matching, alternatives, confidence)
+### マイルストーン6
+#### クロスチェーン運用開始
+> デリバラブル：
+- CCTPブリッジ機能（USDC転送）
+- 少なくとも1つの一般ブリッジがライブ（WormholeまたはLayerZero）
+- ブリッジモニタリングとアラート運用
+- ユーザーフローテスト済み（スワップ → ブリッジ → スワップ）
 
-> CEX connection (read-only → potentially order preparation for signing) after legal-regulatory approval
+### マイルストーン7
+#### スケールと収益性
+> 成功指標：
+- ユーザー：月間5万～10万アクティブ
+- 収益：月500万～1,000万ドル
+- マージン：損益分岐点または収益的
 
-## Compliance Gates
+## 技術デリバラブル
+### スマートコントラクト（新規）
+- AAVEアダプター（供給、借入、返済）
+- ブリッジオーケストレーションコントラクト
+- 自動化スケジューラー（クレーム/リバランスロジック）
+- 更新されたルーター（レンディング + ブリッジフローを処理）
 
-Risk assessment of lending integrations, KYC impact evaluation (for CEX), update of ToS and warning policies.
+### AI/MLインフラストラクチャ
+- 特徴量ストア（ユーザープロファイル、設定、TVL）
+- 推奨エンジン（戦略ランキング）
+- 説明可能性レイヤー（理由コード）
+- モデルレジストリ（バージョン管理、ロールバック機能）
+- A/Bテストフレームワーク（推奨で実験）
 
-## Success Metrics
+### バックエンド強化
+- ブリッジインデクサー（クロスチェーン取引を追跡）
+- 自動化ジョブスケジューラー（cron風、冪等）
+- 強化された分析（ユーザーコホート、リテンション）
 
-% of users using audit/revoke, AI proposal→signature conversion, response time to risk alerts.
+### フロントエンドアップデート
+- レンディングUI（借入/返済、ヘルスファクター表示）
+- AI推奨パネル（戦略 + 説明）
+- ブリッジフロー（コストプレビュー付きマルチステップ）
+- 高度なダッシュボード（ポートフォリオ分析、税務レポート）
 
-:::tip[Intelligence and control]
+:::tip[インテリジェンスと制御]
 
-Phase 2 enhances user capabilities with AI-powered insights and comprehensive audit tools while maintaining the non-custodial model.
+フェーズ2は、ノンカストディアルモデルを維持しながら、AIによるインサイトと包括的な監査ツールでユーザー機能を強化します。
 
 :::

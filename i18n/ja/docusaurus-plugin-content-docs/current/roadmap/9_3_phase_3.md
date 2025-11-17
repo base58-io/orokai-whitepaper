@@ -1,59 +1,152 @@
 ---
-sidebar_label: Phase 3 — Regulated Integrations and OROKAI Chain
+sidebar_label: フェーズ3 — 規制統合とOROKAIチェーン
 sidebar_position: 4
 custom_edit_url: null
 ---
 
-# Phase 3 — Regulated Integrations and OROKAI Chain
+# フェーズ3 — 規制統合とOROKAIチェーン
 
-## Functional Scope
+## スコープ：機関向けと規制対象機能
 
-### CEX lending
+### 強化されたKYC（必要な場合）
 
-Access through licensed partners, potentially requires KYC and geographic restrictions.
+- 階層型KYC（DeFiではオプション、フィアット/CEX/RWAでは必須）
+- パートナー管理（Stripe、V Plus Pay、CEXパートナー）
+- プライバシー保護（OROKAIへの最小限のデータ）
+- 地域別バリエーション（米国 vs EU vs アジア要件）
 
-### KYC
+### 実世界資産（RWA）統合
 
-Enabled only where partner features require it (fiat/CEX/RWA/securities).
+- トークン化証券（ライセンス取得済み発行者経由のみ）
+- トークン化商品（金、不動産）
+- OROKAI = UI/集約レイヤーのみ
+- パートナーが規制負担を負う（発行者、カストディアン）
 
-### RWA (Real-World Assets)
+### 証券取引統合（条件付き）
 
-Integrations exclusively through licensed entities offering RWA; OROKAI = software/UI layer.
+- ポートフォリオでトークン化株式/債券を表示
+- ライセンス取得済みブローカー・ディーラーパートナー経由で実行
+- OROKAIはブローカーとして機能しない
+- 管轄区域に大きく依存（一部地域ではローンチしない可能性）
 
-### Securities trading integration
+### トークン生成イベント（TGE）
 
-Optional, dependent on jurisdiction/partner; OROKAI is not a broker/PSP.
+- OROKAIトークンローンチ（ユーティリティ、証券ではない）
+- 手数料割引、ガバナンス、ステーキング
+- 完全な詳細については第8章を参照 [TBD]
+- すべての主要市場での法的承認が必要
 
-### Token ICO / TGE
+### OROKAIチェーンメインネットv1
 
-We use the neutral term "TGE (Token Generation Event)"; details dependent on jurisdiction and legal opinions (utility, no return promises).
+- L1またはL2アーキテクチャ（24か月目までに決定）
+- OROKAIトークンでのガス
+- オーケストレーションレイヤー（バッチング、ルーティング、メッセージング）
+- バリデーターセットまたはシーケンサーインフラストラクチャ
+- 既存ネットワークとのクロスチェーン通信
 
-### Blockchain L1 (OROKAI Chain)
+## マイルストーン
+### マイルストーン8
+#### 法的・パートナーシップ基盤
+> デリバラブル：
+- 法的フレームワーク確定（エンティティ構造、ライセンス）
+- パートナー契約締結（CEX、RWA発行者、ブローカー）
+- KYCフロー設計（パートナー統合）
+- コンプライアンスドキュメント完成
 
-OROKAI Chain launch according to Chapter 8 (mainnet v1, gas policy and fee distribution, buyback burn/rebate).
+### マイルストーン9
+#### TGE準備
+> デリバラブル：
+- トークンエコノミクス確定（第8章参照 [TBD]）
+- トークンコントラクトデプロイ（テストネット）
+- 配布計画確定（チーム、コミュニティ、トレジャリー）
+- マーケティングキャンペーン準備
+- 取引所リスティング交渉（DEX + CEX）
 
-## Milestones
+### マイルストーン10
+#### OROKAIチェーンローンチ
+> デリバラブル：
+- パブリックテストネットライブ（バリデーター/シーケンサー運用）
+- 開発者ドキュメント公開
+- 初期dAppsデプロイ（OROKAIプラットフォーム自体）
+- バグバウンティ + インセンティブ付きテストネットプログラム
+- クロスチェーンブリッジ接続テスト済み
 
-> CEX lending (partner) — pilot + compliance gates
+## 技術デリバラブル
+### 規制対象機能統合
+- パートナーAPI接続（CEX、RWAプラットフォーム、ブローカー）
+- KYC検証フロー（パートナーへのパススルー）
+- コンプライアンスレポートツール（取引ログ、AMLアラート）
+- 地理的制限強化（VPN検出、IP検証）
 
-> KYC module (only where required; privacy-by-design)
+### OROKAIチェーン（追求する場合）
 
-> RWA/securities — PoC with partner, jurisdictional sandbox
+#### スマートコントラクト：
+- トークンコントラクト（ERC-20互換またはネイティブ）
+- ステーキング/委任コントラクト
+- ガス手数料分配ロジック
+- ガバナンスモジュール（有効な場合）
 
-> TGE — utility documentation + marketing guidelines (no financial promises)
+#### インフラストラクチャ：
+- バリデーター/シーケンサーソフトウェア
+- ブロックエクスプローラー
+- RPCエンドポイント（パブリック + プレミアム）
+- ブリッジコントラクト（Ethereum、Polygonなどへ）
+- 開発者SDK/ツール
 
-> OROKAI Chain mainnet v1 (routing/batching, bridge/DEX allow-list)
+#### 可観測性：
+- ネットワークモニタリング（バリデーター、TPS、ファイナリティ）
+- トークンエコノミクスダッシュボード（供給、ステーキング、バーン）
+- ガバナンスポータル（該当する場合）
 
-## Compliance Gates
+### プラットフォーム強化
+- エンタープライズAPI（機関クライアント向け）
+- ホワイトラベルSDK（B2Bパートナー向け）
+- 高度な分析（コホート分析、予測モデル）
+- マルチシグサポート（DAO、ファンド、ファミリーオフィス向け）
 
-Legal opinions for TGE, partner agreements and licenses for CEX/RWA/securities, chain security audits.
+## コンプライアンスと法務
 
-## Success Metrics
+### トークン法的意見
+- Howeyテスト分析（米国）
+- MiFID IIコンプライアンス（EU）
+- 各管轄区域での証券分類
+- セーフハーバー戦略（該当する場合）
 
-SLA of CEX/RWA integrations, on-chain activity (gas), share of operations routed through OROKAI Chain.
+### RWA/証券フレームワーク
+- ブローカー・ディーラー関係（OROKAIはブローカーではない）
+- 譲渡代理人調整（トークン化証券用）
+- カストディ契約（パートナー保有、OROKAIではない）
+- 投資家適格性検証（必要な場合）
 
-:::tip[Regulated expansion]
+### 多管轄戦略
+- エンティティ構造（米国 vs オフショアエンティティ）
+- 必要に応じた地理的ブロック（制限された国）
+- 主要市場での現地法律顧問（米国、EU、シンガポール、日本、サウジアラビア）
+- 規制サンドボックス参加（利用可能な場合）
 
-Phase 3 represents full maturity with traditional finance integrations and native blockchain infrastructure, all built on regulatory compliance foundations.
+## 条件付き実行（柔軟性）
+
+**フェーズ3の機能は高度に条件付きです：**
+
+もし 法的意見 = 「トークンは証券」
+   ならば TGEを遅延/キャンセル または ガバナンスのみのトークンとして再構築
+
+もし RWAパートナーシップが実現しない
+   ならば RWA統合をスキップ、コアDeFiに焦点
+
+もし OROKAIチェーンコストが1,000万ドル以上超過
+   ならば 実現可能性を再評価、潜在的にチェーンを放棄（既存のL1/L2を使用）
+
+もし 規制対象機能が米国でブロックされる
+   ならば アジア/EU市場に焦点、より低いTAMを受け入れる
+
+もし 規制対象機能なしで収益性を達成
+   ならば フェーズ3の優先度を下げ、代わりにフェーズ2機能を最適化
+
+哲学：フェーズ3は拡大であり、生存ではない
+
+:::tip[規制対象拡大]
+
+フェーズ3は、伝統的な金融統合とネイティブブロックチェーンインフラストラクチャによる完全な成熟を表し、すべて規制コンプライアンスの基盤上に構築されます。
 
 :::

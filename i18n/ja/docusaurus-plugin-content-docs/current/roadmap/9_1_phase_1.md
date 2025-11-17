@@ -1,53 +1,121 @@
 ---
-sidebar_label: Phase 1 — Foundations
+sidebar_label: フェーズ1 — 基盤
 sidebar_position: 2
 custom_edit_url: null
 ---
 
-# Phase 1 — Foundations
+# フェーズ1 — 基盤
 
-## Functional Scope
+## スコープ：ミニマムバイアブルプロダクト
 
-### DeFi staking
+### DeFiステーキング
 
-Integrations for ATOM (Cosmos), SOL (Solana), ETH (Ethereum) — protocol allow-list, rewards view, claim schedule.
+> 統合対象：
+- ETH（Lido経由 - stETH）
+- ATOM（Cosmos）
+- SOL（Solana）
+- プロトコルホワイトリスト、報酬ビュー
 
-### On-ramp / off-ramp (card)
+### オン/オフランプ（パートナー経由）
 
-Entry/exit through licensed partners (issuance/settlements/KYC/AML on partner side).
+> ライセンス取得済みパートナーを通じた入出金（発行/決済/KYC/AMLはパートナー側）
+- Stripe統合（主要）
+- Onramper統合（バックアップ）
+- クレジットカードオンランプ
+- 銀行振込オフランプ
 
-### On-ramp / off-ramp (payment provider)
+### 決済カード（V Plus Pay経由）
 
-Fiat↔crypto payments via PSP (partner).
+> バーチャルカード優先（物理カードはフェーズ2）
+- ウォレット残高から支出
+- 基本手数料構造（2.5%）
 
-### DEX domestic & swap
+### DEX国内とスワップ
 
-Basic crypto swaps within supported chains through DEX from allow-list.
+> サポートされているチェーン内での基本的な暗号資産スワップ：
+- Uniswap V3（Ethereum、Polygon、Base）
+- Raydium（Solana）
+- ホワイトリストアプローチ（審査済みプールのみ）
+- 透明な手数料内訳
 
-### Virtual card
+### ゼロセットアップウォレット
 
-Virtual card (if partner agreement provides).
+> スマートウォレット作成
+- ユーザー側、ノンカストディアル
+- メール/ソーシャルログイン（MPC鍵管理）
+- シードフレーズバックアップオプション
+- WalletConnectサポート（既存ウォレット）
 
-## Milestones
+## マイルストーン
 
-> MVP staking (ATOM/SOL/ETH) with results view and claims
+### マイルストーン1
+#### コアインフラストラクチャ
+> デリバラブル：
+- マルチチェーンRPC統合（Ethereum、Solana、Cosmos）
+- ウォレット作成フローテスト済み
+- 基本UI/UX（ウェブアプリ）
+- スマートコントラクトデプロイ（テストネット）
 
-> On/off-ramp integration (provider + card) with transparent costs before authorization
+### マイルストーン2
+#### パートナー統合
+> デリバラブル：
+- Stripe/Onramperライブ（テストネット/サンドボックス）
+- V Plus Payカード統合完了
+- Lidoステーキング機能
+- Uniswapスワップルーティング動作
 
-> DEX-swap + basic warnings (slippage, permissions)
+### マイルストーン3
+#### ベータローンチ
+> デリバラブル：
+- クローズドベータ（100～500ユーザー、招待制）
+- モニタリングと可観測性ライブ
+- サポートインフラストラクチャ準備完了
+- バグバウンティプログラムローンチ
 
-> Virtual card (pilot) — only through partner, no PAN/CVV processing by OROKAI
+### マイルストーン4
+#### パブリックローンチ
+> デリバラブル：
+- 公開利用可能（オープンサインアップ）
+- マーケティングキャンペーン（コンテンツ、有料広告、パートナーシップ）
+- ドキュメント完成（ユーザーガイド、FAQ）
+- 初期流動性パートナーシップ（プロトコル、ウォレット）
 
-## Compliance Gates (Go/No-Go)
+## 技術デリバラブル
 
-Smart contract audit of MVP, geo/sanctions policy in UI, KYC/AML testing on partner side.
+### スマートコントラクト
+- AllocationRouter（マルチステップフローをオーケストレート）
+- プロトコルアダプター（Lido、Cosmosバリデーター、Solanaステーキング）
+- DEXルーター（Uniswap統合）
+- 緊急停止メカニズム
 
-## Success Metrics (Examples)
+### バックエンドサービス
+- RPC集約レイヤー（マルチプロバイダー冗長性）
+- インデクサー（取引履歴、残高）
+- 見積もり/ルーティングエンジン（DEX価格集約）
+- ウェブフックハンドラー（パートナーイベント）
+- ジョブキュー（非同期操作）
 
-TTFV (time to first allocation), % completed "prepare→sign" flows, onboarding NPS.
+### フロントエンド
 
-:::tip[Foundation building]
+- ウェブアプリ（React、レスポンシブ）
+- ウォレットアダプター（WalletConnect、スマートウォレット作成）
+- 取引フロー（準備、コストプレビュー、署名）
+- ダッシュボード（残高、履歴、ポジション）
+- サポートチャット（Intercomまたは類似）
 
-Phase 1 establishes core infrastructure and validates the non-custodial model with essential DeFi integrations.
+## コンプライアンスとパートナーシップ
+### 規制
+- 利用規約、プライバシーポリシーの法的レビュー
+- 地理的制限実装（制裁措置コンプライアンス）
+- パートナーKYC/AML（Stripe、V Plus Payが処理）
+### 主要パートナーシップ
+- Stripe（オンランプ）- 優先度1
+- Onramper（オンランプバックアップ）- 優先度2
+- V Plus Pay（カード発行者）- 優先度1
+- 1～2のDeFiプロトコル（Lido確定、その他TBD）
+
+:::tip[基盤構築]
+
+フェーズ1は、コアインフラストラクチャを確立し、必須のDeFi統合でノンカストディアルモデルを検証します。
 
 :::

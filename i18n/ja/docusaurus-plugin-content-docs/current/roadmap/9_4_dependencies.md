@@ -1,27 +1,77 @@
 ---
-sidebar_label: Dependencies and Critical Path
+sidebar_label: 依存関係とクリティカルパス
 sidebar_position: 5
 custom_edit_url: null
 ---
 
-# Dependencies and Critical Path
+# 依存関係とクリティカルパス
 
-## Phase Prerequisites
+## フェーズの依存関係
 
-### Phase 1 → 2
+### 順次
 
-Stable MVP (staking + on/off-ramp + DEX) and audits are prerequisites for launching collateral loans and AI v2.
+フェーズ1 → フェーズ2 → フェーズ3
 
-### Phase 2 → 3
+根拠：
+- フェーズ2には安定したフェーズ1プラットフォームが必要（壊れた基盤の上には構築できない）
+- フェーズ3にはフェーズ2からのスケールが必要（規制対象機能にはユーザーベースが必要）
+- 並行実行を試みる = リソースの無駄、技術的負債
 
-Legal compliance and partner agreements are prerequisites for CEX/RWA/securities features and TGE.
+許可される重複：
+- フェーズ2の計画はフェーズ1中に開始可能
+- フェーズ3のパートナーシップはフェーズ2中に交渉可能
 
-### OROKAI Chain
+### 機能レベルの依存関係
 
-Requires completed audits, MEV/slashing policy, and finalized bridge allow-list.
+> インフラストラクチャ
+- ブロック：パートナー統合、ステーキング、スワップ、UI
 
-:::tip[Sequential validation]
+> パートナー統合
+- 依存：インフラストラクチャ完成
+- ブロック：ベータローンチ、パブリックローンチ
 
-Each phase builds on validated foundations from the previous phase, ensuring stability and compliance before expanding functionality.
+> ベータ → パブリックローンチ
+- 依存：パートナー準備完了、監査完了
+- ブロック：フェーズ2開始
+
+> AIエージェント開発
+- 依存：フェーズ1からのユーザーデータ（行動パターン）
+- ブロック：高度な自動化機能
+
+> ブリッジ統合
+- 依存：マルチチェーンインフラストラクチャ安定
+- ブロック：複雑なクロスチェーン戦略
+
+> インフラストラクチャのスケール
+- 依存：負荷を生成する5万人以上のユーザー
+- ブロック：フェーズ3の準備
+
+> 規制承認
+- 依存：法的意見、パートナー契約
+- ブロック：TGE、RWA、証券機能
+
+> TGE + チェーンテストネット
+- 依存：トークン法的明確性
+- ブロック：OROKAIチェーンメインネット
+
+> チェーンメインネット + 市場リーダーシップ
+- 依存：テストネット成功、エコシステム準備
+- ブロック：なし（フェーズ3完了）
+
+### 非クリティカル（並行可能）
+
+> カード統合（ステーキング開発と並行）
+
+> コンテンツマーケティング（すべての技術作業と並行）
+
+> アフィリエイトプログラム設計（フェーズ2機能と並行）
+
+> UI/UX改善（すべてのフェーズを通じて継続）
+
+> セキュリティ監査（早期に開始、並行実行）
+
+:::tip[順次検証]
+
+各フェーズは前のフェーズから検証された基盤の上に構築され、機能を拡張する前に安定性とコンプライアンスを確保します。
 
 :::

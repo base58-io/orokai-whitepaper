@@ -52,11 +52,11 @@
     "description": "The generated-index page description for category 'Value for Users' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Business Model": {
-    "message": "Business Model",
+    "message": "ビジネスモデル",
     "description": "The label for category 'Business Model' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Business Model.link.generated-index.description": {
-    "message": "OROKAI monetizes the software layer and network infrastructure, not user funds.",
+    "message": "OROKAIは、ユーザー資金ではなく、ソフトウェアレイヤーとネットワークインフラストラクチャを収益化します。",
     "description": "The generated-index page description for category 'Business Model' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Token and Blockchain": {
@@ -68,11 +68,11 @@
     "description": "The generated-index page description for category 'Token and Blockchain' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Roadmap": {
-    "message": "Roadmap",
+    "message": "ロードマップ",
     "description": "The label for category 'Roadmap' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Roadmap.link.generated-index.description": {
-    "message": "The OROKAI roadmap describes development in three phases. Each phase has clearly defined product goals, milestones, compliance gates (go/no-go), and success metrics.",
+    "message": "OROKAIロードマップは3つのフェーズでの開発を説明します。各フェーズには、明確に定義された製品目標、マイルストーン、コンプライアンスゲート（進行/非進行）、および成功指標があります。",
     "description": "The generated-index page description for category 'Roadmap' in sidebar 'tutorialSidebar'"
   }
 }

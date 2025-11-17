@@ -1,8 +1,8 @@
 {
-  "label": "Roadmap",
+  "label": "ロードマップ",
   "position": 9,
   "link": {
     "type": "generated-index",
-    "description": "The OROKAI roadmap describes development in three phases. Each phase has clearly defined product goals, milestones, compliance gates (go/no-go), and success metrics."
+    "description": "OROKAIロードマップは3つのフェーズでの開発を説明します。各フェーズには、明確に定義された製品目標、マイルストーン、コンプライアンスゲート（進行/非進行）、および成功指標があります。"
   }
 }
