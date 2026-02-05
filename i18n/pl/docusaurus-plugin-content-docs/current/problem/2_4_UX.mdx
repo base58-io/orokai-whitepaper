@@ -64,13 +64,42 @@ DeFi w 2025 roku przypomina inne technologie w momencie PRZED ich masową adopcj
 import StartLight from '@site/static/img/defi.svg';
 import StartDark from '@site/static/img/defi.svg';
 
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+import StartLight from '@site/static/img/defi.svg';
+import StartDark from '@site/static/img/defi.svg';
+
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <StartLight className="light-only" />
-    <StartDark className="dark-only" />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '1px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <StartLight
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        aria-label="DeFi diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <StartDark
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        aria-label="DeFi diagram"
+      />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
+
 
 Kluczowe pytanie: Jak przeskoczyć "chasm" (przepaść) między 
 Early Adopters (7M użytkowników DeFi) a Early Majority (100M+)?

@@ -45,16 +45,42 @@ custom_edit_url: null
 
 ### OROKAIアーキテクチャ（簡略版）
 
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
 import StartLight from '@site/static/img/simply.svg';
 import StartDark from '@site/static/img/simply.svg';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <StartLight className="light-only" />
-    <StartDark className="dark-only" />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '1px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <StartLight
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        aria-label="Simplified flow diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <StartDark
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        aria-label="Simplified flow diagram"
+      />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
+
 
 :::tip[重要なポイント]
 

@@ -8,7 +8,7 @@ custom_edit_url: null
 
 ## The Missing Unified Experience
 
-### Lack of a cohesive "fiat-to-strategy" path
+### Lack of a cohesive and compliant "fiat-to-strategy" path
 
 On-ramp, network selection, allocation, monitoring, claiming, and potential migration – today fragmented across different tools and interfaces.
 
@@ -61,16 +61,42 @@ DeFi in 2025 resembles other technologies at the moment BEFORE their mass adopti
 
 ## **Where is the "Stripe/Gmail/Uber for DeFi"?**
 
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
 import StartLight from '@site/static/img/defi.svg';
 import StartDark from '@site/static/img/defi.svg';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <StartLight className="light-only" />
-    <StartDark className="dark-only" />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '1px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <StartLight
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        aria-label="DeFi diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <StartDark
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        aria-label="DeFi diagram"
+      />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
+
 
 Key question: How to cross the "chasm" between 
 Early Adopters (7M DeFi users) and Early Majority (10M+)?

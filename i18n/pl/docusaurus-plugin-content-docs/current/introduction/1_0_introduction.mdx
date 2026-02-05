@@ -54,3 +54,41 @@ Informacje, w tym wyniki modułu AI Agenta, mają charakter wyłącznie informac
 
 ### Dostępność / sankcje 
 Korzystanie z interfejsu może być niedozwolone w określonych jurysdykcjach; zabronione jest obchodzenie ograniczeń (np. przez VPN). Nie zezwalamy na użycie przez podmioty z list sankcyjnych.
+
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+import risksLight from '@site/static/img/risks.png';
+import risksDark from '@site/static/img/risks.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '0px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <img
+        src={risksLight}
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Risks diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <img
+        src={risksDark}
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Risks diagram"
+      />
+    </Zoom>
+  </div>
+</div>
+
+<div style={{ margin: '24px 0' }} />

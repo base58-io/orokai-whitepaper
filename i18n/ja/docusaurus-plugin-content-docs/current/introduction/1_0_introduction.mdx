@@ -54,3 +54,41 @@ AIエージェントモジュールの出力を含む情報は、情報提供の
 
 ### 利用可能性/制裁措置
 特定の管轄区域では、インターフェースの使用が禁止される場合があります。制限の回避（VPNなど）は禁止されています。制裁リストに掲載されている事業体による使用は認められません。
+
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+import risksLight from '@site/static/img/risks.png';
+import risksDark from '@site/static/img/risks.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '0px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <img
+        src={risksLight}
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Risks diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <img
+        src={risksDark}
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Risks diagram"
+      />
+    </Zoom>
+  </div>
+</div>
+
+<div style={{ margin: '24px 0' }} />

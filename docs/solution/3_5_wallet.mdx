@@ -34,16 +34,25 @@ This is one of the most important distinctions in OROKAI's design. Many users (a
 
 ### Custodial vs. Non-Custodial Solutions
 
-import CustodialLight from '@site/static/img/custodial.png';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+import CustodialLight from '@site/static/img/custodial-light.png';
 import CustodialDark from '@site/static/img/custodial.png';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <img src={CustodialLight} className="light-only" style={{ width: '100%' }} />
-    <img src={CustodialDark} className="dark-only" style={{ width: '100%' }} />
+  <div style={{ width: '100%', borderRadius: '8px', padding: '8px' }}>
+    <Zoom>
+      <img src={CustodialLight} className="light-only" style={{ width: '100%' }} />
+    </Zoom>
+
+    <Zoom>
+      <img src={CustodialDark} className="dark-only" style={{ width: '100%' }} />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
 
   > **Control:**         Exchange has your keys  
 
@@ -59,12 +68,37 @@ import NonCustodialLight from '@site/static/img/noncustodial.png';
 import NonCustodialDark from '@site/static/img/noncustodial.png';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <img src={NonCustodialLight} className="light-only" style={{ width: '100%' }} />
-    <img src={NonCustodialDark} className="dark-only" style={{ width: '100%' }} />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '0px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <img
+        src={NonCustodialLight}
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Non-custodial architecture diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <img
+        src={NonCustodialDark}
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Non-custodial architecture diagram"
+      />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
+
 
   > **Control:**         YOU have your keys (on your device) 
 
@@ -86,7 +120,7 @@ import NonCustodialDark from '@site/static/img/noncustodial.png';
 | Question | Answer |
 |----------|--------|
 | **"Does OROKAI hold my funds?"** | **NO.** Your funds are on-chain in YOUR address. OROKAI cannot access them. |
-| **"Can OROKAI freeze my account?"** | **Partial.** We can block UI access (e.g., sanctions compliance), but we CANNOT freeze your on-chain funds. You can always access via other wallets. |
+| **"Can OROKAI freeze my account?"** | **Partially.** We can block UI access (e.g., sanctions compliance), but we CANNOT freeze your on-chain funds. You can always access via other wallets. |
 | **"What if OROKAI gets hacked?"** | **Your funds are safe.** Private keys are on YOUR device, not our servers. Hackers could only access metadata (tx history), not keys. |
 | **"What if I lose my device?"** | **Depends on wallet type.** Smart Wallet/MPC = recoverable via email/social. Traditional = need seed phrase backup. We recommend enabling recovery BEFORE transacting. |
 | **"Can I use my OROKAI wallet in MetaMask?"** | **Yes** (if Option C). Export seed phrase → Import to MetaMask. For Smart Wallet/MPC, you'd transfer funds to a new MetaMask address. |
@@ -153,12 +187,37 @@ import zeroLight from '@site/static/img/zero.png';
 import zeroDark from '@site/static/img/zero.png';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <img src={zeroLight} className="light-only" style={{ width: '100%' }} />
-    <img src={zeroDark} className="dark-only" style={{ width: '100%' }} />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '0px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <img
+        src={zeroLight}
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Zero custody / zero access diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <img
+        src={zeroDark}
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Zero custody / zero access diagram"
+      />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
+
 
 :::tip[KEY PRECEDENTS:]
 > MetaMask (ConsenSys): Non-custodial, NOT regulated as VASP

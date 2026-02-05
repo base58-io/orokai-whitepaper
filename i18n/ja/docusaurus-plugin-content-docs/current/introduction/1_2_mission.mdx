@@ -26,16 +26,42 @@ Web3以外のユーザーとパートナーのために、<mark>安全で理解�
 
 ### OROKAIは「ブリッジ」としてどのように機能するか？
 
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
 import StartLight from '@site/static/img/box-dark.svg';
 import StartDark from '@site/static/img/box-dark.svg';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <StartLight className="light-only" />
-    <StartDark className="dark-only" />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '1px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <StartLight
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        aria-label="Start diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <StartDark
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        aria-label="Start diagram"
+      />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
+
 :::warning[重要な違い]
 
 **OROKAI**は、これらの手順をあなたに代わって<mark>実行しません</mark>。準備し、コストを表示し、<mark>あなた自身のウォレットで署名します</mark>。

@@ -10,11 +10,11 @@ custom_edit_url: null
 
 ### Transactional and UX errors
 
-Wrong networks, confusing tickers, incorrect contract permissions, insufficient gas funds → <mark>losses, locked funds, or inefficient use of assets.</mark>
+Wrong networks, confusing tickers, incorrect contract permissions, insufficient gas funds, “fat finger” errors → <mark>losses, locked funds, or inefficient use of assets.</mark>
 
 ### Information asymmetry
 
-Users often <mark>do not understand</mark> the sources of returns (where rewards come from), let alone the risks (e.g., bridge risk, contract risk, liquidity risk).
+Users often <mark>do not understand</mark> the sources of returns (where rewards come from), let alone the risks (e.g., bridge risk, counterparty risk, contract risk, liquidity risk).
 
 ### "Overchoice" effect
 

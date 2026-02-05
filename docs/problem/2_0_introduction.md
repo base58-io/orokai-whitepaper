@@ -6,7 +6,7 @@ custom_edit_url: null
 
 # Introduction to Problem
 
-## **The DeFi adoption gap: 99.87% of people don't use decentralized protocols**
+## **The DeFi adoption gap: 99.87% of people are hesitant or don't know how to use benefit from decentralized protocols**
 
 ### **The Scale of Untapped Potential**
 

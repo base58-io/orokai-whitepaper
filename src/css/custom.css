@@ -604,3 +604,29 @@ code {
 [data-theme='dark'] .light-only {
   display: none;
 }
+
+/* react-medium-image-zoom — match Docusaurus dark mode */
+html[data-theme='dark'] .medium-zoom-overlay {
+  background: rgba(0, 0, 0, 0.85) !important;
+}
+
+html[data-theme='dark'] .medium-zoom-image--opened {
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Light mode overlay */
+:root[data-theme='light'] [data-rmiz-modal-overlay='visible'],
+html[data-theme='light'] [data-rmiz-modal-overlay='visible'],
+body[data-theme='light'] [data-rmiz-modal-overlay='visible'],
+[data-theme='light'] [data-rmiz-modal-overlay='visible'] {
+  background-color: #f8f4f2 !important;
+}
+
+/* Dark mode overlay */
+:root[data-theme='dark'] [data-rmiz-modal-overlay='visible'],
+html[data-theme='dark'] [data-rmiz-modal-overlay='visible'],
+body[data-theme='dark'] [data-rmiz-modal-overlay='visible'],
+[data-theme='dark'] [data-rmiz-modal-overlay='visible'] {
+  background-color: #171717 !important;
+}
+

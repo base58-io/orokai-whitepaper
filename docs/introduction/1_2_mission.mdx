@@ -8,7 +8,7 @@ custom_edit_url: null
 
 ## Mission
 
-To build a <mark>secure, understandable, and accessible</mark> bridge to DeFi for users and partners from outside web3 — enabling them to independently benefit from passive asset management opportunities without taking away control over their assets and without the need to master on-chain complexity.
+To build a <mark>secure, understandable, and accessible</mark> bridge to DeFi for users and partners from outside web3 — enabling them to independently benefit from passive asset management opportunities without relinquishing control over their assets and without the need to master on-chain complexity.
 
 ## Vision
 
@@ -26,16 +26,42 @@ An ecosystem where:
 
 ### How does OROKAI work as a "bridge"?
 
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
 import StartLight from '@site/static/img/box-dark.svg';
 import StartDark from '@site/static/img/box-dark.svg';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <StartLight className="light-only" />
-    <StartDark className="dark-only" />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '1px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <StartLight
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        aria-label="Start diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <StartDark
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        aria-label="Start diagram"
+      />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
+
 :::warning[Key difference]
 
 **OROKAI** does <mark>NOT execute</mark> these steps on your behalf. It prepares them, shows costs, and <mark>you sign</mark> in your own wallet.

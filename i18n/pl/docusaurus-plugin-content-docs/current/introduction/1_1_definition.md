@@ -26,7 +26,9 @@ Umożliwić osobom bez technicznego zaplecza korzystanie z DeFi w modelu self-cu
 
 > interoperacyjność między łańcuchami,
 
-> zgodność z wymogami regulacyjnymi (w modelu etapowym).
+> zgodność z wymogami regulacyjnymi (w modelu etapowym),
+
+> płynne i bezproblemowe doświadczenie użytkownika.
 
 
 ## Charakter usług

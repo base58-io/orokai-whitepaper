@@ -26,7 +26,9 @@ To enable individuals without technical expertise to use DeFi in a self-custody 
 
 > interoperability between chains,
 
-> compliance with regulatory requirements (in a phased model).
+> compliance with regulatory requirements (in a phased model),
+
+> smooth and frictionless user experience.
 
 ## Nature of Services
 

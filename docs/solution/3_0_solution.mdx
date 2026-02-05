@@ -12,7 +12,7 @@ custom_edit_url: null
 
 **OROKAI** doesn't hold your funds or execute transactions for you. 
 
-We prepare transaction sequences, show all costs upfront, and YOU sign in YOUR wallet.
+We prepare transaction sequences, show all costs upfront, and ONLY YOU execute decisions by signing in YOUR wallet.
 
 :::
 
@@ -35,30 +35,56 @@ We prepare transaction sequences, show all costs upfront, and YOU sign in YOUR w
 
 > <mark>**Does NOT have access to your keys**</mark> – You own them, always  
 
-> <mark>**Does NOT execute transactions for you**</mark> – You sign every step (one signature for multiple actions)
+> <mark>**Does NOT make decisions and execute transactions for you**</mark> – You sign every step (one signature for multiple actions)
 
-> <mark>**Does NOT guarantee returns**</mark> – Yields are variable, from external protocols  
+> <mark>**Does NOT guarantee returns**</mark> – Yields are variable, as provided by external protocols  
 
 > <mark>**Does NOT provide investment advice**</mark> – AI suggestions are informational only  
 
-> <mark>**Does NOT act as broker/custodian**</mark> – We're software, not a financial institution  
+> <mark>**Does NOT act as broker/custodian**</mark> – We're a software provider, not a financial institution  
 
 ### The OROKAI Architecture (Simplified)
+
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import StartLight from '@site/static/img/simply.svg';
 import StartDark from '@site/static/img/simply.svg';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '1px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <StartLight className="light-only" />
-    <StartDark className="dark-only" />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '1px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <StartLight
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        aria-label="Simplified flow diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <StartDark
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        aria-label="Simplified flow diagram"
+      />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
+
 
 :::tip[Key Takeaway]
 
-OROKAI sits BETWEEN the user and DeFi protocols as a <mark>software layer</mark> that:
+OROKAI serves as the trusted link BETWEEN the user and DeFi protocols a convenient <mark>software layer</mark> that:
 
 > Simplifies complexity (orchestration, routing, cost calculation)
 

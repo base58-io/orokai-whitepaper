@@ -10,7 +10,7 @@ custom_edit_url: null
 
 ### Allow-list of providers
 
-We present only protocols from the <mark>list of verified integrations</mark> (including staking/LST, lending, DEX). Criteria include reputation, liquidity, audits/bug bounties, incident history, and parameter transparency.
+We present only protocols from the <mark>list of verified integrations</mark> (including staking/earning/LST, lending, DEX trading). Criteria include reputation, liquidity, audits/bug bounties, incident history, and parameter transparency.
 
 ### Interface neutrality
 
