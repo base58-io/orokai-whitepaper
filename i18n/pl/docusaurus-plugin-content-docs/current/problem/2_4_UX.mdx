@@ -4,6 +4,12 @@ sidebar_position: 5
 custom_edit_url: null
 ---
 
+import StartLight from "@site/static/img/defi.svg";
+import StartDark from "@site/static/img/defi.svg";
+
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
 # Brak „jednego okna” inwestycyjnego i prostego UX dla użytkowników spoza Web3
 
 ## Brak spójnego doświadczenia
@@ -14,7 +20,9 @@ On-ramp, wybór sieci, alokacja, monitoring, claim i ewentualna migracja – dzi
 
 ### Brak normalizacji parametrów
 
-<mark>Użytkownik potrzebuje porównywalnych danych</mark> (np. oczekiwany profil ryzyka, opłaty, harmonogramy wypłat), a nie żargonu specyficznego dla każdego protokołu.
+<mark>Użytkownik potrzebuje porównywalnych danych</mark> (np. oczekiwany profil
+ryzyka, opłaty, harmonogramy wypłat), a nie żargonu specyficznego dla każdego
+protokołu.
 
 ### Brak przewidywalnego rozliczania
 
@@ -26,49 +34,38 @@ DeFi w 2025 roku przypomina inne technologie w momencie PRZED ich masową adopcj
 
 ### 1. Email w latach 90. vs. Gmail (2004)
 
-| Lata 90. (Pre-Gmail) | Era Gmail | Analogia DeFi |
-|---------------------|-----------|---------------|
+| Lata 90. (Pre-Gmail)                  | Era Gmail                    | Analogia DeFi                                     |
+| ------------------------------------- | ---------------------------- | ------------------------------------------------- |
 | Musisz skonfigurować POP3/SMTP server | Jedno konto, działa wszędzie | **Dziś:** Musisz zrozumieć RPC nodes, gas, klucze |
-| Każdy provider ma inny interfejs | Jednolity UX | **Dziś:** Każdy protokół ma inny UI/UX |
-| Spam bez filtrów | AI filtrowanie | **Dziś:** Brak AI wsparcia decyzji |
-| "Dial-up" opóźnienia | Instant | **Dziś:** "Pending" transakcje, bridge delays |
+| Każdy provider ma inny interfejs      | Jednolity UX                 | **Dziś:** Każdy protokół ma inny UI/UX            |
+| Spam bez filtrów                      | AI filtrowanie               | **Dziś:** Brak AI wsparcia decyzji                |
+| "Dial-up" opóźnienia                  | Instant                      | **Dziś:** "Pending" transakcje, bridge delays     |
 
 > **Rezultat:** Gmail doprowadził do masowej adopcji email (z ~100M do 1.8B użytkowników w 10 lat)
 
 ### 2. E-commerce przed Stripe (2011)
 
-| Przed Stripe | Po Stripe | Analogia DeFi |
-|--------------|-----------|---------------|
-| Musisz zintegrować bramkę płatniczą (2-6 miesięcy) | 7 linijek kodu | **Dziś:** Musisz zintegrować każdy protokół osobno |
-| Różne standardy per kraj | Jedno API, 135+ krajów | **Dziś:** Różne standardy per blockchain |
-| Compliance per jurysdykcja (PCI DSS manual) | Stripe obsługuje | **Dziś:** Musisz sam zrozumieć regulacje |
-| Rozliczenia fiat kosztowne | Automatyczne | **Dziś:** Ręczna konwersja krypto→fiat |
+| Przed Stripe                                       | Po Stripe              | Analogia DeFi                                      |
+| -------------------------------------------------- | ---------------------- | -------------------------------------------------- |
+| Musisz zintegrować bramkę płatniczą (2-6 miesięcy) | 7 linijek kodu         | **Dziś:** Musisz zintegrować każdy protokół osobno |
+| Różne standardy per kraj                           | Jedno API, 135+ krajów | **Dziś:** Różne standardy per blockchain           |
+| Compliance per jurysdykcja (PCI DSS manual)        | Stripe obsługuje       | **Dziś:** Musisz sam zrozumieć regulacje           |
+| Rozliczenia fiat kosztowne                         | Automatyczne           | **Dziś:** Ręczna konwersja krypto→fiat             |
 
 > **Rezultat:** Stripe umożliwił milionom małych biznesów przyjmowanie płatności online
 
-
 ### 3. Uber vs. wywoływanie taxi (2009)
 
-| Tradycyjne taxi | Uber | Analogia DeFi |
-|-----------------|------|---------------|
-| Nie wiesz kto przyjedzie | Profil kierowcy, oceny | **Dziś:** Nie wiesz czy protokół jest bezpieczny (audyty ukryte) |
-| Nie znasz ceny z góry | Cena przed jazdą | **Dziś:** Gas fee zaskoczenie po transakcji |
-| Gotówka, problemy z płatnością | Automatyczna karta | **Dziś:** Musisz mieć ETH na gas, nawet dla USDC swap |
-| Dzwonisz, czekasz, bez ETA | Real-time tracking | **Dziś:** "Pending" bez jasnego statusu |
+| Tradycyjne taxi                | Uber                   | Analogia DeFi                                                    |
+| ------------------------------ | ---------------------- | ---------------------------------------------------------------- |
+| Nie wiesz kto przyjedzie       | Profil kierowcy, oceny | **Dziś:** Nie wiesz czy protokół jest bezpieczny (audyty ukryte) |
+| Nie znasz ceny z góry          | Cena przed jazdą       | **Dziś:** Gas fee zaskoczenie po transakcji                      |
+| Gotówka, problemy z płatnością | Automatyczna karta     | **Dziś:** Musisz mieć ETH na gas, nawet dla USDC swap            |
+| Dzwonisz, czekasz, bez ETA     | Real-time tracking     | **Dziś:** "Pending" bez jasnego statusu                          |
 
 > **Rezultat:** Uber zmniejszył "friction" z ~15 min do ~2 min → 150M+ użytkowników
 
-
 ## **Gdzie jest "Stripe/Gmail/Uber dla DeFi"?**
-
-import StartLight from '@site/static/img/defi.svg';
-import StartDark from '@site/static/img/defi.svg';
-
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
-
-import StartLight from '@site/static/img/defi.svg';
-import StartDark from '@site/static/img/defi.svg';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
   <div
@@ -95,17 +92,17 @@ import StartDark from '@site/static/img/defi.svg';
         aria-label="DeFi diagram"
       />
     </Zoom>
+
   </div>
 </div>
 
-<div style={{ margin: '24px 0' }} />
+<div style={{ margin: "24px 0" }} />
 
-
-Kluczowe pytanie: Jak przeskoczyć "chasm" (przepaść) między 
+Kluczowe pytanie: Jak przeskoczyć "chasm" (przepaść) między
 Early Adopters (7M użytkowników DeFi) a Early Majority (100M+)?
 
-
 **Odpowiedź:** Potrzebna jest warstwa abstrakcji, która:
+
 > **Ukrywa złożoność techniczną** (jak Gmail ukrył SMTP/POP3)
 
 > **Standaryzuje doświadczenie** (jak Stripe ujednolicił płatności)
@@ -123,19 +120,18 @@ Brak łatwego, zrozumiałego „one-stop” doświadczenia, które prowadzi uży
 :::tip[Co te problemy oznaczają dla OROKAI]
 
 > **Abstrakcja warstwy technicznej**
-Abstrakcja zarządzania (portfele, gaz, bridge) przy zachowaniu pełnej kontroli użytkownika i czytelnych uprawnień (least-privilege).
+> Abstrakcja zarządzania (portfele, gaz, bridge) przy zachowaniu pełnej kontroli użytkownika i czytelnych uprawnień (least-privilege).
 
 > **Normalizacja metryk i ostrzeżeń**
-Wspólny język dla porównywania strategii i jednolite komunikaty ryzyka.
-
+> Wspólny język dla porównywania strategii i jednolite komunikaty ryzyka.
 
 > **Prowadzenie „krok po kroku”**
-Ścieżka od on-ramp do alokacji i ewentualnego claim/rebalans, z jasnymi kosztami przed podpisaniem transakcji.
+> Ścieżka od on-ramp do alokacji i ewentualnego claim/rebalans, z jasnymi kosztami przed podpisaniem transakcji.
 
 > **Rozliczanie w USDT (opcjonalne)**
-Uproszczenie zrozumienia wyników, przy zachowaniu informacji, że zwroty są zmienne i niegwarantowane, a konwersje odbywają się przez DEX i za zgodą użytkownika.
+> Uproszczenie zrozumienia wyników, przy zachowaniu informacji, że zwroty są zmienne i niegwarantowane, a konwersje odbywają się przez DEX i za zgodą użytkownika.
 
 > **Moduł AI jako asystent informacyjny**
-Ogranicza paraliż decyzyjny, ale nie udziela porad inwestycyjnych.
+> Ogranicza paraliż decyzyjny, ale nie udziela porad inwestycyjnych.
 
 :::
