@@ -1,0 +1,66 @@
+---
+sidebar_label: Unique Proposition
+sidebar_position: 4
+custom_edit_url: null
+---
+
+# Unique Value Proposition (USP) and Target Audience
+
+## OROKAI USP
+
+### Non-custodial by design
+OROKAI does not hold user funds; it operates as an orchestration layer for transactions signed by the user.
+
+### One interface across multiple chains and protocols
+The platform aggregates access to DeFi protocols across different blockchains, simplifying allocation, reward handling, and protocol transitions while preserving user custody.
+
+### Context-aware AI Agent
+The Agent provides <mark>informational,</mark> profile-aligned outputs based on user preferences, experience level, and risk alignment. It does not provide investment advice and cannot act on behalf of the user.
+
+### "Zero-friction" UX
+Onboarding and position management are designed to minimize operational complexity, with optional guided flows and integrated on- and off-ramps via licensed partners.
+
+### Transparency
+Protocol-generated rewards may be settled in reference stable assets such as USDT. <mark>Reward levels are variable, protocol-dependent, and not guaranteed.</mark>
+
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+import uspLight from '@site/static/img/usp.png';
+import uspDark from '@site/static/img/usp.png';
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '0px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <img
+        src={uspLight}
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="USP diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <img
+        src={uspDark}
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="USP diagram"
+      />
+    </Zoom>
+  </div>
+</div>
+
+<div style={{ margin: '24px 0' }} />
+
+## Target Audience
+
+OROKAI is designed for individuals new to web3 who value simplicity, for crypto-native users seeking aggregation and operational efficiency, and for B2B or B2B2C partners requiring non-custodial infrastructure via APIs or white-label deployments.
