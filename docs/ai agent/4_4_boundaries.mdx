@@ -3,6 +3,8 @@ sidebar_label: Boundaries and Responsible
 sidebar_position: 5
 custom_edit_url: null
 ---
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 # Boundaries and Responsible Use of AI (Disclaimer)
 
@@ -14,18 +16,42 @@ import yesLight from '@site/static/img/yes.png';
 import yesDark from '@site/static/img/yes.png';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <img src={yesLight} className="light-only" style={{ width: '100%' }} />
-    <img src={yesDark} className="dark-only" style={{ width: '100%' }} />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '0px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <img
+        src={yesLight}
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Affirmative outcome diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <img
+        src={yesDark}
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Affirmative outcome diagram"
+      />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
 
 > Analyzes your profile
 
    - Goals: capital preservation / passive income / growth
    - Risk tolerance: conservative / balanced / opportunistic
-   - Time horizon: short-term / medium-term / long-term
+   - Time horizon: short-term / long-term
    - Preferences: chains, assets, lock-up constraints
    - Experience level: beginner / intermediate / advanced
 
@@ -53,8 +79,8 @@ import yesDark from '@site/static/img/yes.png';
 
    - "APY dropped 2% → Consider migration?"
    - "New protocol matches your profile → Review?"
-   -  "Gas prices low → Good time to rebalance?"
-   -  YOU approve any changes (AI doesn't execute)
+   - "Gas prices low → Good time to rebalance?"
+   - YOU approve any changes (AI doesn't execute)
 
 ### What AI AGENT does not do:
 
@@ -62,12 +88,36 @@ import noLight from '@site/static/img/no.png';
 import noDark from '@site/static/img/no.png';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <img src={noLight} className="light-only" style={{ width: '100%' }} />
-    <img src={noDark} className="dark-only" style={{ width: '100%' }} />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '0px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <img
+        src={noLight}
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Negative outcome diagram"
+      />
+    </Zoom>
+
+    <Zoom>
+      <img
+        src={noDark}
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Negative outcome diagram"
+      />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
 
 > Does not provide financial advice
 
@@ -94,13 +144,6 @@ import noDark from '@site/static/img/no.png';
    - Always read protocol docs, understand risks
    - AI is a tool to help, not a substitute for research
 
-
-:::tip[TRANSPARENCY & EXPLAINABILITY:]
-- Every recommendation shows "Why this?" reason-codes
-- You can see which factors influenced the suggestion
-- You can adjust your profile anytime (AI re-evaluates)
-- Full history of suggestions and your actions (audit trail)
-:::
 
 ## Why "Informational Only" Matters 
 
@@ -149,17 +192,6 @@ Quick links to revoke/limit approvals.
 
 ### Compliance
 Geo-restrictions, sanctions, partner rules (on/off-ramp, cards) on their side; we enforce restrictions in UI.
-
-## Transparency and Explainability
-
-### Reason codes
-Each proposal has reason codes, list of assumptions, and risk factors.
-
-### Decision log
-What, when, and on what basis was suggested – available to users.
-
-### User control
-<mark>Users can disable personalization</mark> or reset their profile.
 
 :::warning[Important disclaimer]
 

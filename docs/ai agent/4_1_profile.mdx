@@ -4,25 +4,6 @@ sidebar_position: 2
 custom_edit_url: null
 ---
 
-# User Profile (Goals, Preferences, Risk Tolerance)
-
-## Profile Scope (User-Declared)
-
-### Goals
-Capital preservation / passive income / LST/LRT exposure / cross-chain diversification.
-
-### Time horizon and liquidity
-No lock-up / acceptable lock-up / flexible exit.
-
-### Risk preferences
-Conservative / balanced / opportunistic (with limits).
-
-### Experience level
-Outside web3 / beginner / advanced (affects explanation depth).
-
-### Operational preferences
-Settlement currency (e.g., USDT), basket of chains/protocols, max number of steps, fee constraints.
-
 ## How Profile Building Works: Step-by-Step
 
 The AI Agent's recommendations are only as good as the profile data it receives. Here's how OROKAI builds a comprehensive user profile **while keeping it simple**:
@@ -30,20 +11,59 @@ The AI Agent's recommendations are only as good as the profile data it receives.
 
 > Profile building journey (5-10 minutes)
 
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
 import stepsLight from '@site/static/img/steps.png';
 import stepsDark from '@site/static/img/steps.png';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <img src={stepsLight} className="light-only" style={{ width: '100%' }} />
-    <img src={stepsDark} className="dark-only" style={{ width: '100%' }} />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '0px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <img
+        src={stepsLight}
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Process steps overview"
+      />
+    </Zoom>
+
+    <Zoom>
+      <img
+        src={stepsDark}
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Process steps overview"
+      />
+    </Zoom>
   </div>
 </div>
+
 <div style={{ margin: '24px 0' }}></div>
 
 ### STEP 1: Goals
 
-What do you want to achieve with DeFi?
+#### What do you want to achieve with DeFi? (What's your DeFi goal?)
+Tell us what you want to achieve with DeFi investments.
+
+> Capital Preservation
+
+> Passive Income
+
+> Capital Growth
+
+> Diversification
+
+> Exploration & Learning
+
 
 ```
 EXAMPLES:
@@ -70,7 +90,14 @@ EXAMPLES:
 
 ### STEP 2: Risk tolerance
 
-How much risk are you comfortable with?
+#### How much risk are you comfortable with? (What's your risk tolerance?)
+Help us understand how much risk you are comfortable with.
+
+> Conservative
+
+> Balanced
+
+> Opportunistic
 
 ``` 
 EXAMPLES:
@@ -89,7 +116,14 @@ What this means:
 
 ### STEP 3: Time horizon
 
-How long do you plan to keep funds deployed?
+#### How long do you plan to keep funds deployed? (What's your investment time horizon?)
+How long do you plan to keep your investments?
+
+> Short-term (< 3 months)
+
+> Medium-term (3-12 months)
+
+> Long-term (1+ years)
 ``` 
 EXAMPLES:
 [   ] Short-term (< 3 months)
@@ -106,7 +140,14 @@ EXAMPLES:
 ```
 
 ### STEP 4: Liquidity preferences
-How important is it to withdraw anytime?
+#### How important is it to withdraw anytime? (What's your liquidity preference?)
+How quickly do you need access to your funds?
+
+> Instant access
+
+> Flexible (few days)
+
+> Committed (locked)
 
 ``` 
 EXAMPLES:
@@ -124,7 +165,35 @@ EXAMPLES:
 ```
 
 ### STEP 5: Chain & asset preferences 
-Which blockchains and assets do you prefer?
+#### Which blockchains and assets do you prefer? (Which blockchain do you prefer?)
+Select your preferred blockchain ecosystem.
+
+> Ethereum
+
+> Polygon
+
+> BNB Chain
+
+> Solana
+
+> Base
+
+> Cosmos
+
+#### Which assets do you prefer?
+Select your preferred asset types.
+
+> ETH
+
+> USDC
+
+> USDT
+
+> BTC (wrapped)
+
+> MATIC
+
+> SOL
 
 ``` 
 EXAMPLES:
@@ -136,7 +205,45 @@ Preferred Assets: (Select 1-5)
 ```
 
 ### STEP 6: Operational constraints
-Any operational preferences or limits?
+#### Any operational preferences or limits? (What's your max gas cost tolerance?)
+Set your maximum acceptable transaction fee.
+
+> No limit
+
+> $20
+
+> $10
+
+> Custom
+
+#### How many transaction steps are acceptable?
+Some strategies require multiple transactions.
+
+> No limit
+
+> 5 steps
+
+> 3 steps
+
+> 1 step
+
+#### How should rewards be handled?
+Choose how your earned rewards are processed.
+
+> Auto-convert to USDT
+
+> Keep in native tokens
+
+> Re-stake automatically
+
+#### What's your protocol exposure limit?
+Maximum percentage of funds in a single protocol.
+
+> No limit
+
+> 50%
+
+> 30%
 
 ``` 
 EXAMPLES:
@@ -156,7 +263,14 @@ Exposure Limits (per protocol):
 ```
 
 ### STEP 7: Experience level
-How would you describe your DeFi experience?
+How would you describe your DeFi experience? (What's your DeFi experience level?)
+Help us tailor the experience to your knowledge.
+
+> New to DeFi
+
+> Some experience
+
+> Advanced
 
 ``` 
 EXAMPLES:
@@ -177,93 +291,60 @@ EXAMPLES:
 
 :::tip[NOTE] 
 
-OROKAI also monitors your behavior:
-   • Frequency of transactions → adjust complexity recommendations
-   • Types of protocols used → expand/narrow suggestions
-   • Response to risk warnings → refine risk scoring
+OROKAI adapts its suggestions based on user-provided interaction context, including:
+
+   • User responses during onboarding
+
+   • Current assets visible in the user’s wallet
+
+   • Open allocations
+
+   When onboarding is skipped, the system applies a predefined default profile.
 
 :::
-
-### Dynamic Profile Adaptation
-
-Your profile isn't static. AI learns from your behavior and market conditions:
-
-> **USER BEHAVIOR SIGNALS:**
-
-
-- You consistently ignore "higher APY" options
-
-   → AI: Shift recommendations toward stability/security
-
-   → Update: Risk tolerance lowered to "Conservative"
-
-- You've completed 10+ transactions without issues
-
-   → AI: Enable more advanced features
-
-   → Update: Experience level → "Intermediate"
-
-- You always choose Ethereum despite higher gas
-
-   → AI: Deprioritize other chains in recommendations
-
-   → Update: Chain preference → "ETH strongly preferred"
-
-- You manually convert rewards to USDT every time
-
-   → AI: Suggest enabling auto-convert
-
-   → Update: Settlement preference → "Auto-USDT"
-
-
-> **MARKET CONDITION SIGNALS:**
-
-
-- Ethereum gas spikes to >$50 per transaction
-
-   → AI: Temporarily boost Polygon/Base in recommendations
-
-   → Message: "Consider Polygon: same protocols, 95% lower gas"
-
-- Protocol X has security incident
-
-   → AI: Immediately remove from recommendations
-
-   → Message: "Protocol X quarantined due to incident"
-
-- New protocol passes 90-day vetting period
-
-   → AI: Add to suggestions if matches profile
-
-   → Message: "New option available: Protocol Y"
-
-- Your staked protocol's APY drops 30%
-
-   → AI: Notify + suggest alternatives
-
-   → Message: "APY dropped to 2.2%. Migrate to Protocol Z (3.1%)?"
-
-:::warning[IMPORTANT]
-
-All adaptations are SUGGESTIONS. You can accept, ignore, or manually override anytime. AI cannot execute changes without your signature.
-
-:::
-
 
 ## Profile Mechanics
 
-### Declarative configuration
-UI-based setup (checkboxes, sliders, limits).
-
-### Security policies
-Hard limits on exposure per protocol/chain (e.g., allow-list), least-privilege principle for smart contract permissions.
-
 ### Privacy
-Profile data is used for personalization and does not authorize the Agent to execute transactions; processing in accordance with Privacy Policy.
+OROKAI does not collect or store personally identifiable user data.
+Each user is assigned a system-generated identifier, which is used solely to associate interaction responses and system outputs.
 
-## Module Output
+Onboarding responses are linked to this identifier and processed to assign the user to one or more predefined content context groups. 
+These groups represent generalized behavioral and preference categories rather than individual user profiles.
 
-**"Profile Card"** displaying: goals → risk level → preferred chains → constraints → settlement currency.
+Profile data is used exclusively for personalization of informational outputs and does not authorize the Agent to execute transactions or take actions on behalf of the user.
+All processing is performed in accordance with the applicable Privacy Policy.
+
+### Context Grouping Logic
+User inputs collected during onboarding are evaluated by the backend using a deterministic classification algorithm. 
+Based on the selected responses, the system assigns the identifier to relevant content context groups.
+
+These groups are used to:
+
+• Scope informational notifications
+
+• Filter protocol and network visibility
+
+• Adjust the relevance of surfaced data
+
+The Agent generates messages at the group level, not the individual level. 
+The backend then distributes these messages to identifiers associated with the corresponding groups.
+
+No persistent behavioral tracking or individual profiling is performed beyond group assignment.
+
+### Module Output
+
+**The Profile Card** (derived from group-level context), displaying:
+
+• Goals
+
+• Risk level category
+
+• Preferred chains
+
+• Operational constraints
+
+The Profile Card represents a contextual summary, not a user account or identity.
 
 :::tip[User control]
 

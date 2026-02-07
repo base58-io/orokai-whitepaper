@@ -1,0 +1,118 @@
+.section {
+  padding: 40px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  height: 100%;
+  padding: 28px;
+  border-radius: 20px;
+  text-align: center;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* subtelna animacja jak w wzorcu */
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* === KOLORY w oparciu o Docusaurus vars === */
+
+/* Ciemne kafelki */
+.darkCard {
+  background: color-mix(in srgb, var(--ifm-background-surface-color) 90%, #1d1d1d);
+  border: 1px solid color-mix(in srgb, var(--ifm-color-emphasis-200) 35%, transparent 65%);
+}
+
+.darkCard:hover {
+  border-color: rgba(203, 185, 185, 0.35);
+}
+
+/* Jasny środkowy kafelek */
+.primaryCard {
+  background: #D8CACA;          /* brandowa jasna płytka */
+  color: #171717;               /* wymuszony kontrast */
+}
+
+@media (min-width: 768px) {
+  .primaryCard {
+    transform: none;
+  }
+}
+
+/* Kicker */
+.kicker {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-weight: 700;
+  margin-bottom: 18px;
+
+  /* w dark/light będzie czytelne */
+  color: rgba(203, 185, 185, 0.9);
+}
+
+.kickerOnPrimary {
+  color: rgba(23, 23, 23, 0.55) !important;
+}
+
+/* Tytuły */
+.title {
+  margin: 0 0 18px 0;
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+
+  /* wygląda jak Zodiak bez fontów */
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+
+  /* domyślnie tytuł ma być jasny/czytelny na darkCard */
+  color: var(--ifm-font-color-base);
+}
+
+.titleOnPrimary {
+  color: #171717 !important;
+}
+
+/* Tekst */
+.textMuted {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 300;
+
+  /* zamiast sztywnego #888 */
+  color: var(--ifm-color-emphasis-700);
+}
+
+.textStrong {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 600;
+  color: #171717;
+}
+
+.textOnPrimary {
+  color: rgba(23, 23, 23, 0.85) !important;
+  font-weight: 600;
+}

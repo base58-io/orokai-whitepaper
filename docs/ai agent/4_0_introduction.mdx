@@ -25,16 +25,43 @@ AI Agent OROKAI is a module that <mark>supports users</mark> in understanding op
 
 ### Without AI:
 
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
 import decisionLight from '@site/static/img/decision.png';
 import decisionDark from '@site/static/img/decision.png';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <img src={decisionLight} className="light-only" style={{ width: '100%' }} />
-    <img src={decisionDark} className="dark-only" style={{ width: '100%' }} />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '0px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <img
+        src={decisionLight}
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Decision flow without OROKAI"
+      />
+    </Zoom>
+
+    <Zoom>
+      <img
+        src={decisionDark}
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Decision flow without OROKAI"
+      />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
 
 ### With OROKAI AI:
 
@@ -42,12 +69,36 @@ import decisionaiLight from '@site/static/img/decisionai.png';
 import decisionaiDark from '@site/static/img/decisionai.png';
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-  <div style={{ width: '100%', flexShrink: 0, border: '0px solid var(--sidebar-border)', borderRadius: '8px', padding: '8px' }}>
-    <img src={decisionaiLight} className="light-only" style={{ width: '100%' }} />
-    <img src={decisionaiDark} className="dark-only" style={{ width: '100%' }} />
+  <div
+    style={{
+      width: '100%',
+      flexShrink: 0,
+      border: '0px solid var(--sidebar-border)',
+      borderRadius: '8px',
+      padding: '8px',
+    }}
+  >
+    <Zoom>
+      <img
+        src={decisionaiLight}
+        className="light-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Decision flow with OROKAI AI assistance"
+      />
+    </Zoom>
+
+    <Zoom>
+      <img
+        src={decisionaiDark}
+        className="dark-only"
+        style={{ width: '100%', cursor: 'zoom-in' }}
+        alt="Decision flow with OROKAI AI assistance"
+      />
+    </Zoom>
   </div>
 </div>
-<div style={{ margin: '24px 0' }}></div>
+
+<div style={{ margin: '24px 0' }} />
 
 ## Nature of the module 
 Informational only; does not constitute investment, legal, or tax advice. Returns are variable and not guaranteed; they result from parameters of external protocols.
