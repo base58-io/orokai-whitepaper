@@ -1,0 +1,8 @@
+{
+  "label": "AI Agent",
+  "position": 4,
+  "link": {
+    "type": "doc",
+    "id": "ai_agent/index"
+  }
+}

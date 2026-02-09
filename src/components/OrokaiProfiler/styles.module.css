@@ -1,0 +1,299 @@
+/* src/components/OrokaiProfiler/styles.module.css */
+
+.profilerContainer {
+  --brand: #CBB9B9;
+  --bg: #171717;
+  --border: rgba(255, 255, 255, 0.08);
+  --text-main: #F5F5F5;
+  --text-muted: #A3A3A3;
+  
+  background-color: var(--bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: var(--text-main);
+  font-family: 'Satoshi', sans-serif;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.header h2 {
+  font-family: 'Zodiak', serif;
+  font-size: 1.75rem;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.header p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* --- GRID LAYOUT (Kluczowa zmiana) --- */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile: 1 kolumna */
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr; /* Desktop: 2 kolumny */
+    align-items: stretch; /* Wyrównanie wysokości */
+  }
+}
+
+/* Glass Panel Style */
+.panel {
+  background: linear-gradient(145deg, rgba(30,30,30,0.9) 0%, rgba(23,23,23,0.95) 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.3s;
+}
+
+.panel:hover {
+  border-color: rgba(203, 185, 185, 0.3);
+}
+
+/* --- Chart Panel Specifics (Szeroki na dole) --- */
+.chartPanel {
+  /* Na desktopie rozciągnij na całą szerokość (2 kolumny) */
+  grid-column: 1 / -1; 
+  align-items: center;
+  justify-content: center;
+  /* Ograniczamy wysokość panelu wykresu, żeby nie był ogromny */
+  max-height: 300px; 
+}
+
+/* Wymuszamy, by siatka wewnątrz panelu wykresu była pozioma na desktopie */
+@media (min-width: 768px) {
+    .chartPanel {
+        flex-direction: row; /* Wykres z lewej, tekst z prawej (opcjonalnie) */
+        gap: 2rem;
+    }
+}
+
+.chartWrapper {
+  width: 100%;
+  max-width: 400px; /* Ograniczamy szerokość samego radaru */
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chartCaption {
+  text-align: center;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  opacity: 0.6;
+}
+
+/* --- Reszta stylów (Kontrolki, Wynik) bez zmian --- */
+
+.stepIndicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.stepNum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-size: 0.75rem;
+  border-radius: 50%;
+  border: 1px solid var(--brand);
+  color: var(--brand);
+  font-family: 'Zodiak', serif;
+}
+
+.stepIndicator h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.controlGroup {
+  margin-bottom: 1rem;
+}
+
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.brandText {
+  color: var(--brand);
+  font-weight: bold;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: var(--brand);
+  margin-top: -5px;
+  box-shadow: 0 0 8px rgba(203, 185, 185, 0.4);
+}
+
+.slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.05em;
+}
+
+.toggleGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.toggleBtn {
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--text-muted);
+}
+
+.toggleBtn:hover {
+  border-color: rgba(255,255,255,0.3);
+  color: var(--text-main);
+}
+
+.toggleBtn.active {
+  background: rgba(203, 185, 185, 0.1);
+  border-color: rgba(203, 185, 185, 0.5);
+  color: var(--brand);
+}
+
+/* Output Area */
+.outputPanel {
+  position: relative;
+  overflow: hidden;
+}
+
+.glowEffect {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 100px;
+  height: 100px;
+  background: var(--brand);
+  opacity: 0.08;
+  border-radius: 50%;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.contentRelative {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.aiLabel {
+  color: var(--brand);
+  font-size: 0.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.strategyTitle {
+  font-family: 'Zodiak', serif;
+  font-size: 1.4rem;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.strategyDesc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  border-left: 1px solid rgba(255,255,255,0.1);
+  padding-left: 0.75rem;
+  margin-bottom: auto;
+}
+
+.tagRow {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tagRow span {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.tag {
+  background: var(--brand);
+  color: var(--bg);
+  padding: 0.2rem 0.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
