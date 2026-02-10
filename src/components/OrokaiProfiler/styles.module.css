@@ -26,6 +26,7 @@
   font-size: 1.75rem;
   color: var(--text-main);
   margin-bottom: 0.25rem;
+  font-weight: normal;
 }
 
 .header p {
@@ -95,7 +96,7 @@
 
 .chartCaption {
   text-align: center;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: var(--text-muted);
@@ -125,6 +126,7 @@
   border: 1px solid var(--brand);
   color: var(--brand);
   font-family: 'Zodiak', serif;
+  font-weight: normal;
 }
 
 .stepIndicator h3 {
@@ -261,6 +263,7 @@
   color: var(--text-main);
   margin-bottom: 0.75rem;
   line-height: 1.1;
+  font-weight: normal;
 }
 
 .strategyDesc {
